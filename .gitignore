@@ -16,3 +16,4 @@ AGENTS.md
 /data/raw/
 /data/processed/
 /data/.prepare-*/
+/results/.eda-*/

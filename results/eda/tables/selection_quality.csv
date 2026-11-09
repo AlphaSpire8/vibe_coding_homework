@@ -1,0 +1,6 @@
+category,label,raw_rows,other_eligible_rows,complete_station_rows,station_completeness
+rider,member,3708926,3585172,2640636,0.7365437418344224
+rider,casual,2151695,1998739,1480971,0.7409526706588504
+vehicle,electric_bike,2980627,2869184,1406921,0.49035579453949274
+vehicle,classic_bike,2735657,2714727,2714686,0.9999848971922407
+vehicle,electric_scooter,144337,0,0,

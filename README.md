@@ -5,4 +5,6 @@
 - [scripts/](scripts/)：数据下载与检查代码。
 - [tests/](tests/)：下载与校验逻辑的测试。
 - [docs/](docs/)：工作计划、研究记录与阶段报告。
+- [configs/](configs/)：探索范围与分析参数。
+- [results/](results/)：图表、汇总统计和运行记录。
 - `pyproject.toml`、`uv.lock`：根目录 uv 项目配置与依赖锁定。

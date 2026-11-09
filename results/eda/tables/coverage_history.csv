@@ -1,0 +1,15 @@
+year,rows_all,rows_clean,retention,role
+2013,759788,759788,1.0,existing_quality_counts_only
+2014,2454634,2454634,1.0,existing_quality_counts_only
+2015,3183439,3183439,1.0,existing_quality_counts_only
+2016,3595383,3595333,0.9999860932757373,existing_quality_counts_only
+2017,3829014,3829003,0.999997127197759,existing_quality_counts_only
+2018,3603082,3601571,0.9995806367992736,existing_quality_counts_only
+2019,3818004,3816156,0.9995159774583787,existing_quality_counts_only
+2020,3541683,3329822,0.940180699401951,existing_quality_counts_only
+2021,5595063,4527658,0.8092237746027167,existing_quality_counts_only
+2022,5667717,4292553,0.757368972374591,existing_quality_counts_only
+2023,5719877,4244172,0.7420040675699845,existing_quality_counts_only
+2024,5860621,4121607,0.7032713768728605,existing_quality_counts_only
+2025,5552964,3661513,0.6593799275486029,existing_quality_counts_only
+2026,5797266,3810484,0.6572898328280952,existing_quality_counts_only
