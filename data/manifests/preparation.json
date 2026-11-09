@@ -1,0 +1,4072 @@
+{
+  "prepared_at": "2026-11-09T12:25:00+00:00",
+  "duckdb_version": "2.0.0",
+  "build_mode": "filter_only",
+  "normalized_at": "2026-11-09T12:14:02+00:00",
+  "download_manifest_sha256": "17f5355173a100cc45bb1980934b6e9817217d934ebd1a7cf0e50cf859b21079",
+  "policy": {
+    "duration_min_seconds": 60,
+    "duration_max_seconds": 86400,
+    "require_complete_stations": true,
+    "exact_duplicates": "keep_first",
+    "conflicting_ids": "retain_and_flag",
+    "exclude_rideable_types": [
+      "electric_scooter"
+    ]
+  },
+  "trips": {
+    "rows_all": 58978535,
+    "rows_clean": 49227733,
+    "rows_removed": 9750802,
+    "first_date": "2013-06-27",
+    "last_date": "2026-10-31",
+    "quality_flags": {
+      "flag_id_missing": 0,
+      "flag_time_invalid": 0,
+      "flag_duration_missing": 0,
+      "flag_reported_duration_invalid": 0,
+      "flag_duration_nonpositive": 14331,
+      "flag_duration_short": 829321,
+      "flag_duration_long": 39883,
+      "flag_negative_wall_duration": 11471,
+      "flag_duration_mismatch": 479,
+      "flag_station_missing": 9295857,
+      "flag_rider_unmapped": 190,
+      "flag_coordinate_missing": 39465,
+      "flag_coordinate_invalid": 0,
+      "flag_zero_coordinates": 11,
+      "flag_outside_source_period": 2863,
+      "flag_duplicate_id": 1032,
+      "flag_conflicting_id": 840
+    },
+    "filter_audit": [
+      {
+        "rule": "ID 完整",
+        "before": 58978535,
+        "after": 58978535,
+        "removed": 0
+      },
+      {
+        "rule": "起止时间可解析",
+        "before": 58978535,
+        "after": 58978535,
+        "removed": 0
+      },
+      {
+        "rule": "时长 60 秒至 24 小时",
+        "before": 58978535,
+        "after": 58095000,
+        "removed": 883535
+      },
+      {
+        "rule": "起终点站信息完整",
+        "before": 58095000,
+        "after": 49274759,
+        "removed": 8820241
+      },
+      {
+        "rule": "完全相同重复仅保留一条",
+        "before": 49274759,
+        "after": 49274679,
+        "removed": 80
+      },
+      {
+        "rule": "排除明确标注的电动滑板车",
+        "before": 49274679,
+        "after": 49227733,
+        "removed": 46946
+      }
+    ],
+    "yearly_rows": [
+      {
+        "year": 2013,
+        "rows_all": 759788,
+        "rows_clean": 759788
+      },
+      {
+        "year": 2014,
+        "rows_all": 2454634,
+        "rows_clean": 2454634
+      },
+      {
+        "year": 2015,
+        "rows_all": 3183439,
+        "rows_clean": 3183439
+      },
+      {
+        "year": 2016,
+        "rows_all": 3595383,
+        "rows_clean": 3595333
+      },
+      {
+        "year": 2017,
+        "rows_all": 3829014,
+        "rows_clean": 3829003
+      },
+      {
+        "year": 2018,
+        "rows_all": 3603082,
+        "rows_clean": 3601571
+      },
+      {
+        "year": 2019,
+        "rows_all": 3818004,
+        "rows_clean": 3816156
+      },
+      {
+        "year": 2020,
+        "rows_all": 3541683,
+        "rows_clean": 3329822
+      },
+      {
+        "year": 2021,
+        "rows_all": 5595063,
+        "rows_clean": 4527658
+      },
+      {
+        "year": 2022,
+        "rows_all": 5667717,
+        "rows_clean": 4292553
+      },
+      {
+        "year": 2023,
+        "rows_all": 5719877,
+        "rows_clean": 4244172
+      },
+      {
+        "year": 2024,
+        "rows_all": 5860621,
+        "rows_clean": 4121607
+      },
+      {
+        "year": 2025,
+        "rows_all": 5552964,
+        "rows_clean": 3661513
+      },
+      {
+        "year": 2026,
+        "rows_all": 5797266,
+        "rows_clean": 3810484
+      }
+    ],
+    "weather_unmatched_clean_rows": 0,
+    "rider_categories": [
+      {
+        "raw": "member",
+        "normalized": "member",
+        "rows": 23195061
+      },
+      {
+        "raw": "Subscriber",
+        "normalized": "member",
+        "rows": 15912140
+      },
+      {
+        "raw": "casual",
+        "normalized": "casual",
+        "rows": 14540130
+      },
+      {
+        "raw": "Customer",
+        "normalized": "casual",
+        "rows": 5331014
+      },
+      {
+        "raw": "Dependent",
+        "normalized": "unknown",
+        "rows": 190
+      }
+    ],
+    "vehicle_categories": [
+      {
+        "type": null,
+        "rows_all": 21243344,
+        "rows_clean": 21239924
+      },
+      {
+        "type": "electric_bike",
+        "rows_all": 19154949,
+        "rows_clean": 9791147
+      },
+      {
+        "type": "classic_bike",
+        "rows_all": 14901479,
+        "rows_clean": 14728987
+      },
+      {
+        "type": "docked_bike",
+        "rows_all": 3534426,
+        "rows_clean": 3467675
+      },
+      {
+        "type": "electric_scooter",
+        "rows_all": 144337,
+        "rows_clean": 0
+      }
+    ],
+    "station_ids_with_multiple_names": 762
+  },
+  "weather": {
+    "source_rows": {
+      "USW00094846": 386002,
+      "USW00014819": 104640
+    },
+    "target_observations": 183370,
+    "daily_rows": 35615,
+    "quality_flagged": 37
+  },
+  "stations": {
+    "rows": 6017,
+    "historical_tables": 8,
+    "gbfs_rows": 2079
+  },
+  "sources": [
+    {
+      "archive": "202004-divvy-tripdata.zip",
+      "member": "202004-divvy-tripdata.csv",
+      "rows": 84776,
+      "schema_family": "modern",
+      "column_mapping": {
+        "ride_id": "ride_id",
+        "started_at_raw": "started_at",
+        "ended_at_raw": "ended_at",
+        "rider_type_raw": "member_casual",
+        "rideable_type": "rideable_type",
+        "reported_duration_raw": null,
+        "bike_id": null,
+        "gender_raw": null,
+        "birth_year_raw": null,
+        "start_station_id": "start_station_id",
+        "start_station_name": "start_station_name",
+        "end_station_id": "end_station_id",
+        "end_station_name": "end_station_name",
+        "start_lat_raw": "start_lat",
+        "start_lng_raw": "start_lng",
+        "end_lat_raw": "end_lat",
+        "end_lng_raw": "end_lng"
+      }
+    },
+    {
+      "archive": "202005-divvy-tripdata.zip",
+      "member": "202005-divvy-tripdata.csv",
+      "rows": 200274,
+      "schema_family": "modern",
+      "column_mapping": {
+        "ride_id": "ride_id",
+        "started_at_raw": "started_at",
+        "ended_at_raw": "ended_at",
+        "rider_type_raw": "member_casual",
+        "rideable_type": "rideable_type",
+        "reported_duration_raw": null,
+        "bike_id": null,
+        "gender_raw": null,
+        "birth_year_raw": null,
+        "start_station_id": "start_station_id",
+        "start_station_name": "start_station_name",
+        "end_station_id": "end_station_id",
+        "end_station_name": "end_station_name",
+        "start_lat_raw": "start_lat",
+        "start_lng_raw": "start_lng",
+        "end_lat_raw": "end_lat",
+        "end_lng_raw": "end_lng"
+      }
+    },
+    {
+      "archive": "202006-divvy-tripdata.zip",
+      "member": "202006-divvy-tripdata.csv",
+      "rows": 343005,
+      "schema_family": "modern",
+      "column_mapping": {
+        "ride_id": "ride_id",
+        "started_at_raw": "started_at",
+        "ended_at_raw": "ended_at",
+        "rider_type_raw": "member_casual",
+        "rideable_type": "rideable_type",
+        "reported_duration_raw": null,
+        "bike_id": null,
+        "gender_raw": null,
+        "birth_year_raw": null,
+        "start_station_id": "start_station_id",
+        "start_station_name": "start_station_name",
+        "end_station_id": "end_station_id",
+        "end_station_name": "end_station_name",
+        "start_lat_raw": "start_lat",
+        "start_lng_raw": "start_lng",
+        "end_lat_raw": "end_lat",
+        "end_lng_raw": "end_lng"
+      }
+    },
+    {
+      "archive": "202007-divvy-tripdata.zip",
+      "member": "202007-divvy-tripdata.csv",
+      "rows": 551480,
+      "schema_family": "modern",
+      "column_mapping": {
+        "ride_id": "ride_id",
+        "started_at_raw": "started_at",
+        "ended_at_raw": "ended_at",
+        "rider_type_raw": "member_casual",
+        "rideable_type": "rideable_type",
+        "reported_duration_raw": null,
+        "bike_id": null,
+        "gender_raw": null,
+        "birth_year_raw": null,
+        "start_station_id": "start_station_id",
+        "start_station_name": "start_station_name",
+        "end_station_id": "end_station_id",
+        "end_station_name": "end_station_name",
+        "start_lat_raw": "start_lat",
+        "start_lng_raw": "start_lng",
+        "end_lat_raw": "end_lat",
+        "end_lng_raw": "end_lng"
+      }
+    },
+    {
+      "archive": "202008-divvy-tripdata.zip",
+      "member": "202008-divvy-tripdata.csv",
+      "rows": 622361,
+      "schema_family": "modern",
+      "column_mapping": {
+        "ride_id": "ride_id",
+        "started_at_raw": "started_at",
+        "ended_at_raw": "ended_at",
+        "rider_type_raw": "member_casual",
+        "rideable_type": "rideable_type",
+        "reported_duration_raw": null,
+        "bike_id": null,
+        "gender_raw": null,
+        "birth_year_raw": null,
+        "start_station_id": "start_station_id",
+        "start_station_name": "start_station_name",
+        "end_station_id": "end_station_id",
+        "end_station_name": "end_station_name",
+        "start_lat_raw": "start_lat",
+        "start_lng_raw": "start_lng",
+        "end_lat_raw": "end_lat",
+        "end_lng_raw": "end_lng"
+      }
+    },
+    {
+      "archive": "202009-divvy-tripdata.zip",
+      "member": "202009-divvy-tripdata.csv",
+      "rows": 532958,
+      "schema_family": "modern",
+      "column_mapping": {
+        "ride_id": "ride_id",
+        "started_at_raw": "started_at",
+        "ended_at_raw": "ended_at",
+        "rider_type_raw": "member_casual",
+        "rideable_type": "rideable_type",
+        "reported_duration_raw": null,
+        "bike_id": null,
+        "gender_raw": null,
+        "birth_year_raw": null,
+        "start_station_id": "start_station_id",
+        "start_station_name": "start_station_name",
+        "end_station_id": "end_station_id",
+        "end_station_name": "end_station_name",
+        "start_lat_raw": "start_lat",
+        "start_lng_raw": "start_lng",
+        "end_lat_raw": "end_lat",
+        "end_lng_raw": "end_lng"
+      }
+    },
+    {
+      "archive": "202010-divvy-tripdata.zip",
+      "member": "202010-divvy-tripdata.csv",
+      "rows": 388653,
+      "schema_family": "modern",
+      "column_mapping": {
+        "ride_id": "ride_id",
+        "started_at_raw": "started_at",
+        "ended_at_raw": "ended_at",
+        "rider_type_raw": "member_casual",
+        "rideable_type": "rideable_type",
+        "reported_duration_raw": null,
+        "bike_id": null,
+        "gender_raw": null,
+        "birth_year_raw": null,
+        "start_station_id": "start_station_id",
+        "start_station_name": "start_station_name",
+        "end_station_id": "end_station_id",
+        "end_station_name": "end_station_name",
+        "start_lat_raw": "start_lat",
+        "start_lng_raw": "start_lng",
+        "end_lat_raw": "end_lat",
+        "end_lng_raw": "end_lng"
+      }
+    },
+    {
+      "archive": "202011-divvy-tripdata.zip",
+      "member": "202011-divvy-tripdata.csv",
+      "rows": 259716,
+      "schema_family": "modern",
+      "column_mapping": {
+        "ride_id": "ride_id",
+        "started_at_raw": "started_at",
+        "ended_at_raw": "ended_at",
+        "rider_type_raw": "member_casual",
+        "rideable_type": "rideable_type",
+        "reported_duration_raw": null,
+        "bike_id": null,
+        "gender_raw": null,
+        "birth_year_raw": null,
+        "start_station_id": "start_station_id",
+        "start_station_name": "start_station_name",
+        "end_station_id": "end_station_id",
+        "end_station_name": "end_station_name",
+        "start_lat_raw": "start_lat",
+        "start_lng_raw": "start_lng",
+        "end_lat_raw": "end_lat",
+        "end_lng_raw": "end_lng"
+      }
+    },
+    {
+      "archive": "202012-divvy-tripdata.zip",
+      "member": "202012-divvy-tripdata.csv",
+      "rows": 131573,
+      "schema_family": "modern",
+      "column_mapping": {
+        "ride_id": "ride_id",
+        "started_at_raw": "started_at",
+        "ended_at_raw": "ended_at",
+        "rider_type_raw": "member_casual",
+        "rideable_type": "rideable_type",
+        "reported_duration_raw": null,
+        "bike_id": null,
+        "gender_raw": null,
+        "birth_year_raw": null,
+        "start_station_id": "start_station_id",
+        "start_station_name": "start_station_name",
+        "end_station_id": "end_station_id",
+        "end_station_name": "end_station_name",
+        "start_lat_raw": "start_lat",
+        "start_lng_raw": "start_lng",
+        "end_lat_raw": "end_lat",
+        "end_lng_raw": "end_lng"
+      }
+    },
+    {
+      "archive": "202101-divvy-tripdata.zip",
+      "member": "202101-divvy-tripdata.csv",
+      "rows": 96834,
+      "schema_family": "modern",
+      "column_mapping": {
+        "ride_id": "ride_id",
+        "started_at_raw": "started_at",
+        "ended_at_raw": "ended_at",
+        "rider_type_raw": "member_casual",
+        "rideable_type": "rideable_type",
+        "reported_duration_raw": null,
+        "bike_id": null,
+        "gender_raw": null,
+        "birth_year_raw": null,
+        "start_station_id": "start_station_id",
+        "start_station_name": "start_station_name",
+        "end_station_id": "end_station_id",
+        "end_station_name": "end_station_name",
+        "start_lat_raw": "start_lat",
+        "start_lng_raw": "start_lng",
+        "end_lat_raw": "end_lat",
+        "end_lng_raw": "end_lng"
+      }
+    },
+    {
+      "archive": "202102-divvy-tripdata.zip",
+      "member": "202102-divvy-tripdata.csv",
+      "rows": 49622,
+      "schema_family": "modern",
+      "column_mapping": {
+        "ride_id": "ride_id",
+        "started_at_raw": "started_at",
+        "ended_at_raw": "ended_at",
+        "rider_type_raw": "member_casual",
+        "rideable_type": "rideable_type",
+        "reported_duration_raw": null,
+        "bike_id": null,
+        "gender_raw": null,
+        "birth_year_raw": null,
+        "start_station_id": "start_station_id",
+        "start_station_name": "start_station_name",
+        "end_station_id": "end_station_id",
+        "end_station_name": "end_station_name",
+        "start_lat_raw": "start_lat",
+        "start_lng_raw": "start_lng",
+        "end_lat_raw": "end_lat",
+        "end_lng_raw": "end_lng"
+      }
+    },
+    {
+      "archive": "202103-divvy-tripdata.zip",
+      "member": "202103-divvy-tripdata.csv",
+      "rows": 228496,
+      "schema_family": "modern",
+      "column_mapping": {
+        "ride_id": "ride_id",
+        "started_at_raw": "started_at",
+        "ended_at_raw": "ended_at",
+        "rider_type_raw": "member_casual",
+        "rideable_type": "rideable_type",
+        "reported_duration_raw": null,
+        "bike_id": null,
+        "gender_raw": null,
+        "birth_year_raw": null,
+        "start_station_id": "start_station_id",
+        "start_station_name": "start_station_name",
+        "end_station_id": "end_station_id",
+        "end_station_name": "end_station_name",
+        "start_lat_raw": "start_lat",
+        "start_lng_raw": "start_lng",
+        "end_lat_raw": "end_lat",
+        "end_lng_raw": "end_lng"
+      }
+    },
+    {
+      "archive": "202104-divvy-tripdata.zip",
+      "member": "202104-divvy-tripdata.csv",
+      "rows": 337230,
+      "schema_family": "modern",
+      "column_mapping": {
+        "ride_id": "ride_id",
+        "started_at_raw": "started_at",
+        "ended_at_raw": "ended_at",
+        "rider_type_raw": "member_casual",
+        "rideable_type": "rideable_type",
+        "reported_duration_raw": null,
+        "bike_id": null,
+        "gender_raw": null,
+        "birth_year_raw": null,
+        "start_station_id": "start_station_id",
+        "start_station_name": "start_station_name",
+        "end_station_id": "end_station_id",
+        "end_station_name": "end_station_name",
+        "start_lat_raw": "start_lat",
+        "start_lng_raw": "start_lng",
+        "end_lat_raw": "end_lat",
+        "end_lng_raw": "end_lng"
+      }
+    },
+    {
+      "archive": "202105-divvy-tripdata.zip",
+      "member": "202105-divvy-tripdata.csv",
+      "rows": 531633,
+      "schema_family": "modern",
+      "column_mapping": {
+        "ride_id": "ride_id",
+        "started_at_raw": "started_at",
+        "ended_at_raw": "ended_at",
+        "rider_type_raw": "member_casual",
+        "rideable_type": "rideable_type",
+        "reported_duration_raw": null,
+        "bike_id": null,
+        "gender_raw": null,
+        "birth_year_raw": null,
+        "start_station_id": "start_station_id",
+        "start_station_name": "start_station_name",
+        "end_station_id": "end_station_id",
+        "end_station_name": "end_station_name",
+        "start_lat_raw": "start_lat",
+        "start_lng_raw": "start_lng",
+        "end_lat_raw": "end_lat",
+        "end_lng_raw": "end_lng"
+      }
+    },
+    {
+      "archive": "202106-divvy-tripdata.zip",
+      "member": "202106-divvy-tripdata.csv",
+      "rows": 729595,
+      "schema_family": "modern",
+      "column_mapping": {
+        "ride_id": "ride_id",
+        "started_at_raw": "started_at",
+        "ended_at_raw": "ended_at",
+        "rider_type_raw": "member_casual",
+        "rideable_type": "rideable_type",
+        "reported_duration_raw": null,
+        "bike_id": null,
+        "gender_raw": null,
+        "birth_year_raw": null,
+        "start_station_id": "start_station_id",
+        "start_station_name": "start_station_name",
+        "end_station_id": "end_station_id",
+        "end_station_name": "end_station_name",
+        "start_lat_raw": "start_lat",
+        "start_lng_raw": "start_lng",
+        "end_lat_raw": "end_lat",
+        "end_lng_raw": "end_lng"
+      }
+    },
+    {
+      "archive": "202107-divvy-tripdata.zip",
+      "member": "202107-divvy-tripdata.csv",
+      "rows": 822410,
+      "schema_family": "modern",
+      "column_mapping": {
+        "ride_id": "ride_id",
+        "started_at_raw": "started_at",
+        "ended_at_raw": "ended_at",
+        "rider_type_raw": "member_casual",
+        "rideable_type": "rideable_type",
+        "reported_duration_raw": null,
+        "bike_id": null,
+        "gender_raw": null,
+        "birth_year_raw": null,
+        "start_station_id": "start_station_id",
+        "start_station_name": "start_station_name",
+        "end_station_id": "end_station_id",
+        "end_station_name": "end_station_name",
+        "start_lat_raw": "start_lat",
+        "start_lng_raw": "start_lng",
+        "end_lat_raw": "end_lat",
+        "end_lng_raw": "end_lng"
+      }
+    },
+    {
+      "archive": "202108-divvy-tripdata.zip",
+      "member": "202108-divvy-tripdata.csv",
+      "rows": 804352,
+      "schema_family": "modern",
+      "column_mapping": {
+        "ride_id": "ride_id",
+        "started_at_raw": "started_at",
+        "ended_at_raw": "ended_at",
+        "rider_type_raw": "member_casual",
+        "rideable_type": "rideable_type",
+        "reported_duration_raw": null,
+        "bike_id": null,
+        "gender_raw": null,
+        "birth_year_raw": null,
+        "start_station_id": "start_station_id",
+        "start_station_name": "start_station_name",
+        "end_station_id": "end_station_id",
+        "end_station_name": "end_station_name",
+        "start_lat_raw": "start_lat",
+        "start_lng_raw": "start_lng",
+        "end_lat_raw": "end_lat",
+        "end_lng_raw": "end_lng"
+      }
+    },
+    {
+      "archive": "202109-divvy-tripdata.zip",
+      "member": "202109-divvy-tripdata.csv",
+      "rows": 756147,
+      "schema_family": "modern",
+      "column_mapping": {
+        "ride_id": "ride_id",
+        "started_at_raw": "started_at",
+        "ended_at_raw": "ended_at",
+        "rider_type_raw": "member_casual",
+        "rideable_type": "rideable_type",
+        "reported_duration_raw": null,
+        "bike_id": null,
+        "gender_raw": null,
+        "birth_year_raw": null,
+        "start_station_id": "start_station_id",
+        "start_station_name": "start_station_name",
+        "end_station_id": "end_station_id",
+        "end_station_name": "end_station_name",
+        "start_lat_raw": "start_lat",
+        "start_lng_raw": "start_lng",
+        "end_lat_raw": "end_lat",
+        "end_lng_raw": "end_lng"
+      }
+    },
+    {
+      "archive": "202110-divvy-tripdata.zip",
+      "member": "202110-divvy-tripdata.csv",
+      "rows": 631226,
+      "schema_family": "modern",
+      "column_mapping": {
+        "ride_id": "ride_id",
+        "started_at_raw": "started_at",
+        "ended_at_raw": "ended_at",
+        "rider_type_raw": "member_casual",
+        "rideable_type": "rideable_type",
+        "reported_duration_raw": null,
+        "bike_id": null,
+        "gender_raw": null,
+        "birth_year_raw": null,
+        "start_station_id": "start_station_id",
+        "start_station_name": "start_station_name",
+        "end_station_id": "end_station_id",
+        "end_station_name": "end_station_name",
+        "start_lat_raw": "start_lat",
+        "start_lng_raw": "start_lng",
+        "end_lat_raw": "end_lat",
+        "end_lng_raw": "end_lng"
+      }
+    },
+    {
+      "archive": "202111-divvy-tripdata.zip",
+      "member": "202111-divvy-tripdata.csv",
+      "rows": 359978,
+      "schema_family": "modern",
+      "column_mapping": {
+        "ride_id": "ride_id",
+        "started_at_raw": "started_at",
+        "ended_at_raw": "ended_at",
+        "rider_type_raw": "member_casual",
+        "rideable_type": "rideable_type",
+        "reported_duration_raw": null,
+        "bike_id": null,
+        "gender_raw": null,
+        "birth_year_raw": null,
+        "start_station_id": "start_station_id",
+        "start_station_name": "start_station_name",
+        "end_station_id": "end_station_id",
+        "end_station_name": "end_station_name",
+        "start_lat_raw": "start_lat",
+        "start_lng_raw": "start_lng",
+        "end_lat_raw": "end_lat",
+        "end_lng_raw": "end_lng"
+      }
+    },
+    {
+      "archive": "202112-divvy-tripdata.zip",
+      "member": "202112-divvy-tripdata.csv",
+      "rows": 247540,
+      "schema_family": "modern",
+      "column_mapping": {
+        "ride_id": "ride_id",
+        "started_at_raw": "started_at",
+        "ended_at_raw": "ended_at",
+        "rider_type_raw": "member_casual",
+        "rideable_type": "rideable_type",
+        "reported_duration_raw": null,
+        "bike_id": null,
+        "gender_raw": null,
+        "birth_year_raw": null,
+        "start_station_id": "start_station_id",
+        "start_station_name": "start_station_name",
+        "end_station_id": "end_station_id",
+        "end_station_name": "end_station_name",
+        "start_lat_raw": "start_lat",
+        "start_lng_raw": "start_lng",
+        "end_lat_raw": "end_lat",
+        "end_lng_raw": "end_lng"
+      }
+    },
+    {
+      "archive": "202201-divvy-tripdata.zip",
+      "member": "202201-divvy-tripdata.csv",
+      "rows": 103770,
+      "schema_family": "modern",
+      "column_mapping": {
+        "ride_id": "ride_id",
+        "started_at_raw": "started_at",
+        "ended_at_raw": "ended_at",
+        "rider_type_raw": "member_casual",
+        "rideable_type": "rideable_type",
+        "reported_duration_raw": null,
+        "bike_id": null,
+        "gender_raw": null,
+        "birth_year_raw": null,
+        "start_station_id": "start_station_id",
+        "start_station_name": "start_station_name",
+        "end_station_id": "end_station_id",
+        "end_station_name": "end_station_name",
+        "start_lat_raw": "start_lat",
+        "start_lng_raw": "start_lng",
+        "end_lat_raw": "end_lat",
+        "end_lng_raw": "end_lng"
+      }
+    },
+    {
+      "archive": "202202-divvy-tripdata.zip",
+      "member": "202202-divvy-tripdata.csv",
+      "rows": 115609,
+      "schema_family": "modern",
+      "column_mapping": {
+        "ride_id": "ride_id",
+        "started_at_raw": "started_at",
+        "ended_at_raw": "ended_at",
+        "rider_type_raw": "member_casual",
+        "rideable_type": "rideable_type",
+        "reported_duration_raw": null,
+        "bike_id": null,
+        "gender_raw": null,
+        "birth_year_raw": null,
+        "start_station_id": "start_station_id",
+        "start_station_name": "start_station_name",
+        "end_station_id": "end_station_id",
+        "end_station_name": "end_station_name",
+        "start_lat_raw": "start_lat",
+        "start_lng_raw": "start_lng",
+        "end_lat_raw": "end_lat",
+        "end_lng_raw": "end_lng"
+      }
+    },
+    {
+      "archive": "202203-divvy-tripdata.zip",
+      "member": "202203-divvy-tripdata.csv",
+      "rows": 284042,
+      "schema_family": "modern",
+      "column_mapping": {
+        "ride_id": "ride_id",
+        "started_at_raw": "started_at",
+        "ended_at_raw": "ended_at",
+        "rider_type_raw": "member_casual",
+        "rideable_type": "rideable_type",
+        "reported_duration_raw": null,
+        "bike_id": null,
+        "gender_raw": null,
+        "birth_year_raw": null,
+        "start_station_id": "start_station_id",
+        "start_station_name": "start_station_name",
+        "end_station_id": "end_station_id",
+        "end_station_name": "end_station_name",
+        "start_lat_raw": "start_lat",
+        "start_lng_raw": "start_lng",
+        "end_lat_raw": "end_lat",
+        "end_lng_raw": "end_lng"
+      }
+    },
+    {
+      "archive": "202204-divvy-tripdata.zip",
+      "member": "202204-divvy-tripdata.csv",
+      "rows": 371249,
+      "schema_family": "modern",
+      "column_mapping": {
+        "ride_id": "ride_id",
+        "started_at_raw": "started_at",
+        "ended_at_raw": "ended_at",
+        "rider_type_raw": "member_casual",
+        "rideable_type": "rideable_type",
+        "reported_duration_raw": null,
+        "bike_id": null,
+        "gender_raw": null,
+        "birth_year_raw": null,
+        "start_station_id": "start_station_id",
+        "start_station_name": "start_station_name",
+        "end_station_id": "end_station_id",
+        "end_station_name": "end_station_name",
+        "start_lat_raw": "start_lat",
+        "start_lng_raw": "start_lng",
+        "end_lat_raw": "end_lat",
+        "end_lng_raw": "end_lng"
+      }
+    },
+    {
+      "archive": "202205-divvy-tripdata.zip",
+      "member": "202205-divvy-tripdata.csv",
+      "rows": 634858,
+      "schema_family": "modern",
+      "column_mapping": {
+        "ride_id": "ride_id",
+        "started_at_raw": "started_at",
+        "ended_at_raw": "ended_at",
+        "rider_type_raw": "member_casual",
+        "rideable_type": "rideable_type",
+        "reported_duration_raw": null,
+        "bike_id": null,
+        "gender_raw": null,
+        "birth_year_raw": null,
+        "start_station_id": "start_station_id",
+        "start_station_name": "start_station_name",
+        "end_station_id": "end_station_id",
+        "end_station_name": "end_station_name",
+        "start_lat_raw": "start_lat",
+        "start_lng_raw": "start_lng",
+        "end_lat_raw": "end_lat",
+        "end_lng_raw": "end_lng"
+      }
+    },
+    {
+      "archive": "202206-divvy-tripdata.zip",
+      "member": "202206-divvy-tripdata.csv",
+      "rows": 769204,
+      "schema_family": "modern",
+      "column_mapping": {
+        "ride_id": "ride_id",
+        "started_at_raw": "started_at",
+        "ended_at_raw": "ended_at",
+        "rider_type_raw": "member_casual",
+        "rideable_type": "rideable_type",
+        "reported_duration_raw": null,
+        "bike_id": null,
+        "gender_raw": null,
+        "birth_year_raw": null,
+        "start_station_id": "start_station_id",
+        "start_station_name": "start_station_name",
+        "end_station_id": "end_station_id",
+        "end_station_name": "end_station_name",
+        "start_lat_raw": "start_lat",
+        "start_lng_raw": "start_lng",
+        "end_lat_raw": "end_lat",
+        "end_lng_raw": "end_lng"
+      }
+    },
+    {
+      "archive": "202207-divvy-tripdata.zip",
+      "member": "202207-divvy-tripdata.csv",
+      "rows": 823488,
+      "schema_family": "modern",
+      "column_mapping": {
+        "ride_id": "ride_id",
+        "started_at_raw": "started_at",
+        "ended_at_raw": "ended_at",
+        "rider_type_raw": "member_casual",
+        "rideable_type": "rideable_type",
+        "reported_duration_raw": null,
+        "bike_id": null,
+        "gender_raw": null,
+        "birth_year_raw": null,
+        "start_station_id": "start_station_id",
+        "start_station_name": "start_station_name",
+        "end_station_id": "end_station_id",
+        "end_station_name": "end_station_name",
+        "start_lat_raw": "start_lat",
+        "start_lng_raw": "start_lng",
+        "end_lat_raw": "end_lat",
+        "end_lng_raw": "end_lng"
+      }
+    },
+    {
+      "archive": "202208-divvy-tripdata.zip",
+      "member": "202208-divvy-tripdata.csv",
+      "rows": 785932,
+      "schema_family": "modern",
+      "column_mapping": {
+        "ride_id": "ride_id",
+        "started_at_raw": "started_at",
+        "ended_at_raw": "ended_at",
+        "rider_type_raw": "member_casual",
+        "rideable_type": "rideable_type",
+        "reported_duration_raw": null,
+        "bike_id": null,
+        "gender_raw": null,
+        "birth_year_raw": null,
+        "start_station_id": "start_station_id",
+        "start_station_name": "start_station_name",
+        "end_station_id": "end_station_id",
+        "end_station_name": "end_station_name",
+        "start_lat_raw": "start_lat",
+        "start_lng_raw": "start_lng",
+        "end_lat_raw": "end_lat",
+        "end_lng_raw": "end_lng"
+      }
+    },
+    {
+      "archive": "202209-divvy-tripdata.zip",
+      "member": "202209-divvy-publictripdata.csv",
+      "rows": 701339,
+      "schema_family": "modern",
+      "column_mapping": {
+        "ride_id": "ride_id",
+        "started_at_raw": "started_at",
+        "ended_at_raw": "ended_at",
+        "rider_type_raw": "member_casual",
+        "rideable_type": "rideable_type",
+        "reported_duration_raw": null,
+        "bike_id": null,
+        "gender_raw": null,
+        "birth_year_raw": null,
+        "start_station_id": "start_station_id",
+        "start_station_name": "start_station_name",
+        "end_station_id": "end_station_id",
+        "end_station_name": "end_station_name",
+        "start_lat_raw": "start_lat",
+        "start_lng_raw": "start_lng",
+        "end_lat_raw": "end_lat",
+        "end_lng_raw": "end_lng"
+      }
+    },
+    {
+      "archive": "202210-divvy-tripdata.zip",
+      "member": "202210-divvy-tripdata.csv",
+      "rows": 558685,
+      "schema_family": "modern",
+      "column_mapping": {
+        "ride_id": "ride_id",
+        "started_at_raw": "started_at",
+        "ended_at_raw": "ended_at",
+        "rider_type_raw": "member_casual",
+        "rideable_type": "rideable_type",
+        "reported_duration_raw": null,
+        "bike_id": null,
+        "gender_raw": null,
+        "birth_year_raw": null,
+        "start_station_id": "start_station_id",
+        "start_station_name": "start_station_name",
+        "end_station_id": "end_station_id",
+        "end_station_name": "end_station_name",
+        "start_lat_raw": "start_lat",
+        "start_lng_raw": "start_lng",
+        "end_lat_raw": "end_lat",
+        "end_lng_raw": "end_lng"
+      }
+    },
+    {
+      "archive": "202211-divvy-tripdata.zip",
+      "member": "202211-divvy-tripdata.csv",
+      "rows": 337735,
+      "schema_family": "modern",
+      "column_mapping": {
+        "ride_id": "ride_id",
+        "started_at_raw": "started_at",
+        "ended_at_raw": "ended_at",
+        "rider_type_raw": "member_casual",
+        "rideable_type": "rideable_type",
+        "reported_duration_raw": null,
+        "bike_id": null,
+        "gender_raw": null,
+        "birth_year_raw": null,
+        "start_station_id": "start_station_id",
+        "start_station_name": "start_station_name",
+        "end_station_id": "end_station_id",
+        "end_station_name": "end_station_name",
+        "start_lat_raw": "start_lat",
+        "start_lng_raw": "start_lng",
+        "end_lat_raw": "end_lat",
+        "end_lng_raw": "end_lng"
+      }
+    },
+    {
+      "archive": "202212-divvy-tripdata.zip",
+      "member": "202212-divvy-tripdata.csv",
+      "rows": 181806,
+      "schema_family": "modern",
+      "column_mapping": {
+        "ride_id": "ride_id",
+        "started_at_raw": "started_at",
+        "ended_at_raw": "ended_at",
+        "rider_type_raw": "member_casual",
+        "rideable_type": "rideable_type",
+        "reported_duration_raw": null,
+        "bike_id": null,
+        "gender_raw": null,
+        "birth_year_raw": null,
+        "start_station_id": "start_station_id",
+        "start_station_name": "start_station_name",
+        "end_station_id": "end_station_id",
+        "end_station_name": "end_station_name",
+        "start_lat_raw": "start_lat",
+        "start_lng_raw": "start_lng",
+        "end_lat_raw": "end_lat",
+        "end_lng_raw": "end_lng"
+      }
+    },
+    {
+      "archive": "202301-divvy-tripdata.zip",
+      "member": "202301-divvy-tripdata.csv",
+      "rows": 190301,
+      "schema_family": "modern",
+      "column_mapping": {
+        "ride_id": "ride_id",
+        "started_at_raw": "started_at",
+        "ended_at_raw": "ended_at",
+        "rider_type_raw": "member_casual",
+        "rideable_type": "rideable_type",
+        "reported_duration_raw": null,
+        "bike_id": null,
+        "gender_raw": null,
+        "birth_year_raw": null,
+        "start_station_id": "start_station_id",
+        "start_station_name": "start_station_name",
+        "end_station_id": "end_station_id",
+        "end_station_name": "end_station_name",
+        "start_lat_raw": "start_lat",
+        "start_lng_raw": "start_lng",
+        "end_lat_raw": "end_lat",
+        "end_lng_raw": "end_lng"
+      }
+    },
+    {
+      "archive": "202302-divvy-tripdata.zip",
+      "member": "202302-divvy-tripdata.csv",
+      "rows": 190445,
+      "schema_family": "modern",
+      "column_mapping": {
+        "ride_id": "ride_id",
+        "started_at_raw": "started_at",
+        "ended_at_raw": "ended_at",
+        "rider_type_raw": "member_casual",
+        "rideable_type": "rideable_type",
+        "reported_duration_raw": null,
+        "bike_id": null,
+        "gender_raw": null,
+        "birth_year_raw": null,
+        "start_station_id": "start_station_id",
+        "start_station_name": "start_station_name",
+        "end_station_id": "end_station_id",
+        "end_station_name": "end_station_name",
+        "start_lat_raw": "start_lat",
+        "start_lng_raw": "start_lng",
+        "end_lat_raw": "end_lat",
+        "end_lng_raw": "end_lng"
+      }
+    },
+    {
+      "archive": "202303-divvy-tripdata.zip",
+      "member": "202303-divvy-tripdata.csv",
+      "rows": 258678,
+      "schema_family": "modern",
+      "column_mapping": {
+        "ride_id": "ride_id",
+        "started_at_raw": "started_at",
+        "ended_at_raw": "ended_at",
+        "rider_type_raw": "member_casual",
+        "rideable_type": "rideable_type",
+        "reported_duration_raw": null,
+        "bike_id": null,
+        "gender_raw": null,
+        "birth_year_raw": null,
+        "start_station_id": "start_station_id",
+        "start_station_name": "start_station_name",
+        "end_station_id": "end_station_id",
+        "end_station_name": "end_station_name",
+        "start_lat_raw": "start_lat",
+        "start_lng_raw": "start_lng",
+        "end_lat_raw": "end_lat",
+        "end_lng_raw": "end_lng"
+      }
+    },
+    {
+      "archive": "202304-divvy-tripdata.zip",
+      "member": "202304-divvy-tripdata.csv",
+      "rows": 426590,
+      "schema_family": "modern",
+      "column_mapping": {
+        "ride_id": "ride_id",
+        "started_at_raw": "started_at",
+        "ended_at_raw": "ended_at",
+        "rider_type_raw": "member_casual",
+        "rideable_type": "rideable_type",
+        "reported_duration_raw": null,
+        "bike_id": null,
+        "gender_raw": null,
+        "birth_year_raw": null,
+        "start_station_id": "start_station_id",
+        "start_station_name": "start_station_name",
+        "end_station_id": "end_station_id",
+        "end_station_name": "end_station_name",
+        "start_lat_raw": "start_lat",
+        "start_lng_raw": "start_lng",
+        "end_lat_raw": "end_lat",
+        "end_lng_raw": "end_lng"
+      }
+    },
+    {
+      "archive": "202305-divvy-tripdata.zip",
+      "member": "202305-divvy-tripdata.csv",
+      "rows": 604827,
+      "schema_family": "modern",
+      "column_mapping": {
+        "ride_id": "ride_id",
+        "started_at_raw": "started_at",
+        "ended_at_raw": "ended_at",
+        "rider_type_raw": "member_casual",
+        "rideable_type": "rideable_type",
+        "reported_duration_raw": null,
+        "bike_id": null,
+        "gender_raw": null,
+        "birth_year_raw": null,
+        "start_station_id": "start_station_id",
+        "start_station_name": "start_station_name",
+        "end_station_id": "end_station_id",
+        "end_station_name": "end_station_name",
+        "start_lat_raw": "start_lat",
+        "start_lng_raw": "start_lng",
+        "end_lat_raw": "end_lat",
+        "end_lng_raw": "end_lng"
+      }
+    },
+    {
+      "archive": "202306-divvy-tripdata.zip",
+      "member": "202306-divvy-tripdata.csv",
+      "rows": 719618,
+      "schema_family": "modern",
+      "column_mapping": {
+        "ride_id": "ride_id",
+        "started_at_raw": "started_at",
+        "ended_at_raw": "ended_at",
+        "rider_type_raw": "member_casual",
+        "rideable_type": "rideable_type",
+        "reported_duration_raw": null,
+        "bike_id": null,
+        "gender_raw": null,
+        "birth_year_raw": null,
+        "start_station_id": "start_station_id",
+        "start_station_name": "start_station_name",
+        "end_station_id": "end_station_id",
+        "end_station_name": "end_station_name",
+        "start_lat_raw": "start_lat",
+        "start_lng_raw": "start_lng",
+        "end_lat_raw": "end_lat",
+        "end_lng_raw": "end_lng"
+      }
+    },
+    {
+      "archive": "202307-divvy-tripdata.zip",
+      "member": "202307-divvy-tripdata.csv",
+      "rows": 767650,
+      "schema_family": "modern",
+      "column_mapping": {
+        "ride_id": "ride_id",
+        "started_at_raw": "started_at",
+        "ended_at_raw": "ended_at",
+        "rider_type_raw": "member_casual",
+        "rideable_type": "rideable_type",
+        "reported_duration_raw": null,
+        "bike_id": null,
+        "gender_raw": null,
+        "birth_year_raw": null,
+        "start_station_id": "start_station_id",
+        "start_station_name": "start_station_name",
+        "end_station_id": "end_station_id",
+        "end_station_name": "end_station_name",
+        "start_lat_raw": "start_lat",
+        "start_lng_raw": "start_lng",
+        "end_lat_raw": "end_lat",
+        "end_lng_raw": "end_lng"
+      }
+    },
+    {
+      "archive": "202308-divvy-tripdata.zip",
+      "member": "202308-divvy-tripdata.csv",
+      "rows": 771693,
+      "schema_family": "modern",
+      "column_mapping": {
+        "ride_id": "ride_id",
+        "started_at_raw": "started_at",
+        "ended_at_raw": "ended_at",
+        "rider_type_raw": "member_casual",
+        "rideable_type": "rideable_type",
+        "reported_duration_raw": null,
+        "bike_id": null,
+        "gender_raw": null,
+        "birth_year_raw": null,
+        "start_station_id": "start_station_id",
+        "start_station_name": "start_station_name",
+        "end_station_id": "end_station_id",
+        "end_station_name": "end_station_name",
+        "start_lat_raw": "start_lat",
+        "start_lng_raw": "start_lng",
+        "end_lat_raw": "end_lat",
+        "end_lng_raw": "end_lng"
+      }
+    },
+    {
+      "archive": "202309-divvy-tripdata.zip",
+      "member": "202309-divvy-tripdata.csv",
+      "rows": 666371,
+      "schema_family": "modern",
+      "column_mapping": {
+        "ride_id": "ride_id",
+        "started_at_raw": "started_at",
+        "ended_at_raw": "ended_at",
+        "rider_type_raw": "member_casual",
+        "rideable_type": "rideable_type",
+        "reported_duration_raw": null,
+        "bike_id": null,
+        "gender_raw": null,
+        "birth_year_raw": null,
+        "start_station_id": "start_station_id",
+        "start_station_name": "start_station_name",
+        "end_station_id": "end_station_id",
+        "end_station_name": "end_station_name",
+        "start_lat_raw": "start_lat",
+        "start_lng_raw": "start_lng",
+        "end_lat_raw": "end_lat",
+        "end_lng_raw": "end_lng"
+      }
+    },
+    {
+      "archive": "202310-divvy-tripdata.zip",
+      "member": "202310-divvy-tripdata.csv",
+      "rows": 537113,
+      "schema_family": "modern",
+      "column_mapping": {
+        "ride_id": "ride_id",
+        "started_at_raw": "started_at",
+        "ended_at_raw": "ended_at",
+        "rider_type_raw": "member_casual",
+        "rideable_type": "rideable_type",
+        "reported_duration_raw": null,
+        "bike_id": null,
+        "gender_raw": null,
+        "birth_year_raw": null,
+        "start_station_id": "start_station_id",
+        "start_station_name": "start_station_name",
+        "end_station_id": "end_station_id",
+        "end_station_name": "end_station_name",
+        "start_lat_raw": "start_lat",
+        "start_lng_raw": "start_lng",
+        "end_lat_raw": "end_lat",
+        "end_lng_raw": "end_lng"
+      }
+    },
+    {
+      "archive": "202311-divvy-tripdata.zip",
+      "member": "202311-divvy-tripdata.csv",
+      "rows": 362518,
+      "schema_family": "modern",
+      "column_mapping": {
+        "ride_id": "ride_id",
+        "started_at_raw": "started_at",
+        "ended_at_raw": "ended_at",
+        "rider_type_raw": "member_casual",
+        "rideable_type": "rideable_type",
+        "reported_duration_raw": null,
+        "bike_id": null,
+        "gender_raw": null,
+        "birth_year_raw": null,
+        "start_station_id": "start_station_id",
+        "start_station_name": "start_station_name",
+        "end_station_id": "end_station_id",
+        "end_station_name": "end_station_name",
+        "start_lat_raw": "start_lat",
+        "start_lng_raw": "start_lng",
+        "end_lat_raw": "end_lat",
+        "end_lng_raw": "end_lng"
+      }
+    },
+    {
+      "archive": "202312-divvy-tripdata.zip",
+      "member": "202312-divvy-tripdata.csv",
+      "rows": 224073,
+      "schema_family": "modern",
+      "column_mapping": {
+        "ride_id": "ride_id",
+        "started_at_raw": "started_at",
+        "ended_at_raw": "ended_at",
+        "rider_type_raw": "member_casual",
+        "rideable_type": "rideable_type",
+        "reported_duration_raw": null,
+        "bike_id": null,
+        "gender_raw": null,
+        "birth_year_raw": null,
+        "start_station_id": "start_station_id",
+        "start_station_name": "start_station_name",
+        "end_station_id": "end_station_id",
+        "end_station_name": "end_station_name",
+        "start_lat_raw": "start_lat",
+        "start_lng_raw": "start_lng",
+        "end_lat_raw": "end_lat",
+        "end_lng_raw": "end_lng"
+      }
+    },
+    {
+      "archive": "202401-divvy-tripdata.zip",
+      "member": "202401-divvy-tripdata.csv",
+      "rows": 144873,
+      "schema_family": "modern",
+      "column_mapping": {
+        "ride_id": "ride_id",
+        "started_at_raw": "started_at",
+        "ended_at_raw": "ended_at",
+        "rider_type_raw": "member_casual",
+        "rideable_type": "rideable_type",
+        "reported_duration_raw": null,
+        "bike_id": null,
+        "gender_raw": null,
+        "birth_year_raw": null,
+        "start_station_id": "start_station_id",
+        "start_station_name": "start_station_name",
+        "end_station_id": "end_station_id",
+        "end_station_name": "end_station_name",
+        "start_lat_raw": "start_lat",
+        "start_lng_raw": "start_lng",
+        "end_lat_raw": "end_lat",
+        "end_lng_raw": "end_lng"
+      }
+    },
+    {
+      "archive": "202402-divvy-tripdata.zip",
+      "member": "202402-divvy-tripdata.csv",
+      "rows": 223164,
+      "schema_family": "modern",
+      "column_mapping": {
+        "ride_id": "ride_id",
+        "started_at_raw": "started_at",
+        "ended_at_raw": "ended_at",
+        "rider_type_raw": "member_casual",
+        "rideable_type": "rideable_type",
+        "reported_duration_raw": null,
+        "bike_id": null,
+        "gender_raw": null,
+        "birth_year_raw": null,
+        "start_station_id": "start_station_id",
+        "start_station_name": "start_station_name",
+        "end_station_id": "end_station_id",
+        "end_station_name": "end_station_name",
+        "start_lat_raw": "start_lat",
+        "start_lng_raw": "start_lng",
+        "end_lat_raw": "end_lat",
+        "end_lng_raw": "end_lng"
+      }
+    },
+    {
+      "archive": "202403-divvy-tripdata.zip",
+      "member": "202403-divvy-tripdata.csv",
+      "rows": 301687,
+      "schema_family": "modern",
+      "column_mapping": {
+        "ride_id": "ride_id",
+        "started_at_raw": "started_at",
+        "ended_at_raw": "ended_at",
+        "rider_type_raw": "member_casual",
+        "rideable_type": "rideable_type",
+        "reported_duration_raw": null,
+        "bike_id": null,
+        "gender_raw": null,
+        "birth_year_raw": null,
+        "start_station_id": "start_station_id",
+        "start_station_name": "start_station_name",
+        "end_station_id": "end_station_id",
+        "end_station_name": "end_station_name",
+        "start_lat_raw": "start_lat",
+        "start_lng_raw": "start_lng",
+        "end_lat_raw": "end_lat",
+        "end_lng_raw": "end_lng"
+      }
+    },
+    {
+      "archive": "202404-divvy-tripdata.zip",
+      "member": "202404-divvy-tripdata.csv",
+      "rows": 415025,
+      "schema_family": "modern",
+      "column_mapping": {
+        "ride_id": "ride_id",
+        "started_at_raw": "started_at",
+        "ended_at_raw": "ended_at",
+        "rider_type_raw": "member_casual",
+        "rideable_type": "rideable_type",
+        "reported_duration_raw": null,
+        "bike_id": null,
+        "gender_raw": null,
+        "birth_year_raw": null,
+        "start_station_id": "start_station_id",
+        "start_station_name": "start_station_name",
+        "end_station_id": "end_station_id",
+        "end_station_name": "end_station_name",
+        "start_lat_raw": "start_lat",
+        "start_lng_raw": "start_lng",
+        "end_lat_raw": "end_lat",
+        "end_lng_raw": "end_lng"
+      }
+    },
+    {
+      "archive": "202405-divvy-tripdata.zip",
+      "member": "202405-divvy-tripdata.csv",
+      "rows": 609493,
+      "schema_family": "modern",
+      "column_mapping": {
+        "ride_id": "ride_id",
+        "started_at_raw": "started_at",
+        "ended_at_raw": "ended_at",
+        "rider_type_raw": "member_casual",
+        "rideable_type": "rideable_type",
+        "reported_duration_raw": null,
+        "bike_id": null,
+        "gender_raw": null,
+        "birth_year_raw": null,
+        "start_station_id": "start_station_id",
+        "start_station_name": "start_station_name",
+        "end_station_id": "end_station_id",
+        "end_station_name": "end_station_name",
+        "start_lat_raw": "start_lat",
+        "start_lng_raw": "start_lng",
+        "end_lat_raw": "end_lat",
+        "end_lng_raw": "end_lng"
+      }
+    },
+    {
+      "archive": "202406-divvy-tripdata.zip",
+      "member": "202406-divvy-tripdata.csv",
+      "rows": 710721,
+      "schema_family": "modern",
+      "column_mapping": {
+        "ride_id": "ride_id",
+        "started_at_raw": "started_at",
+        "ended_at_raw": "ended_at",
+        "rider_type_raw": "member_casual",
+        "rideable_type": "rideable_type",
+        "reported_duration_raw": null,
+        "bike_id": null,
+        "gender_raw": null,
+        "birth_year_raw": null,
+        "start_station_id": "start_station_id",
+        "start_station_name": "start_station_name",
+        "end_station_id": "end_station_id",
+        "end_station_name": "end_station_name",
+        "start_lat_raw": "start_lat",
+        "start_lng_raw": "start_lng",
+        "end_lat_raw": "end_lat",
+        "end_lng_raw": "end_lng"
+      }
+    },
+    {
+      "archive": "202407-divvy-tripdata.zip",
+      "member": "202407-divvy-tripdata.csv",
+      "rows": 748962,
+      "schema_family": "modern",
+      "column_mapping": {
+        "ride_id": "ride_id",
+        "started_at_raw": "started_at",
+        "ended_at_raw": "ended_at",
+        "rider_type_raw": "member_casual",
+        "rideable_type": "rideable_type",
+        "reported_duration_raw": null,
+        "bike_id": null,
+        "gender_raw": null,
+        "birth_year_raw": null,
+        "start_station_id": "start_station_id",
+        "start_station_name": "start_station_name",
+        "end_station_id": "end_station_id",
+        "end_station_name": "end_station_name",
+        "start_lat_raw": "start_lat",
+        "start_lng_raw": "start_lng",
+        "end_lat_raw": "end_lat",
+        "end_lng_raw": "end_lng"
+      }
+    },
+    {
+      "archive": "202408-divvy-tripdata.zip",
+      "member": "202408-divvy-tripdata.csv",
+      "rows": 755639,
+      "schema_family": "modern",
+      "column_mapping": {
+        "ride_id": "ride_id",
+        "started_at_raw": "started_at",
+        "ended_at_raw": "ended_at",
+        "rider_type_raw": "member_casual",
+        "rideable_type": "rideable_type",
+        "reported_duration_raw": null,
+        "bike_id": null,
+        "gender_raw": null,
+        "birth_year_raw": null,
+        "start_station_id": "start_station_id",
+        "start_station_name": "start_station_name",
+        "end_station_id": "end_station_id",
+        "end_station_name": "end_station_name",
+        "start_lat_raw": "start_lat",
+        "start_lng_raw": "start_lng",
+        "end_lat_raw": "end_lat",
+        "end_lng_raw": "end_lng"
+      }
+    },
+    {
+      "archive": "202409-divvy-tripdata.zip",
+      "member": "202409-divvy-tripdata.csv",
+      "rows": 821276,
+      "schema_family": "modern",
+      "column_mapping": {
+        "ride_id": "ride_id",
+        "started_at_raw": "started_at",
+        "ended_at_raw": "ended_at",
+        "rider_type_raw": "member_casual",
+        "rideable_type": "rideable_type",
+        "reported_duration_raw": null,
+        "bike_id": null,
+        "gender_raw": null,
+        "birth_year_raw": null,
+        "start_station_id": "start_station_id",
+        "start_station_name": "start_station_name",
+        "end_station_id": "end_station_id",
+        "end_station_name": "end_station_name",
+        "start_lat_raw": "start_lat",
+        "start_lng_raw": "start_lng",
+        "end_lat_raw": "end_lat",
+        "end_lng_raw": "end_lng"
+      }
+    },
+    {
+      "archive": "202410-divvy-tripdata.zip",
+      "member": "202410-divvy-tripdata.csv",
+      "rows": 616281,
+      "schema_family": "modern",
+      "column_mapping": {
+        "ride_id": "ride_id",
+        "started_at_raw": "started_at",
+        "ended_at_raw": "ended_at",
+        "rider_type_raw": "member_casual",
+        "rideable_type": "rideable_type",
+        "reported_duration_raw": null,
+        "bike_id": null,
+        "gender_raw": null,
+        "birth_year_raw": null,
+        "start_station_id": "start_station_id",
+        "start_station_name": "start_station_name",
+        "end_station_id": "end_station_id",
+        "end_station_name": "end_station_name",
+        "start_lat_raw": "start_lat",
+        "start_lng_raw": "start_lng",
+        "end_lat_raw": "end_lat",
+        "end_lng_raw": "end_lng"
+      }
+    },
+    {
+      "archive": "202411-divvy-tripdata.zip",
+      "member": "202411-divvy-tripdata.csv",
+      "rows": 335075,
+      "schema_family": "modern",
+      "column_mapping": {
+        "ride_id": "ride_id",
+        "started_at_raw": "started_at",
+        "ended_at_raw": "ended_at",
+        "rider_type_raw": "member_casual",
+        "rideable_type": "rideable_type",
+        "reported_duration_raw": null,
+        "bike_id": null,
+        "gender_raw": null,
+        "birth_year_raw": null,
+        "start_station_id": "start_station_id",
+        "start_station_name": "start_station_name",
+        "end_station_id": "end_station_id",
+        "end_station_name": "end_station_name",
+        "start_lat_raw": "start_lat",
+        "start_lng_raw": "start_lng",
+        "end_lat_raw": "end_lat",
+        "end_lng_raw": "end_lng"
+      }
+    },
+    {
+      "archive": "202412-divvy-tripdata.zip",
+      "member": "202412-divvy-tripdata.csv",
+      "rows": 178372,
+      "schema_family": "modern",
+      "column_mapping": {
+        "ride_id": "ride_id",
+        "started_at_raw": "started_at",
+        "ended_at_raw": "ended_at",
+        "rider_type_raw": "member_casual",
+        "rideable_type": "rideable_type",
+        "reported_duration_raw": null,
+        "bike_id": null,
+        "gender_raw": null,
+        "birth_year_raw": null,
+        "start_station_id": "start_station_id",
+        "start_station_name": "start_station_name",
+        "end_station_id": "end_station_id",
+        "end_station_name": "end_station_name",
+        "start_lat_raw": "start_lat",
+        "start_lng_raw": "start_lng",
+        "end_lat_raw": "end_lat",
+        "end_lng_raw": "end_lng"
+      }
+    },
+    {
+      "archive": "202501-divvy-tripdata.zip",
+      "member": "202501-divvy-tripdata.csv",
+      "rows": 138689,
+      "schema_family": "modern",
+      "column_mapping": {
+        "ride_id": "ride_id",
+        "started_at_raw": "started_at",
+        "ended_at_raw": "ended_at",
+        "rider_type_raw": "member_casual",
+        "rideable_type": "rideable_type",
+        "reported_duration_raw": null,
+        "bike_id": null,
+        "gender_raw": null,
+        "birth_year_raw": null,
+        "start_station_id": "start_station_id",
+        "start_station_name": "start_station_name",
+        "end_station_id": "end_station_id",
+        "end_station_name": "end_station_name",
+        "start_lat_raw": "start_lat",
+        "start_lng_raw": "start_lng",
+        "end_lat_raw": "end_lat",
+        "end_lng_raw": "end_lng"
+      }
+    },
+    {
+      "archive": "202502-divvy-tripdata.zip",
+      "member": "202502-divvy-tripdata.csv",
+      "rows": 151880,
+      "schema_family": "modern",
+      "column_mapping": {
+        "ride_id": "ride_id",
+        "started_at_raw": "started_at",
+        "ended_at_raw": "ended_at",
+        "rider_type_raw": "member_casual",
+        "rideable_type": "rideable_type",
+        "reported_duration_raw": null,
+        "bike_id": null,
+        "gender_raw": null,
+        "birth_year_raw": null,
+        "start_station_id": "start_station_id",
+        "start_station_name": "start_station_name",
+        "end_station_id": "end_station_id",
+        "end_station_name": "end_station_name",
+        "start_lat_raw": "start_lat",
+        "start_lng_raw": "start_lng",
+        "end_lat_raw": "end_lat",
+        "end_lng_raw": "end_lng"
+      }
+    },
+    {
+      "archive": "202503-divvy-tripdata.zip",
+      "member": "202503-divvy-tripdata.csv",
+      "rows": 298155,
+      "schema_family": "modern",
+      "column_mapping": {
+        "ride_id": "ride_id",
+        "started_at_raw": "started_at",
+        "ended_at_raw": "ended_at",
+        "rider_type_raw": "member_casual",
+        "rideable_type": "rideable_type",
+        "reported_duration_raw": null,
+        "bike_id": null,
+        "gender_raw": null,
+        "birth_year_raw": null,
+        "start_station_id": "start_station_id",
+        "start_station_name": "start_station_name",
+        "end_station_id": "end_station_id",
+        "end_station_name": "end_station_name",
+        "start_lat_raw": "start_lat",
+        "start_lng_raw": "start_lng",
+        "end_lat_raw": "end_lat",
+        "end_lng_raw": "end_lng"
+      }
+    },
+    {
+      "archive": "202504-divvy-tripdata.zip",
+      "member": "202504-divvy-tripdata.csv",
+      "rows": 371341,
+      "schema_family": "modern",
+      "column_mapping": {
+        "ride_id": "ride_id",
+        "started_at_raw": "started_at",
+        "ended_at_raw": "ended_at",
+        "rider_type_raw": "member_casual",
+        "rideable_type": "rideable_type",
+        "reported_duration_raw": null,
+        "bike_id": null,
+        "gender_raw": null,
+        "birth_year_raw": null,
+        "start_station_id": "start_station_id",
+        "start_station_name": "start_station_name",
+        "end_station_id": "end_station_id",
+        "end_station_name": "end_station_name",
+        "start_lat_raw": "start_lat",
+        "start_lng_raw": "start_lng",
+        "end_lat_raw": "end_lat",
+        "end_lng_raw": "end_lng"
+      }
+    },
+    {
+      "archive": "202505-divvy-tripdata.zip",
+      "member": "202505-divvy-tripdata.csv",
+      "rows": 502456,
+      "schema_family": "modern",
+      "column_mapping": {
+        "ride_id": "ride_id",
+        "started_at_raw": "started_at",
+        "ended_at_raw": "ended_at",
+        "rider_type_raw": "member_casual",
+        "rideable_type": "rideable_type",
+        "reported_duration_raw": null,
+        "bike_id": null,
+        "gender_raw": null,
+        "birth_year_raw": null,
+        "start_station_id": "start_station_id",
+        "start_station_name": "start_station_name",
+        "end_station_id": "end_station_id",
+        "end_station_name": "end_station_name",
+        "start_lat_raw": "start_lat",
+        "start_lng_raw": "start_lng",
+        "end_lat_raw": "end_lat",
+        "end_lng_raw": "end_lng"
+      }
+    },
+    {
+      "archive": "202506-divvy-tripdata.zip",
+      "member": "202506-divvy-tripdata.csv",
+      "rows": 678904,
+      "schema_family": "modern",
+      "column_mapping": {
+        "ride_id": "ride_id",
+        "started_at_raw": "started_at",
+        "ended_at_raw": "ended_at",
+        "rider_type_raw": "member_casual",
+        "rideable_type": "rideable_type",
+        "reported_duration_raw": null,
+        "bike_id": null,
+        "gender_raw": null,
+        "birth_year_raw": null,
+        "start_station_id": "start_station_id",
+        "start_station_name": "start_station_name",
+        "end_station_id": "end_station_id",
+        "end_station_name": "end_station_name",
+        "start_lat_raw": "start_lat",
+        "start_lng_raw": "start_lng",
+        "end_lat_raw": "end_lat",
+        "end_lng_raw": "end_lng"
+      }
+    },
+    {
+      "archive": "202507-divvy-tripdata.zip",
+      "member": "202507-divvy-tripdata.csv",
+      "rows": 763432,
+      "schema_family": "modern",
+      "column_mapping": {
+        "ride_id": "ride_id",
+        "started_at_raw": "started_at",
+        "ended_at_raw": "ended_at",
+        "rider_type_raw": "member_casual",
+        "rideable_type": "rideable_type",
+        "reported_duration_raw": null,
+        "bike_id": null,
+        "gender_raw": null,
+        "birth_year_raw": null,
+        "start_station_id": "start_station_id",
+        "start_station_name": "start_station_name",
+        "end_station_id": "end_station_id",
+        "end_station_name": "end_station_name",
+        "start_lat_raw": "start_lat",
+        "start_lng_raw": "start_lng",
+        "end_lat_raw": "end_lat",
+        "end_lng_raw": "end_lng"
+      }
+    },
+    {
+      "archive": "202508-divvy-tripdata.zip",
+      "member": "202508-divvy-tripdata.csv",
+      "rows": 790177,
+      "schema_family": "modern",
+      "column_mapping": {
+        "ride_id": "ride_id",
+        "started_at_raw": "started_at",
+        "ended_at_raw": "ended_at",
+        "rider_type_raw": "member_casual",
+        "rideable_type": "rideable_type",
+        "reported_duration_raw": null,
+        "bike_id": null,
+        "gender_raw": null,
+        "birth_year_raw": null,
+        "start_station_id": "start_station_id",
+        "start_station_name": "start_station_name",
+        "end_station_id": "end_station_id",
+        "end_station_name": "end_station_name",
+        "start_lat_raw": "start_lat",
+        "start_lng_raw": "start_lng",
+        "end_lat_raw": "end_lat",
+        "end_lng_raw": "end_lng"
+      }
+    },
+    {
+      "archive": "202509-divvy-tripdata.zip",
+      "member": "202509-divvy-tripdata.csv",
+      "rows": 714759,
+      "schema_family": "modern",
+      "column_mapping": {
+        "ride_id": "ride_id",
+        "started_at_raw": "started_at",
+        "ended_at_raw": "ended_at",
+        "rider_type_raw": "member_casual",
+        "rideable_type": "rideable_type",
+        "reported_duration_raw": null,
+        "bike_id": null,
+        "gender_raw": null,
+        "birth_year_raw": null,
+        "start_station_id": "start_station_id",
+        "start_station_name": "start_station_name",
+        "end_station_id": "end_station_id",
+        "end_station_name": "end_station_name",
+        "start_lat_raw": "start_lat",
+        "start_lng_raw": "start_lng",
+        "end_lat_raw": "end_lat",
+        "end_lng_raw": "end_lng"
+      }
+    },
+    {
+      "archive": "202510-divvy-tripdata.zip",
+      "member": "202510-divvy-tripdata.csv",
+      "rows": 646039,
+      "schema_family": "modern",
+      "column_mapping": {
+        "ride_id": "ride_id",
+        "started_at_raw": "started_at",
+        "ended_at_raw": "ended_at",
+        "rider_type_raw": "member_casual",
+        "rideable_type": "rideable_type",
+        "reported_duration_raw": null,
+        "bike_id": null,
+        "gender_raw": null,
+        "birth_year_raw": null,
+        "start_station_id": "start_station_id",
+        "start_station_name": "start_station_name",
+        "end_station_id": "end_station_id",
+        "end_station_name": "end_station_name",
+        "start_lat_raw": "start_lat",
+        "start_lng_raw": "start_lng",
+        "end_lat_raw": "end_lat",
+        "end_lng_raw": "end_lng"
+      }
+    },
+    {
+      "archive": "202511-divvy-tripdata.zip",
+      "member": "202511-divvy-tripdata.csv",
+      "rows": 356628,
+      "schema_family": "modern",
+      "column_mapping": {
+        "ride_id": "ride_id",
+        "started_at_raw": "started_at",
+        "ended_at_raw": "ended_at",
+        "rider_type_raw": "member_casual",
+        "rideable_type": "rideable_type",
+        "reported_duration_raw": null,
+        "bike_id": null,
+        "gender_raw": null,
+        "birth_year_raw": null,
+        "start_station_id": "start_station_id",
+        "start_station_name": "start_station_name",
+        "end_station_id": "end_station_id",
+        "end_station_name": "end_station_name",
+        "start_lat_raw": "start_lat",
+        "start_lng_raw": "start_lng",
+        "end_lat_raw": "end_lat",
+        "end_lng_raw": "end_lng"
+      }
+    },
+    {
+      "archive": "202512-divvy-tripdata.zip",
+      "member": "202512-divvy-tripdata.csv",
+      "rows": 140534,
+      "schema_family": "modern",
+      "column_mapping": {
+        "ride_id": "ride_id",
+        "started_at_raw": "started_at",
+        "ended_at_raw": "ended_at",
+        "rider_type_raw": "member_casual",
+        "rideable_type": "rideable_type",
+        "reported_duration_raw": null,
+        "bike_id": null,
+        "gender_raw": null,
+        "birth_year_raw": null,
+        "start_station_id": "start_station_id",
+        "start_station_name": "start_station_name",
+        "end_station_id": "end_station_id",
+        "end_station_name": "end_station_name",
+        "start_lat_raw": "start_lat",
+        "start_lng_raw": "start_lng",
+        "end_lat_raw": "end_lat",
+        "end_lng_raw": "end_lng"
+      }
+    },
+    {
+      "archive": "202601-divvy-tripdata.zip",
+      "member": "202501-divvy-tripdata.csv",
+      "rows": 137787,
+      "schema_family": "modern",
+      "column_mapping": {
+        "ride_id": "ride_id",
+        "started_at_raw": "started_at",
+        "ended_at_raw": "ended_at",
+        "rider_type_raw": "member_casual",
+        "rideable_type": "rideable_type",
+        "reported_duration_raw": null,
+        "bike_id": null,
+        "gender_raw": null,
+        "birth_year_raw": null,
+        "start_station_id": "start_station_id",
+        "start_station_name": "start_station_name",
+        "end_station_id": "end_station_id",
+        "end_station_name": "end_station_name",
+        "start_lat_raw": "start_lat",
+        "start_lng_raw": "start_lng",
+        "end_lat_raw": "end_lat",
+        "end_lng_raw": "end_lng"
+      }
+    },
+    {
+      "archive": "202602-divvy-tripdata.zip",
+      "member": "202602-divvy-tripdata.csv",
+      "rows": 201450,
+      "schema_family": "modern",
+      "column_mapping": {
+        "ride_id": "ride_id",
+        "started_at_raw": "started_at",
+        "ended_at_raw": "ended_at",
+        "rider_type_raw": "member_casual",
+        "rideable_type": "rideable_type",
+        "reported_duration_raw": null,
+        "bike_id": null,
+        "gender_raw": null,
+        "birth_year_raw": null,
+        "start_station_id": "start_station_id",
+        "start_station_name": "start_station_name",
+        "end_station_id": "end_station_id",
+        "end_station_name": "end_station_name",
+        "start_lat_raw": "start_lat",
+        "start_lng_raw": "start_lng",
+        "end_lat_raw": "end_lat",
+        "end_lng_raw": "end_lng"
+      }
+    },
+    {
+      "archive": "202603-divvy-tripdata.zip",
+      "member": "202603-divvy-tripdata.csv",
+      "rows": 317037,
+      "schema_family": "modern",
+      "column_mapping": {
+        "ride_id": "ride_id",
+        "started_at_raw": "started_at",
+        "ended_at_raw": "ended_at",
+        "rider_type_raw": "member_casual",
+        "rideable_type": "rideable_type",
+        "reported_duration_raw": null,
+        "bike_id": null,
+        "gender_raw": null,
+        "birth_year_raw": null,
+        "start_station_id": "start_station_id",
+        "start_station_name": "start_station_name",
+        "end_station_id": "end_station_id",
+        "end_station_name": "end_station_name",
+        "start_lat_raw": "start_lat",
+        "start_lng_raw": "start_lng",
+        "end_lat_raw": "end_lat",
+        "end_lng_raw": "end_lng"
+      }
+    },
+    {
+      "archive": "202604-divvy-tripdata.zip",
+      "member": "202604-divvy-tripdata.csv",
+      "rows": 448252,
+      "schema_family": "modern",
+      "column_mapping": {
+        "ride_id": "ride_id",
+        "started_at_raw": "started_at",
+        "ended_at_raw": "ended_at",
+        "rider_type_raw": "member_casual",
+        "rideable_type": "rideable_type",
+        "reported_duration_raw": null,
+        "bike_id": null,
+        "gender_raw": null,
+        "birth_year_raw": null,
+        "start_station_id": "start_station_id",
+        "start_station_name": "start_station_name",
+        "end_station_id": "end_station_id",
+        "end_station_name": "end_station_name",
+        "start_lat_raw": "start_lat",
+        "start_lng_raw": "start_lng",
+        "end_lat_raw": "end_lat",
+        "end_lng_raw": "end_lng"
+      }
+    },
+    {
+      "archive": "202605-divvy-tripdata.zip",
+      "member": "202605-divvy-tripdata.csv",
+      "rows": 653704,
+      "schema_family": "modern",
+      "column_mapping": {
+        "ride_id": "ride_id",
+        "started_at_raw": "started_at",
+        "ended_at_raw": "ended_at",
+        "rider_type_raw": "member_casual",
+        "rideable_type": "rideable_type",
+        "reported_duration_raw": null,
+        "bike_id": null,
+        "gender_raw": null,
+        "birth_year_raw": null,
+        "start_station_id": "start_station_id",
+        "start_station_name": "start_station_name",
+        "end_station_id": "end_station_id",
+        "end_station_name": "end_station_name",
+        "start_lat_raw": "start_lat",
+        "start_lng_raw": "start_lng",
+        "end_lat_raw": "end_lat",
+        "end_lng_raw": "end_lng"
+      }
+    },
+    {
+      "archive": "202606-divvy-tripdata.zip",
+      "member": "202606-divvy-tripdata.csv",
+      "rows": 762550,
+      "schema_family": "modern",
+      "column_mapping": {
+        "ride_id": "ride_id",
+        "started_at_raw": "started_at",
+        "ended_at_raw": "ended_at",
+        "rider_type_raw": "member_casual",
+        "rideable_type": "rideable_type",
+        "reported_duration_raw": null,
+        "bike_id": null,
+        "gender_raw": null,
+        "birth_year_raw": null,
+        "start_station_id": "start_station_id",
+        "start_station_name": "start_station_name",
+        "end_station_id": "end_station_id",
+        "end_station_name": "end_station_name",
+        "start_lat_raw": "start_lat",
+        "start_lng_raw": "start_lng",
+        "end_lat_raw": "end_lat",
+        "end_lng_raw": "end_lng"
+      }
+    },
+    {
+      "archive": "202607-divvy-tripdata.zip",
+      "member": "202607-divvy-tripdata.csv",
+      "rows": 869051,
+      "schema_family": "modern",
+      "column_mapping": {
+        "ride_id": "ride_id",
+        "started_at_raw": "started_at",
+        "ended_at_raw": "ended_at",
+        "rider_type_raw": "member_casual",
+        "rideable_type": "rideable_type",
+        "reported_duration_raw": null,
+        "bike_id": null,
+        "gender_raw": null,
+        "birth_year_raw": null,
+        "start_station_id": "start_station_id",
+        "start_station_name": "start_station_name",
+        "end_station_id": "end_station_id",
+        "end_station_name": "end_station_name",
+        "start_lat_raw": "start_lat",
+        "start_lng_raw": "start_lng",
+        "end_lat_raw": "end_lat",
+        "end_lng_raw": "end_lng"
+      }
+    },
+    {
+      "archive": "202608-divvy-tripdata.zip",
+      "member": "202608-divvy-tripdata.csv",
+      "rows": 868191,
+      "schema_family": "modern",
+      "column_mapping": {
+        "ride_id": "ride_id",
+        "started_at_raw": "started_at",
+        "ended_at_raw": "ended_at",
+        "rider_type_raw": "member_casual",
+        "rideable_type": "rideable_type",
+        "reported_duration_raw": null,
+        "bike_id": null,
+        "gender_raw": null,
+        "birth_year_raw": null,
+        "start_station_id": "start_station_id",
+        "start_station_name": "start_station_name",
+        "end_station_id": "end_station_id",
+        "end_station_name": "end_station_name",
+        "start_lat_raw": "start_lat",
+        "start_lng_raw": "start_lng",
+        "end_lat_raw": "end_lat",
+        "end_lng_raw": "end_lng"
+      }
+    },
+    {
+      "archive": "202609-divvy-tripdata.zip",
+      "member": "202609-divvy-tripdata.csv",
+      "rows": 770562,
+      "schema_family": "modern",
+      "column_mapping": {
+        "ride_id": "ride_id",
+        "started_at_raw": "started_at",
+        "ended_at_raw": "ended_at",
+        "rider_type_raw": "member_casual",
+        "rideable_type": "rideable_type",
+        "reported_duration_raw": null,
+        "bike_id": null,
+        "gender_raw": null,
+        "birth_year_raw": null,
+        "start_station_id": "start_station_id",
+        "start_station_name": "start_station_name",
+        "end_station_id": "end_station_id",
+        "end_station_name": "end_station_name",
+        "start_lat_raw": "start_lat",
+        "start_lng_raw": "start_lng",
+        "end_lat_raw": "end_lat",
+        "end_lng_raw": "end_lng"
+      }
+    },
+    {
+      "archive": "202610-divvy-tripdata.zip",
+      "member": "202610-divvy-tripdata.csv",
+      "rows": 768705,
+      "schema_family": "modern",
+      "column_mapping": {
+        "ride_id": "ride_id",
+        "started_at_raw": "started_at",
+        "ended_at_raw": "ended_at",
+        "rider_type_raw": "member_casual",
+        "rideable_type": "rideable_type",
+        "reported_duration_raw": null,
+        "bike_id": null,
+        "gender_raw": null,
+        "birth_year_raw": null,
+        "start_station_id": "start_station_id",
+        "start_station_name": "start_station_name",
+        "end_station_id": "end_station_id",
+        "end_station_name": "end_station_name",
+        "start_lat_raw": "start_lat",
+        "start_lng_raw": "start_lng",
+        "end_lat_raw": "end_lat",
+        "end_lng_raw": "end_lng"
+      }
+    },
+    {
+      "archive": "Divvy_Stations_Trips_2013.zip",
+      "member": "Divvy_Stations_Trips_2013/Divvy_Trips_2013.csv",
+      "rows": 759788,
+      "schema_family": "legacy",
+      "column_mapping": {
+        "ride_id": "trip_id",
+        "started_at_raw": "starttime",
+        "ended_at_raw": "stoptime",
+        "rider_type_raw": "usertype",
+        "rideable_type": null,
+        "reported_duration_raw": "tripduration",
+        "bike_id": "bikeid",
+        "gender_raw": "gender",
+        "birth_year_raw": "birthday",
+        "start_station_id": "from_station_id",
+        "start_station_name": "from_station_name",
+        "end_station_id": "to_station_id",
+        "end_station_name": "to_station_name",
+        "start_lat_raw": null,
+        "start_lng_raw": null,
+        "end_lat_raw": null,
+        "end_lng_raw": null
+      }
+    },
+    {
+      "archive": "Divvy_Stations_Trips_2014_Q1Q2.zip",
+      "member": "Divvy_Trips_2014_Q1Q2.csv",
+      "rows": 905699,
+      "schema_family": "legacy",
+      "column_mapping": {
+        "ride_id": "trip_id",
+        "started_at_raw": "starttime",
+        "ended_at_raw": "stoptime",
+        "rider_type_raw": "usertype",
+        "rideable_type": null,
+        "reported_duration_raw": "tripduration",
+        "bike_id": "bikeid",
+        "gender_raw": "gender",
+        "birth_year_raw": "birthyear",
+        "start_station_id": "from_station_id",
+        "start_station_name": "from_station_name",
+        "end_station_id": "to_station_id",
+        "end_station_name": "to_station_name",
+        "start_lat_raw": null,
+        "start_lng_raw": null,
+        "end_lat_raw": null,
+        "end_lng_raw": null
+      }
+    },
+    {
+      "archive": "Divvy_Stations_Trips_2014_Q3Q4.zip",
+      "member": "Divvy_Stations_Trips_2014_Q3Q4/Divvy_Trips_2014-Q3-07.csv",
+      "rows": 410340,
+      "schema_family": "legacy",
+      "column_mapping": {
+        "ride_id": "trip_id",
+        "started_at_raw": "starttime",
+        "ended_at_raw": "stoptime",
+        "rider_type_raw": "usertype",
+        "rideable_type": null,
+        "reported_duration_raw": "tripduration",
+        "bike_id": "bikeid",
+        "gender_raw": "gender",
+        "birth_year_raw": "birthyear",
+        "start_station_id": "from_station_id",
+        "start_station_name": "from_station_name",
+        "end_station_id": "to_station_id",
+        "end_station_name": "to_station_name",
+        "start_lat_raw": null,
+        "start_lng_raw": null,
+        "end_lat_raw": null,
+        "end_lng_raw": null
+      }
+    },
+    {
+      "archive": "Divvy_Stations_Trips_2014_Q3Q4.zip",
+      "member": "Divvy_Stations_Trips_2014_Q3Q4/Divvy_Trips_2014-Q3-0809.csv",
+      "rows": 700630,
+      "schema_family": "legacy",
+      "column_mapping": {
+        "ride_id": "trip_id",
+        "started_at_raw": "starttime",
+        "ended_at_raw": "stoptime",
+        "rider_type_raw": "usertype",
+        "rideable_type": null,
+        "reported_duration_raw": "tripduration",
+        "bike_id": "bikeid",
+        "gender_raw": "gender",
+        "birth_year_raw": "birthyear",
+        "start_station_id": "from_station_id",
+        "start_station_name": "from_station_name",
+        "end_station_id": "to_station_id",
+        "end_station_name": "to_station_name",
+        "start_lat_raw": null,
+        "start_lng_raw": null,
+        "end_lat_raw": null,
+        "end_lng_raw": null
+      }
+    },
+    {
+      "archive": "Divvy_Stations_Trips_2014_Q3Q4.zip",
+      "member": "Divvy_Stations_Trips_2014_Q3Q4/Divvy_Trips_2014-Q4.csv",
+      "rows": 437965,
+      "schema_family": "legacy",
+      "column_mapping": {
+        "ride_id": "trip_id",
+        "started_at_raw": "starttime",
+        "ended_at_raw": "stoptime",
+        "rider_type_raw": "usertype",
+        "rideable_type": null,
+        "reported_duration_raw": "tripduration",
+        "bike_id": "bikeid",
+        "gender_raw": "gender",
+        "birth_year_raw": "birthyear",
+        "start_station_id": "from_station_id",
+        "start_station_name": "from_station_name",
+        "end_station_id": "to_station_id",
+        "end_station_name": "to_station_name",
+        "start_lat_raw": null,
+        "start_lng_raw": null,
+        "end_lat_raw": null,
+        "end_lng_raw": null
+      }
+    },
+    {
+      "archive": "Divvy_Trips_2015-Q1Q2.zip",
+      "member": "Divvy_Trips_2015-Q1.csv",
+      "rows": 202349,
+      "schema_family": "legacy",
+      "column_mapping": {
+        "ride_id": "trip_id",
+        "started_at_raw": "starttime",
+        "ended_at_raw": "stoptime",
+        "rider_type_raw": "usertype",
+        "rideable_type": null,
+        "reported_duration_raw": "tripduration",
+        "bike_id": "bikeid",
+        "gender_raw": "gender",
+        "birth_year_raw": "birthyear",
+        "start_station_id": "from_station_id",
+        "start_station_name": "from_station_name",
+        "end_station_id": "to_station_id",
+        "end_station_name": "to_station_name",
+        "start_lat_raw": null,
+        "start_lng_raw": null,
+        "end_lat_raw": null,
+        "end_lng_raw": null
+      }
+    },
+    {
+      "archive": "Divvy_Trips_2015-Q1Q2.zip",
+      "member": "Divvy_Trips_2015-Q2.csv",
+      "rows": 893890,
+      "schema_family": "legacy",
+      "column_mapping": {
+        "ride_id": "trip_id",
+        "started_at_raw": "starttime",
+        "ended_at_raw": "stoptime",
+        "rider_type_raw": "usertype",
+        "rideable_type": null,
+        "reported_duration_raw": "tripduration",
+        "bike_id": "bikeid",
+        "gender_raw": "gender",
+        "birth_year_raw": "birthyear",
+        "start_station_id": "from_station_id",
+        "start_station_name": "from_station_name",
+        "end_station_id": "to_station_id",
+        "end_station_name": "to_station_name",
+        "start_lat_raw": null,
+        "start_lng_raw": null,
+        "end_lat_raw": null,
+        "end_lng_raw": null
+      }
+    },
+    {
+      "archive": "Divvy_Trips_2015_Q3Q4.zip",
+      "member": "Divvy_Trips_2015_Q4.csv",
+      "rows": 631365,
+      "schema_family": "legacy",
+      "column_mapping": {
+        "ride_id": "trip_id",
+        "started_at_raw": "starttime",
+        "ended_at_raw": "stoptime",
+        "rider_type_raw": "usertype",
+        "rideable_type": null,
+        "reported_duration_raw": "tripduration",
+        "bike_id": "bikeid",
+        "gender_raw": "gender",
+        "birth_year_raw": "birthyear",
+        "start_station_id": "from_station_id",
+        "start_station_name": "from_station_name",
+        "end_station_id": "to_station_id",
+        "end_station_name": "to_station_name",
+        "start_lat_raw": null,
+        "start_lng_raw": null,
+        "end_lat_raw": null,
+        "end_lng_raw": null
+      }
+    },
+    {
+      "archive": "Divvy_Trips_2015_Q3Q4.zip",
+      "member": "Divvy_Trips_2015_09.csv",
+      "rows": 427095,
+      "schema_family": "legacy",
+      "column_mapping": {
+        "ride_id": "trip_id",
+        "started_at_raw": "starttime",
+        "ended_at_raw": "stoptime",
+        "rider_type_raw": "usertype",
+        "rideable_type": null,
+        "reported_duration_raw": "tripduration",
+        "bike_id": "bikeid",
+        "gender_raw": "gender",
+        "birth_year_raw": "birthyear",
+        "start_station_id": "from_station_id",
+        "start_station_name": "from_station_name",
+        "end_station_id": "to_station_id",
+        "end_station_name": "to_station_name",
+        "start_lat_raw": null,
+        "start_lng_raw": null,
+        "end_lat_raw": null,
+        "end_lng_raw": null
+      }
+    },
+    {
+      "archive": "Divvy_Trips_2015_Q3Q4.zip",
+      "member": "Divvy_Trips_2015_08.csv",
+      "rows": 495029,
+      "schema_family": "legacy",
+      "column_mapping": {
+        "ride_id": "trip_id",
+        "started_at_raw": "starttime",
+        "ended_at_raw": "stoptime",
+        "rider_type_raw": "usertype",
+        "rideable_type": null,
+        "reported_duration_raw": "tripduration",
+        "bike_id": "bikeid",
+        "gender_raw": "gender",
+        "birth_year_raw": "birthyear",
+        "start_station_id": "from_station_id",
+        "start_station_name": "from_station_name",
+        "end_station_id": "to_station_id",
+        "end_station_name": "to_station_name",
+        "start_lat_raw": null,
+        "start_lng_raw": null,
+        "end_lat_raw": null,
+        "end_lng_raw": null
+      }
+    },
+    {
+      "archive": "Divvy_Trips_2015_Q3Q4.zip",
+      "member": "Divvy_Trips_2015_07.csv",
+      "rows": 533711,
+      "schema_family": "legacy",
+      "column_mapping": {
+        "ride_id": "trip_id",
+        "started_at_raw": "starttime",
+        "ended_at_raw": "stoptime",
+        "rider_type_raw": "usertype",
+        "rideable_type": null,
+        "reported_duration_raw": "tripduration",
+        "bike_id": "bikeid",
+        "gender_raw": "gender",
+        "birth_year_raw": "birthyear",
+        "start_station_id": "from_station_id",
+        "start_station_name": "from_station_name",
+        "end_station_id": "to_station_id",
+        "end_station_name": "to_station_name",
+        "start_lat_raw": null,
+        "start_lng_raw": null,
+        "end_lat_raw": null,
+        "end_lng_raw": null
+      }
+    },
+    {
+      "archive": "Divvy_Trips_2016_Q1Q2.zip",
+      "member": "Divvy_Trips_2016_Q1Q2/Divvy_Trips_2016_04.csv",
+      "rows": 231635,
+      "schema_family": "legacy",
+      "column_mapping": {
+        "ride_id": "trip_id",
+        "started_at_raw": "starttime",
+        "ended_at_raw": "stoptime",
+        "rider_type_raw": "usertype",
+        "rideable_type": null,
+        "reported_duration_raw": "tripduration",
+        "bike_id": "bikeid",
+        "gender_raw": "gender",
+        "birth_year_raw": "birthyear",
+        "start_station_id": "from_station_id",
+        "start_station_name": "from_station_name",
+        "end_station_id": "to_station_id",
+        "end_station_name": "to_station_name",
+        "start_lat_raw": null,
+        "start_lng_raw": null,
+        "end_lat_raw": null,
+        "end_lng_raw": null
+      }
+    },
+    {
+      "archive": "Divvy_Trips_2016_Q1Q2.zip",
+      "member": "Divvy_Trips_2016_Q1Q2/Divvy_Trips_2016_05.csv",
+      "rows": 363319,
+      "schema_family": "legacy",
+      "column_mapping": {
+        "ride_id": "trip_id",
+        "started_at_raw": "starttime",
+        "ended_at_raw": "stoptime",
+        "rider_type_raw": "usertype",
+        "rideable_type": null,
+        "reported_duration_raw": "tripduration",
+        "bike_id": "bikeid",
+        "gender_raw": "gender",
+        "birth_year_raw": "birthyear",
+        "start_station_id": "from_station_id",
+        "start_station_name": "from_station_name",
+        "end_station_id": "to_station_id",
+        "end_station_name": "to_station_name",
+        "start_lat_raw": null,
+        "start_lng_raw": null,
+        "end_lat_raw": null,
+        "end_lng_raw": null
+      }
+    },
+    {
+      "archive": "Divvy_Trips_2016_Q1Q2.zip",
+      "member": "Divvy_Trips_2016_Q1Q2/Divvy_Trips_2016_06.csv",
+      "rows": 477873,
+      "schema_family": "legacy",
+      "column_mapping": {
+        "ride_id": "trip_id",
+        "started_at_raw": "starttime",
+        "ended_at_raw": "stoptime",
+        "rider_type_raw": "usertype",
+        "rideable_type": null,
+        "reported_duration_raw": "tripduration",
+        "bike_id": "bikeid",
+        "gender_raw": "gender",
+        "birth_year_raw": "birthyear",
+        "start_station_id": "from_station_id",
+        "start_station_name": "from_station_name",
+        "end_station_id": "to_station_id",
+        "end_station_name": "to_station_name",
+        "start_lat_raw": null,
+        "start_lng_raw": null,
+        "end_lat_raw": null,
+        "end_lng_raw": null
+      }
+    },
+    {
+      "archive": "Divvy_Trips_2016_Q1Q2.zip",
+      "member": "Divvy_Trips_2016_Q1Q2/Divvy_Trips_2016_Q1.csv",
+      "rows": 396913,
+      "schema_family": "legacy",
+      "column_mapping": {
+        "ride_id": "trip_id",
+        "started_at_raw": "starttime",
+        "ended_at_raw": "stoptime",
+        "rider_type_raw": "usertype",
+        "rideable_type": null,
+        "reported_duration_raw": "tripduration",
+        "bike_id": "bikeid",
+        "gender_raw": "gender",
+        "birth_year_raw": "birthyear",
+        "start_station_id": "from_station_id",
+        "start_station_name": "from_station_name",
+        "end_station_id": "to_station_id",
+        "end_station_name": "to_station_name",
+        "start_lat_raw": null,
+        "start_lng_raw": null,
+        "end_lat_raw": null,
+        "end_lng_raw": null
+      }
+    },
+    {
+      "archive": "Divvy_Trips_2016_Q3Q4.zip",
+      "member": "Divvy_Trips_2016_Q3.csv",
+      "rows": 1441811,
+      "schema_family": "legacy",
+      "column_mapping": {
+        "ride_id": "trip_id",
+        "started_at_raw": "starttime",
+        "ended_at_raw": "stoptime",
+        "rider_type_raw": "usertype",
+        "rideable_type": null,
+        "reported_duration_raw": "tripduration",
+        "bike_id": "bikeid",
+        "gender_raw": "gender",
+        "birth_year_raw": "birthyear",
+        "start_station_id": "from_station_id",
+        "start_station_name": "from_station_name",
+        "end_station_id": "to_station_id",
+        "end_station_name": "to_station_name",
+        "start_lat_raw": null,
+        "start_lng_raw": null,
+        "end_lat_raw": null,
+        "end_lng_raw": null
+      }
+    },
+    {
+      "archive": "Divvy_Trips_2016_Q3Q4.zip",
+      "member": "Divvy_Trips_2016_Q4.csv",
+      "rows": 683832,
+      "schema_family": "legacy",
+      "column_mapping": {
+        "ride_id": "trip_id",
+        "started_at_raw": "starttime",
+        "ended_at_raw": "stoptime",
+        "rider_type_raw": "usertype",
+        "rideable_type": null,
+        "reported_duration_raw": "tripduration",
+        "bike_id": "bikeid",
+        "gender_raw": "gender",
+        "birth_year_raw": "birthyear",
+        "start_station_id": "from_station_id",
+        "start_station_name": "from_station_name",
+        "end_station_id": "to_station_id",
+        "end_station_name": "to_station_name",
+        "start_lat_raw": null,
+        "start_lng_raw": null,
+        "end_lat_raw": null,
+        "end_lng_raw": null
+      }
+    },
+    {
+      "archive": "Divvy_Trips_2017_Q1Q2.zip",
+      "member": "Divvy_Trips_2017_Q1.csv",
+      "rows": 431691,
+      "schema_family": "legacy",
+      "column_mapping": {
+        "ride_id": "trip_id",
+        "started_at_raw": "start_time",
+        "ended_at_raw": "end_time",
+        "rider_type_raw": "usertype",
+        "rideable_type": null,
+        "reported_duration_raw": "tripduration",
+        "bike_id": "bikeid",
+        "gender_raw": "gender",
+        "birth_year_raw": "birthyear",
+        "start_station_id": "from_station_id",
+        "start_station_name": "from_station_name",
+        "end_station_id": "to_station_id",
+        "end_station_name": "to_station_name",
+        "start_lat_raw": null,
+        "start_lng_raw": null,
+        "end_lat_raw": null,
+        "end_lng_raw": null
+      }
+    },
+    {
+      "archive": "Divvy_Trips_2017_Q1Q2.zip",
+      "member": "Divvy_Trips_2017_Q2.csv",
+      "rows": 1119814,
+      "schema_family": "legacy",
+      "column_mapping": {
+        "ride_id": "trip_id",
+        "started_at_raw": "start_time",
+        "ended_at_raw": "end_time",
+        "rider_type_raw": "usertype",
+        "rideable_type": null,
+        "reported_duration_raw": "tripduration",
+        "bike_id": "bikeid",
+        "gender_raw": "gender",
+        "birth_year_raw": "birthyear",
+        "start_station_id": "from_station_id",
+        "start_station_name": "from_station_name",
+        "end_station_id": "to_station_id",
+        "end_station_name": "to_station_name",
+        "start_lat_raw": null,
+        "start_lng_raw": null,
+        "end_lat_raw": null,
+        "end_lng_raw": null
+      }
+    },
+    {
+      "archive": "Divvy_Trips_2017_Q3Q4.zip",
+      "member": "Divvy_Trips_2017_Q3.csv",
+      "rows": 1608270,
+      "schema_family": "legacy",
+      "column_mapping": {
+        "ride_id": "trip_id",
+        "started_at_raw": "start_time",
+        "ended_at_raw": "end_time",
+        "rider_type_raw": "usertype",
+        "rideable_type": null,
+        "reported_duration_raw": "tripduration",
+        "bike_id": "bikeid",
+        "gender_raw": "gender",
+        "birth_year_raw": "birthyear",
+        "start_station_id": "from_station_id",
+        "start_station_name": "from_station_name",
+        "end_station_id": "to_station_id",
+        "end_station_name": "to_station_name",
+        "start_lat_raw": null,
+        "start_lng_raw": null,
+        "end_lat_raw": null,
+        "end_lng_raw": null
+      }
+    },
+    {
+      "archive": "Divvy_Trips_2017_Q3Q4.zip",
+      "member": "Divvy_Trips_2017_Q4.csv",
+      "rows": 669239,
+      "schema_family": "legacy",
+      "column_mapping": {
+        "ride_id": "trip_id",
+        "started_at_raw": "start_time",
+        "ended_at_raw": "end_time",
+        "rider_type_raw": "usertype",
+        "rideable_type": null,
+        "reported_duration_raw": "tripduration",
+        "bike_id": "bikeid",
+        "gender_raw": "gender",
+        "birth_year_raw": "birthyear",
+        "start_station_id": "from_station_id",
+        "start_station_name": "from_station_name",
+        "end_station_id": "to_station_id",
+        "end_station_name": "to_station_name",
+        "start_lat_raw": null,
+        "start_lng_raw": null,
+        "end_lat_raw": null,
+        "end_lng_raw": null
+      }
+    },
+    {
+      "archive": "Divvy_Trips_2018_Q1.zip",
+      "member": "Divvy_Trips_2018_Q1.csv",
+      "rows": 387145,
+      "schema_family": "legacy",
+      "column_mapping": {
+        "ride_id": "01 - Rental Details Rental ID",
+        "started_at_raw": "01 - Rental Details Local Start Time",
+        "ended_at_raw": "01 - Rental Details Local End Time",
+        "rider_type_raw": "User Type",
+        "rideable_type": null,
+        "reported_duration_raw": "01 - Rental Details Duration In Seconds Uncapped",
+        "bike_id": "01 - Rental Details Bike ID",
+        "gender_raw": "Member Gender",
+        "birth_year_raw": "05 - Member Details Member Birthday Year",
+        "start_station_id": "03 - Rental Start Station ID",
+        "start_station_name": "03 - Rental Start Station Name",
+        "end_station_id": "02 - Rental End Station ID",
+        "end_station_name": "02 - Rental End Station Name",
+        "start_lat_raw": null,
+        "start_lng_raw": null,
+        "end_lat_raw": null,
+        "end_lng_raw": null
+      }
+    },
+    {
+      "archive": "Divvy_Trips_2018_Q2.zip",
+      "member": "Divvy_Trips_2018_Q2.csv",
+      "rows": 1059681,
+      "schema_family": "legacy",
+      "column_mapping": {
+        "ride_id": "trip_id",
+        "started_at_raw": "start_time",
+        "ended_at_raw": "end_time",
+        "rider_type_raw": "usertype",
+        "rideable_type": null,
+        "reported_duration_raw": "tripduration",
+        "bike_id": "bikeid",
+        "gender_raw": "gender",
+        "birth_year_raw": "birthyear",
+        "start_station_id": "from_station_id",
+        "start_station_name": "from_station_name",
+        "end_station_id": "to_station_id",
+        "end_station_name": "to_station_name",
+        "start_lat_raw": null,
+        "start_lng_raw": null,
+        "end_lat_raw": null,
+        "end_lng_raw": null
+      }
+    },
+    {
+      "archive": "Divvy_Trips_2018_Q3.zip",
+      "member": "Divvy_Trips_2018_Q3.csv",
+      "rows": 1513570,
+      "schema_family": "legacy",
+      "column_mapping": {
+        "ride_id": "trip_id",
+        "started_at_raw": "start_time",
+        "ended_at_raw": "end_time",
+        "rider_type_raw": "usertype",
+        "rideable_type": null,
+        "reported_duration_raw": "tripduration",
+        "bike_id": "bikeid",
+        "gender_raw": "gender",
+        "birth_year_raw": "birthyear",
+        "start_station_id": "from_station_id",
+        "start_station_name": "from_station_name",
+        "end_station_id": "to_station_id",
+        "end_station_name": "to_station_name",
+        "start_lat_raw": null,
+        "start_lng_raw": null,
+        "end_lat_raw": null,
+        "end_lng_raw": null
+      }
+    },
+    {
+      "archive": "Divvy_Trips_2018_Q4.zip",
+      "member": "Divvy_Trips_2018_Q4.csv",
+      "rows": 642686,
+      "schema_family": "legacy",
+      "column_mapping": {
+        "ride_id": "trip_id",
+        "started_at_raw": "start_time",
+        "ended_at_raw": "end_time",
+        "rider_type_raw": "usertype",
+        "rideable_type": null,
+        "reported_duration_raw": "tripduration",
+        "bike_id": "bikeid",
+        "gender_raw": "gender",
+        "birth_year_raw": "birthyear",
+        "start_station_id": "from_station_id",
+        "start_station_name": "from_station_name",
+        "end_station_id": "to_station_id",
+        "end_station_name": "to_station_name",
+        "start_lat_raw": null,
+        "start_lng_raw": null,
+        "end_lat_raw": null,
+        "end_lng_raw": null
+      }
+    },
+    {
+      "archive": "Divvy_Trips_2019_Q1.zip",
+      "member": "Divvy_Trips_2019_Q1.csv",
+      "rows": 365069,
+      "schema_family": "legacy",
+      "column_mapping": {
+        "ride_id": "trip_id",
+        "started_at_raw": "start_time",
+        "ended_at_raw": "end_time",
+        "rider_type_raw": "usertype",
+        "rideable_type": null,
+        "reported_duration_raw": "tripduration",
+        "bike_id": "bikeid",
+        "gender_raw": "gender",
+        "birth_year_raw": "birthyear",
+        "start_station_id": "from_station_id",
+        "start_station_name": "from_station_name",
+        "end_station_id": "to_station_id",
+        "end_station_name": "to_station_name",
+        "start_lat_raw": null,
+        "start_lng_raw": null,
+        "end_lat_raw": null,
+        "end_lng_raw": null
+      }
+    },
+    {
+      "archive": "Divvy_Trips_2019_Q2.zip",
+      "member": "Divvy_Trips_2019_Q2.csv",
+      "rows": 1108163,
+      "schema_family": "legacy",
+      "column_mapping": {
+        "ride_id": "01 - Rental Details Rental ID",
+        "started_at_raw": "01 - Rental Details Local Start Time",
+        "ended_at_raw": "01 - Rental Details Local End Time",
+        "rider_type_raw": "User Type",
+        "rideable_type": null,
+        "reported_duration_raw": "01 - Rental Details Duration In Seconds Uncapped",
+        "bike_id": "01 - Rental Details Bike ID",
+        "gender_raw": "Member Gender",
+        "birth_year_raw": "05 - Member Details Member Birthday Year",
+        "start_station_id": "03 - Rental Start Station ID",
+        "start_station_name": "03 - Rental Start Station Name",
+        "end_station_id": "02 - Rental End Station ID",
+        "end_station_name": "02 - Rental End Station Name",
+        "start_lat_raw": null,
+        "start_lng_raw": null,
+        "end_lat_raw": null,
+        "end_lng_raw": null
+      }
+    },
+    {
+      "archive": "Divvy_Trips_2019_Q3.zip",
+      "member": "Divvy_Trips_2019_Q3.csv",
+      "rows": 1640718,
+      "schema_family": "legacy",
+      "column_mapping": {
+        "ride_id": "trip_id",
+        "started_at_raw": "start_time",
+        "ended_at_raw": "end_time",
+        "rider_type_raw": "usertype",
+        "rideable_type": null,
+        "reported_duration_raw": "tripduration",
+        "bike_id": "bikeid",
+        "gender_raw": "gender",
+        "birth_year_raw": "birthyear",
+        "start_station_id": "from_station_id",
+        "start_station_name": "from_station_name",
+        "end_station_id": "to_station_id",
+        "end_station_name": "to_station_name",
+        "start_lat_raw": null,
+        "start_lng_raw": null,
+        "end_lat_raw": null,
+        "end_lng_raw": null
+      }
+    },
+    {
+      "archive": "Divvy_Trips_2019_Q4.zip",
+      "member": "Divvy_Trips_2019_Q4.csv",
+      "rows": 704054,
+      "schema_family": "legacy",
+      "column_mapping": {
+        "ride_id": "trip_id",
+        "started_at_raw": "start_time",
+        "ended_at_raw": "end_time",
+        "rider_type_raw": "usertype",
+        "rideable_type": null,
+        "reported_duration_raw": "tripduration",
+        "bike_id": "bikeid",
+        "gender_raw": "gender",
+        "birth_year_raw": "birthyear",
+        "start_station_id": "from_station_id",
+        "start_station_name": "from_station_name",
+        "end_station_id": "to_station_id",
+        "end_station_name": "to_station_name",
+        "start_lat_raw": null,
+        "start_lng_raw": null,
+        "end_lat_raw": null,
+        "end_lng_raw": null
+      }
+    },
+    {
+      "archive": "Divvy_Trips_2020_Q1.zip",
+      "member": "Divvy_Trips_2020_Q1.csv",
+      "rows": 426887,
+      "schema_family": "modern",
+      "column_mapping": {
+        "ride_id": "ride_id",
+        "started_at_raw": "started_at",
+        "ended_at_raw": "ended_at",
+        "rider_type_raw": "member_casual",
+        "rideable_type": "rideable_type",
+        "reported_duration_raw": null,
+        "bike_id": null,
+        "gender_raw": null,
+        "birth_year_raw": null,
+        "start_station_id": "start_station_id",
+        "start_station_name": "start_station_name",
+        "end_station_id": "end_station_id",
+        "end_station_name": "end_station_name",
+        "start_lat_raw": "start_lat",
+        "start_lng_raw": "start_lng",
+        "end_lat_raw": "end_lat",
+        "end_lng_raw": "end_lng"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "path": "duplicate_ids.parquet",
+      "bytes": 5820,
+      "sha256": "14cdf7f9db1b2aaab67b25f312bf43473c5589a41428568e416253df8fa0137a"
+    },
+    {
+      "path": "station_identity_audit.parquet",
+      "bytes": 135055,
+      "sha256": "bd6108fe471a4e67c61a7b98d8ca5cd07783838cbe36714d72bdccac3fbaad09"
+    },
+    {
+      "path": "station_snapshot_audit.parquet",
+      "bytes": 87351,
+      "sha256": "1444616a2cefd4b38b84ad3b085a5f9141150dde6c4539839b384fba6e44bd0b"
+    },
+    {
+      "path": "station_snapshots.parquet",
+      "bytes": 105300,
+      "sha256": "f522b74d60660a14b4780ad95ff9abf088fcb67eb3b91b6e3825802e0314c295"
+    },
+    {
+      "path": "trips_all/part-001.parquet",
+      "bytes": 6958044,
+      "sha256": "383534af61b487a92aae82aa7611cdd02b037890502ba07d99e89b2e7a4e3913"
+    },
+    {
+      "path": "trips_all/part-002.parquet",
+      "bytes": 16448354,
+      "sha256": "b6685ba1f68832df2ef32e4d2fda01b0145e7dab7423cea59703f53d66460f53"
+    },
+    {
+      "path": "trips_all/part-003.parquet",
+      "bytes": 28200251,
+      "sha256": "b89aaabc05072993ad0c18929c1ce85176ef5c890849bf7dcaa2b3a9e300c5f6"
+    },
+    {
+      "path": "trips_all/part-004.parquet",
+      "bytes": 45633521,
+      "sha256": "e548d88f62b6e67087071649e23469927f12ce0bf93bf2c19800fe62a78f898f"
+    },
+    {
+      "path": "trips_all/part-005.parquet",
+      "bytes": 53539806,
+      "sha256": "bd9e5d397dc6a06a0e00ec68ff52b9319f82edc0af19581ffdff6f239c068cc0"
+    },
+    {
+      "path": "trips_all/part-006.parquet",
+      "bytes": 47216769,
+      "sha256": "54685691549be0cbef83046132a53ffe45d53d9b30f88f3e540b5734875f2740"
+    },
+    {
+      "path": "trips_all/part-007.parquet",
+      "bytes": 34737909,
+      "sha256": "e5dfc97ccdaf6efee559170b7f64c35b846db51f7f138344d9e04e8cc5c6e852"
+    },
+    {
+      "path": "trips_all/part-008.parquet",
+      "bytes": 23199056,
+      "sha256": "4e9290d78ba4807cd404f8bbc5eef00a1b159a8c3d1a761c462d5c958d729a84"
+    },
+    {
+      "path": "trips_all/part-009.parquet",
+      "bytes": 11214121,
+      "sha256": "6a0b7b92680920a4cd1990856b42761ba7f5f38f51cdabd0341877725f708181"
+    },
+    {
+      "path": "trips_all/part-010.parquet",
+      "bytes": 8248600,
+      "sha256": "a8181378f78bd9c0768046bc79746248ad3e192933a2e81dd544740e354cf5c9"
+    },
+    {
+      "path": "trips_all/part-011.parquet",
+      "bytes": 4414743,
+      "sha256": "a4e2ce15759965ef1977e09775d0ad0f1e3dc750d74a3a52e2fd1ab80bfcf17e"
+    },
+    {
+      "path": "trips_all/part-012.parquet",
+      "bytes": 19328927,
+      "sha256": "5df3df1035e75feaa290b09a81f712230494505ca9913ac36b3a2ff720999330"
+    },
+    {
+      "path": "trips_all/part-013.parquet",
+      "bytes": 28690280,
+      "sha256": "4a655611a3e70b55eec531a9abd4cddffff26c859afe6245014d94a6016268fc"
+    },
+    {
+      "path": "trips_all/part-014.parquet",
+      "bytes": 44785296,
+      "sha256": "6c752f4c1a15c708c2f19a6c6da05edcd14f757c85cc6b7a74709256ec32fb82"
+    },
+    {
+      "path": "trips_all/part-015.parquet",
+      "bytes": 62422316,
+      "sha256": "dc95dd562f114535511eb596825a62d262edef630c2d02d0997c877fc36e7955"
+    },
+    {
+      "path": "trips_all/part-016.parquet",
+      "bytes": 70105384,
+      "sha256": "3eeb2b8dbddd7338073e489ae6c883cc6a3d98f754f9886ae325c60c8c2ad8d3"
+    },
+    {
+      "path": "trips_all/part-017.parquet",
+      "bytes": 67938132,
+      "sha256": "ece0bee4e4d01b4739dc65c61c1e32d51da12925b67d4e652af61ccb54ef070c"
+    },
+    {
+      "path": "trips_all/part-018.parquet",
+      "bytes": 64583699,
+      "sha256": "c51f6a1f0fa870b675fc075e31766d2d637034bfef5cf94c5016f1c1f55eb718"
+    },
+    {
+      "path": "trips_all/part-019.parquet",
+      "bytes": 53656921,
+      "sha256": "233493a6f1c733c5e30526cc601a9e6ec64043ae53cfd26f7e73d24f2e4f71e8"
+    },
+    {
+      "path": "trips_all/part-020.parquet",
+      "bytes": 31266644,
+      "sha256": "16a3b767edebddafc544d5a2982201ae65e894751e67787271e3263205aeb8e5"
+    },
+    {
+      "path": "trips_all/part-021.parquet",
+      "bytes": 21272771,
+      "sha256": "7e7317cd3cf99c0c2c6131d5bb0722d898fa895268a6113233a0d803699c6473"
+    },
+    {
+      "path": "trips_all/part-022.parquet",
+      "bytes": 8725436,
+      "sha256": "b5476d94b3092e3f2f5b8db495276e143b496de671b689902f6c4ed06aa6c6df"
+    },
+    {
+      "path": "trips_all/part-023.parquet",
+      "bytes": 9654889,
+      "sha256": "81b9115b7fa437df4eba78b4558a739d6c4b2c6b65a93f51239fc08533acdfd5"
+    },
+    {
+      "path": "trips_all/part-024.parquet",
+      "bytes": 23561449,
+      "sha256": "fcbec8f680538bf6cc463c012408c7fe9bab67724c06acc2f4894ceb61dab8fc"
+    },
+    {
+      "path": "trips_all/part-025.parquet",
+      "bytes": 30692753,
+      "sha256": "329f7c48eba8992e4873200ca38a871c58601f18bd2f43e463775fa84ef0c596"
+    },
+    {
+      "path": "trips_all/part-026.parquet",
+      "bytes": 52280564,
+      "sha256": "b7bcaff636c5cd8935993d6442ccc3a3a45c668c35964bc1aa9e1bb6f74d2329"
+    },
+    {
+      "path": "trips_all/part-027.parquet",
+      "bytes": 63149174,
+      "sha256": "8a72f5066a1888fe8a7509e908121226c88eabb3c6e005146450a2c51d15c6a0"
+    },
+    {
+      "path": "trips_all/part-028.parquet",
+      "bytes": 68161567,
+      "sha256": "a65b9f8fca2c227a7ab95d053928cd4fd2d102a6aa2c34da73fbaeb43aecfaea"
+    },
+    {
+      "path": "trips_all/part-029.parquet",
+      "bytes": 65300190,
+      "sha256": "2b1430ca14eb6aefaf659d19343938ea13a8b1388c5c023303ce334b3b10444a"
+    },
+    {
+      "path": "trips_all/part-030.parquet",
+      "bytes": 57920942,
+      "sha256": "f09437e9e0dd33b349783d032753f15dc96fa49af0e223845d48a8e00ae0b878"
+    },
+    {
+      "path": "trips_all/part-031.parquet",
+      "bytes": 46459921,
+      "sha256": "16a7ab766554996d8d48a48f634585568c55515091f3547faab0ae2ab963868f"
+    },
+    {
+      "path": "trips_all/part-032.parquet",
+      "bytes": 28151275,
+      "sha256": "b61777649bf8898b3c3557ba6d229ba3d04d136bbfbc0f0777c469c295e7048b"
+    },
+    {
+      "path": "trips_all/part-033.parquet",
+      "bytes": 15203488,
+      "sha256": "c951230e4c3c6bca84e552459c0d56a855a3ef3b292b1f424151921ede4e2d79"
+    },
+    {
+      "path": "trips_all/part-034.parquet",
+      "bytes": 15690771,
+      "sha256": "cb5a0b756ea815c4c815e7aa0c94e16e5bc1608cced8d48b0b3374ea05b08935"
+    },
+    {
+      "path": "trips_all/part-035.parquet",
+      "bytes": 15804786,
+      "sha256": "933d9fb3b676ad89871438a7a9d119864a09bc56f8072dba0c2dd0626af70aa1"
+    },
+    {
+      "path": "trips_all/part-036.parquet",
+      "bytes": 21892393,
+      "sha256": "2940ed219d9fda99f3589a14d8ce6b272cf0f23a7d87775171e3c21794f093cb"
+    },
+    {
+      "path": "trips_all/part-037.parquet",
+      "bytes": 35535359,
+      "sha256": "c5e6a53e9e26aa52042d75b216b0e5f2dcdb558e3d109b1181502331682e36e1"
+    },
+    {
+      "path": "trips_all/part-038.parquet",
+      "bytes": 50702445,
+      "sha256": "4124b2b49bb0c2164d74e1c7ec3d094c73a92a232ea8323dac9f2c308e2b350c"
+    },
+    {
+      "path": "trips_all/part-039.parquet",
+      "bytes": 59675106,
+      "sha256": "a8169c61ef0c64f461d6fca054bd0ed15876e39d7260027577f4a23c404c6230"
+    },
+    {
+      "path": "trips_all/part-040.parquet",
+      "bytes": 63750430,
+      "sha256": "f6c89da71b0b8dd0666dc3b9cca7b05edf7def3593077f4b8761645d24e6c90b"
+    },
+    {
+      "path": "trips_all/part-041.parquet",
+      "bytes": 64000899,
+      "sha256": "a8d1f71d7b2700e725f509bde6c50432a95d7d3c565a2383c98ccc8d96f6e412"
+    },
+    {
+      "path": "trips_all/part-042.parquet",
+      "bytes": 55275150,
+      "sha256": "38f087c5df78c8773d1697ca460fc775ee0098e9a824522c20ca89ccbec04bd5"
+    },
+    {
+      "path": "trips_all/part-043.parquet",
+      "bytes": 44339141,
+      "sha256": "f5277bce30b372c52c7d04273e2e93644dbbcdea3e60b3876ff7b15e5d58ca6c"
+    },
+    {
+      "path": "trips_all/part-044.parquet",
+      "bytes": 30121391,
+      "sha256": "531a08ebefe27d5d3fe28aa5deb512eebe525e57bef6e72d1490ed5aa39cc606"
+    },
+    {
+      "path": "trips_all/part-045.parquet",
+      "bytes": 18754930,
+      "sha256": "d5332980a43c3c3a9605144480e6a7ee17be37acd13ebb28733846bfb9e9be68"
+    },
+    {
+      "path": "trips_all/part-046.parquet",
+      "bytes": 12071882,
+      "sha256": "c06c950fd1a9f81bc162c52eb246325368acac4abdd2aeb4a72af25bdd755cef"
+    },
+    {
+      "path": "trips_all/part-047.parquet",
+      "bytes": 18544071,
+      "sha256": "1a94b5424388332ff00c80ede730fb9b2dcb3f45efb2bcc309632b92b0f13147"
+    },
+    {
+      "path": "trips_all/part-048.parquet",
+      "bytes": 25097517,
+      "sha256": "a4b9361de1c51426ecf2473fc3b70d677ce6353fe322000f634d1803405932e6"
+    },
+    {
+      "path": "trips_all/part-049.parquet",
+      "bytes": 34426379,
+      "sha256": "817251d4cb1aadfccc9b1cc05d2c1b6cd4fdf297b44a70fe57d497ece1aae6ad"
+    },
+    {
+      "path": "trips_all/part-050.parquet",
+      "bytes": 50447172,
+      "sha256": "8761438fe4702abaca43f1d6c3df538e305589b77ff2a29790f3c75e3950a65b"
+    },
+    {
+      "path": "trips_all/part-051.parquet",
+      "bytes": 64784278,
+      "sha256": "460d52b04e5895ac17f23fa3a204180fdb67fd3f388b92f791388fb7d121540b"
+    },
+    {
+      "path": "trips_all/part-052.parquet",
+      "bytes": 68203785,
+      "sha256": "928d19b65464170a339b0333691f9ae27e1b19dd8c6d4ce0b228b1adedb90d60"
+    },
+    {
+      "path": "trips_all/part-053.parquet",
+      "bytes": 67751474,
+      "sha256": "60232022bc87634382d2833192aaa93151daa95b99557522dcc39298d6ca7495"
+    },
+    {
+      "path": "trips_all/part-054.parquet",
+      "bytes": 73206986,
+      "sha256": "663b0ed15890ebb7af5eebf3f743781696786776b077acecb9d9908245856b2c"
+    },
+    {
+      "path": "trips_all/part-055.parquet",
+      "bytes": 54861859,
+      "sha256": "f53f96c1924907421db05df832bc79c5f4d4961621b39d7f4d5cf45ea82f7b5f"
+    },
+    {
+      "path": "trips_all/part-056.parquet",
+      "bytes": 30232971,
+      "sha256": "b364fb6cd33aea8901b86a869474a63272b0bed274ac8b92c97aed82ddba0d22"
+    },
+    {
+      "path": "trips_all/part-057.parquet",
+      "bytes": 15929732,
+      "sha256": "94e1ad4f11411851919c896bcb037640c4543f4667997530fdde9e5544b28f8b"
+    },
+    {
+      "path": "trips_all/part-058.parquet",
+      "bytes": 12535413,
+      "sha256": "98868a35380cf7e419d4358826109ea9eb35e0f301f400c7b0433ad3148dc5fa"
+    },
+    {
+      "path": "trips_all/part-059.parquet",
+      "bytes": 13624637,
+      "sha256": "8e5d9c5084d31ccd650746938934f5aa24efc4e51888f7c8f342e8f955dc3dd7"
+    },
+    {
+      "path": "trips_all/part-060.parquet",
+      "bytes": 26641330,
+      "sha256": "920faf8874389a97093723334981fdfefa18357f93ee1f4ee0ef43362f6cf3ee"
+    },
+    {
+      "path": "trips_all/part-061.parquet",
+      "bytes": 33320015,
+      "sha256": "9f8b46e7ec55b58f984e3e00559e0648be1f86a801a188535e8d4d7fbb5637a9"
+    },
+    {
+      "path": "trips_all/part-062.parquet",
+      "bytes": 45047898,
+      "sha256": "cf00317ec5e44546e001287f24233f7051b2c4dd7ed6ef2ce6be2c1a1a8bf7e9"
+    },
+    {
+      "path": "trips_all/part-063.parquet",
+      "bytes": 60746603,
+      "sha256": "90adb1704f9747979117f8daa079032dc43d23180702b5d004eeb07df5be3fda"
+    },
+    {
+      "path": "trips_all/part-064.parquet",
+      "bytes": 68377712,
+      "sha256": "29fae811e124cf0138be145e2332f7a29379bd23c89779f19b81641e1d025a55"
+    },
+    {
+      "path": "trips_all/part-065.parquet",
+      "bytes": 70277183,
+      "sha256": "64c6a317e5a205401aa9691b4525952c79fe14fcb8875eb521e200be078ce526"
+    },
+    {
+      "path": "trips_all/part-066.parquet",
+      "bytes": 63440191,
+      "sha256": "5497edbc2cd468f12c3503923cd231a4a0728856eaf81fa4087e52c7ac830e94"
+    },
+    {
+      "path": "trips_all/part-067.parquet",
+      "bytes": 57450547,
+      "sha256": "0f34afd4856551de6c7f7a5e0ffa970db909b8108e89e06f806d7480181b446f"
+    },
+    {
+      "path": "trips_all/part-068.parquet",
+      "bytes": 31937245,
+      "sha256": "c57b0f9ddafb91bafec7a82865e468eddd9baf7a5e3df2b7f8062bbb1d8c3a94"
+    },
+    {
+      "path": "trips_all/part-069.parquet",
+      "bytes": 12736353,
+      "sha256": "abc711382df574701d1b4cb04f163e6406350e0f37cd51701f3c422f4c8458cb"
+    },
+    {
+      "path": "trips_all/part-070.parquet",
+      "bytes": 12667541,
+      "sha256": "99b2c25d886a930230c1655efd4cfd75f4033692e7910c4571c71840ad2fbed0"
+    },
+    {
+      "path": "trips_all/part-071.parquet",
+      "bytes": 18207087,
+      "sha256": "52f8c117e6287785ab9ca9545a81551409d4905e4751c0118b63c5be53975703"
+    },
+    {
+      "path": "trips_all/part-072.parquet",
+      "bytes": 28752002,
+      "sha256": "4dd8027fdd0605c95e28c4fb76d00f49f097d5fa6592bce5826e25703eb41725"
+    },
+    {
+      "path": "trips_all/part-073.parquet",
+      "bytes": 39994159,
+      "sha256": "c90b3fccd8aa2c163edfc63d1dd87f7be62fb7fab69a21e549aa8122cc501dd4"
+    },
+    {
+      "path": "trips_all/part-074.parquet",
+      "bytes": 58389721,
+      "sha256": "a7a3bc4fb0ba8cdd9d3aa8ec1cf88ab14f09a9be8eab3a6dc370f3a8fb1027c6"
+    },
+    {
+      "path": "trips_all/part-075.parquet",
+      "bytes": 68392306,
+      "sha256": "a956c6c742f8c4e6f4acde06d8cce5b7aec51be0ca7c883be75fcbf17e6a21bd"
+    },
+    {
+      "path": "trips_all/part-076.parquet",
+      "bytes": 77045279,
+      "sha256": "9357e14e5ff7ca3b917c16e60b1750b38265752fa9671d681706ed278bc62226"
+    },
+    {
+      "path": "trips_all/part-077.parquet",
+      "bytes": 76908148,
+      "sha256": "ea7389c97a45d227228c9a523024778d7b91710001739952fa44d6d67f73b63b"
+    },
+    {
+      "path": "trips_all/part-078.parquet",
+      "bytes": 68519338,
+      "sha256": "fd93c560f0d9c1feff25fdf9844c8f9a745305780a07dbb516607ddc27086e72"
+    },
+    {
+      "path": "trips_all/part-079.parquet",
+      "bytes": 70718106,
+      "sha256": "e02c1e141999b7d61630259c7d87b0f9fa0196d17c5414d851ec8f00f5adf856"
+    },
+    {
+      "path": "trips_all/part-080.parquet",
+      "bytes": 44755435,
+      "sha256": "c4d273910c627714b5a357b6cf313a8000486e8ed3e6a69ecdf801d73344d574"
+    },
+    {
+      "path": "trips_all/part-081.parquet",
+      "bytes": 52950609,
+      "sha256": "e535fe69204040550163a00cf3da22ab67365cffb12fb4e58a14c2f4e8eb8d39"
+    },
+    {
+      "path": "trips_all/part-082.parquet",
+      "bytes": 23709357,
+      "sha256": "dc7cfc3f7cda1578722005073ce8cb2bf0c0221bd4b719764677a73c4cbde21d"
+    },
+    {
+      "path": "trips_all/part-083.parquet",
+      "bytes": 40676715,
+      "sha256": "04dfd631feed4b9b0054b7bc87a893621a987e1e8f4063afeb0e5d2c044d00f5"
+    },
+    {
+      "path": "trips_all/part-084.parquet",
+      "bytes": 25919848,
+      "sha256": "99b10116e155cbc0b200fff6242f9869a031b04c7cf283ffe876ebda610e9261"
+    },
+    {
+      "path": "trips_all/part-085.parquet",
+      "bytes": 11767896,
+      "sha256": "09d980b08af654bd516dda47a767101fef244bf4e2df5967d6968f0dfde7e9bb"
+    },
+    {
+      "path": "trips_all/part-086.parquet",
+      "bytes": 52648213,
+      "sha256": "c6aed96815aec947c50c44801155bda1fef7babe722ba2367eac066f22a0172f"
+    },
+    {
+      "path": "trips_all/part-087.parquet",
+      "bytes": 36724398,
+      "sha256": "61a61b00071a5081aee08af3d1a5445bddafc553e08d3eb7e7ec5ed91710a86b"
+    },
+    {
+      "path": "trips_all/part-088.parquet",
+      "bytes": 24466753,
+      "sha256": "84d24d54c53477d15fd96efb14c525f07efa4dc444b6faa650f463010babcbba"
+    },
+    {
+      "path": "trips_all/part-089.parquet",
+      "bytes": 28387537,
+      "sha256": "be1271e152bddeaee2a8c6cbab6dfb8746a6d65250adbd3510cfdec5b73dac2a"
+    },
+    {
+      "path": "trips_all/part-090.parquet",
+      "bytes": 30693701,
+      "sha256": "a6755faa4c4b7fcb65d0a66b7abfa65a8a78d335433e49e99eb457ae4bc37226"
+    },
+    {
+      "path": "trips_all/part-091.parquet",
+      "bytes": 13760506,
+      "sha256": "807a0a7a5dafcb0aabd5bffe5429f52696356f175003905ac61d00d306e40ce2"
+    },
+    {
+      "path": "trips_all/part-092.parquet",
+      "bytes": 21016119,
+      "sha256": "2a78e386a35293e751a6fd66a1aa4acdcfe1b417d3fd632e0060e9aefaa3377a"
+    },
+    {
+      "path": "trips_all/part-093.parquet",
+      "bytes": 27353485,
+      "sha256": "fc3dc24e0502d52acee3d19065b105661267f44e9bedb59dbd3fb1253fb715b2"
+    },
+    {
+      "path": "trips_all/part-094.parquet",
+      "bytes": 23333155,
+      "sha256": "20fc75f3f11454f34470d3cd97143fdba9aa49dabd1dc1346069a5665bca77a3"
+    },
+    {
+      "path": "trips_all/part-095.parquet",
+      "bytes": 94614489,
+      "sha256": "c18c14c5223fcd5b8ebb77e6b0382759f288f4d0d72d80682895d0d91ff50360"
+    },
+    {
+      "path": "trips_all/part-096.parquet",
+      "bytes": 45137814,
+      "sha256": "59d7a6a5f74e07ed8c0b58651ed201862e1dcc95bd21e567ad28be1bece2136b"
+    },
+    {
+      "path": "trips_all/part-097.parquet",
+      "bytes": 28583745,
+      "sha256": "c1091b18b9e61249b499d16f9914531878027ca0ee31e5d85ae55d477241976d"
+    },
+    {
+      "path": "trips_all/part-098.parquet",
+      "bytes": 73700564,
+      "sha256": "c1c12c4859b73468b18d3c6ef493bd239721321deba18c988a6ff9625030f777"
+    },
+    {
+      "path": "trips_all/part-099.parquet",
+      "bytes": 105220331,
+      "sha256": "c5c105ba0c38fbb50c558298e57597b52845edc2bae44a68548b517c60bbb874"
+    },
+    {
+      "path": "trips_all/part-100.parquet",
+      "bytes": 39272608,
+      "sha256": "3e383f75290e6536ade3ca95fedd72a09a6bbcbce6591de1d37066dcf05ab0a4"
+    },
+    {
+      "path": "trips_all/part-101.parquet",
+      "bytes": 25612590,
+      "sha256": "b8a0c3815deb3c2a20b1b39ba27257a382c932d3e3c4ff03d3085bd3a4d56350"
+    },
+    {
+      "path": "trips_all/part-102.parquet",
+      "bytes": 70062896,
+      "sha256": "b885209b4c2f7dada7e22b7235c6566564cdf877babeb3024abc6f71dccf9c28"
+    },
+    {
+      "path": "trips_all/part-103.parquet",
+      "bytes": 99867304,
+      "sha256": "6b4166eb506e55931b4250176ceb0f3bb29b29583709019eeaba19dcba32454b"
+    },
+    {
+      "path": "trips_all/part-104.parquet",
+      "bytes": 42517667,
+      "sha256": "d9d550ab22226037b81dc2a0135dc79255975b1c0e6c7df94862a9b0c584d1dc"
+    },
+    {
+      "path": "trips_all/part-105.parquet",
+      "bytes": 24265759,
+      "sha256": "bb6ccb3de1e02bc282a3efa7b9c7525da1c52d314eaed8d0244d492c3bf36f6b"
+    },
+    {
+      "path": "trips_all/part-106.parquet",
+      "bytes": 73345701,
+      "sha256": "49850a9da2fe0db5b023684911fbb37a11e4fc084447c59c06c649081f522090"
+    },
+    {
+      "path": "trips_all/part-107.parquet",
+      "bytes": 108611208,
+      "sha256": "d4007bb20aad2fbd027b3072bb4b34aa9f234f71c1dab7e439a534a7399c397b"
+    },
+    {
+      "path": "trips_all/part-108.parquet",
+      "bytes": 46494806,
+      "sha256": "86ae02ff9e6f755273e800dd28b02a37e4aa02386f16065f7e3a01d3c64a0967"
+    },
+    {
+      "path": "trips_all/part-109.parquet",
+      "bytes": 34535453,
+      "sha256": "5608d5be30e33b37036bb40f0cfc3f88865b8e9c66e6672983c6f4237afa4d80"
+    },
+    {
+      "path": "trips_clean/part-001.parquet",
+      "bytes": 6852910,
+      "sha256": "a21d3f46e44f01758fa6b96bac4e1295c8e14c05991c1ddc41413e45f839f5de"
+    },
+    {
+      "path": "trips_clean/part-002.parquet",
+      "bytes": 16184402,
+      "sha256": "378fd8e931ab4c7a62e6b6801d32f80f7b97538d8bd4d3dffb1ce872218e0fcf"
+    },
+    {
+      "path": "trips_clean/part-003.parquet",
+      "bytes": 27752981,
+      "sha256": "3886f0ea9797eaf2c79fdf1e68ed9e0857ed34b454af1e4f1f6722cdad2eb468"
+    },
+    {
+      "path": "trips_clean/part-004.parquet",
+      "bytes": 44745742,
+      "sha256": "00e7f858c7dde073f5d977665783245b70e397027f1eac4fcdeaeb5a156cc5b3"
+    },
+    {
+      "path": "trips_clean/part-005.parquet",
+      "bytes": 51461661,
+      "sha256": "f1cf26efd544ad3f7e57f7f7cd9cc5f392965e3a59a532ededd933dea2f39143"
+    },
+    {
+      "path": "trips_clean/part-006.parquet",
+      "bytes": 43212633,
+      "sha256": "3c81906e44b420d1d0ac07c7fe88902ef3e84721982fd27dea7551a559bf9281"
+    },
+    {
+      "path": "trips_clean/part-007.parquet",
+      "bytes": 29718629,
+      "sha256": "15a83139705eafd03d990f7c445e10c3b5fd5846e87c8d5c63e65693acf0a4e0"
+    },
+    {
+      "path": "trips_clean/part-008.parquet",
+      "bytes": 19607377,
+      "sha256": "93c7824ca767ea637ed6db7a5df67ecea3e1a100a673356be4cdc7a6eff52122"
+    },
+    {
+      "path": "trips_clean/part-009.parquet",
+      "bytes": 9495631,
+      "sha256": "08bb1e0c40a573d3d8d90d379c2a5c1f2a0a3b2a3d1a228799dfa32a2ec0f485"
+    },
+    {
+      "path": "trips_clean/part-010.parquet",
+      "bytes": 7043178,
+      "sha256": "79e615998959c70e8ed702115e5979a0ccefe591c67ae50d4916fbb87441299b"
+    },
+    {
+      "path": "trips_clean/part-011.parquet",
+      "bytes": 3769793,
+      "sha256": "224cec2f77ccc203e60206f1c441cef0f5057c1deef3db3805f169a5bcc81f7d"
+    },
+    {
+      "path": "trips_clean/part-012.parquet",
+      "bytes": 17461148,
+      "sha256": "15780f045dbd4268fb47f03bb42a868e9d1e85027b8c50e4aa1820d4b6f7558d"
+    },
+    {
+      "path": "trips_clean/part-013.parquet",
+      "bytes": 25208082,
+      "sha256": "abaecac3fbfa437a922a33a9a7cae9b54b3ac2cb3fe29c323b3698ca80c9db06"
+    },
+    {
+      "path": "trips_clean/part-014.parquet",
+      "bytes": 37374358,
+      "sha256": "876e069e7571355e83f109004f9d2e2f58a229928bb34ff0f9fd12e6e0a08554"
+    },
+    {
+      "path": "trips_clean/part-015.parquet",
+      "bytes": 51576689,
+      "sha256": "71adec31e4ef76481e89545247b6a6dfd469964fe53648087fff6aa9ea9cb0d2"
+    },
+    {
+      "path": "trips_clean/part-016.parquet",
+      "bytes": 58490409,
+      "sha256": "af599b930f6df673c3963b7fb3a1d8bd0a8e422737cbdf4d86b348ff95f5d03b"
+    },
+    {
+      "path": "trips_clean/part-017.parquet",
+      "bytes": 56766064,
+      "sha256": "4f641aef51ad9ebf49d93b98c4cb9a2f3b9a1af476302d445dec8f5dee37016b"
+    },
+    {
+      "path": "trips_clean/part-018.parquet",
+      "bytes": 52768579,
+      "sha256": "c7559f9f99ad58a52b7d61946c943c6caee7d94729628f165e5ade798db8014b"
+    },
+    {
+      "path": "trips_clean/part-019.parquet",
+      "bytes": 40122598,
+      "sha256": "4862206a3fd74f241d902b1f2571700057440a92db56945ab7a68fa99c199a70"
+    },
+    {
+      "path": "trips_clean/part-020.parquet",
+      "bytes": 22115779,
+      "sha256": "9ea7f8f999fee4b91ae8804ef96ce7193ac45822ee6aa6a7d46f1ea349dc805b"
+    },
+    {
+      "path": "trips_clean/part-021.parquet",
+      "bytes": 15233602,
+      "sha256": "c88fc8d61bd9fc372a71d38d82166d1e26d528625229599d7ce121be0247a96b"
+    },
+    {
+      "path": "trips_clean/part-022.parquet",
+      "bytes": 6679026,
+      "sha256": "185b5b985520482be75b8b11ba852a1ced04c29b63d80673f8c5e0c76a34bc2f"
+    },
+    {
+      "path": "trips_clean/part-023.parquet",
+      "bytes": 7420297,
+      "sha256": "160ae442da0ee48e5dbf0172f7a21387b10766855820d40dd69f12e1c9cb0290"
+    },
+    {
+      "path": "trips_clean/part-024.parquet",
+      "bytes": 17830610,
+      "sha256": "321aadabefef608d97fb8384ca323e93359872a89ad6448f81371ed62df1a8a0"
+    },
+    {
+      "path": "trips_clean/part-025.parquet",
+      "bytes": 22423939,
+      "sha256": "da4bed074e058063546f4e3856f372fcb08c4316748a59607f60cd84eb8b4fbb"
+    },
+    {
+      "path": "trips_clean/part-026.parquet",
+      "bytes": 40866650,
+      "sha256": "4c15d2f68df7fd4d2dd3a2d7e92edb1775ac338e662b2f6ca9a7249cdd5dc172"
+    },
+    {
+      "path": "trips_clean/part-027.parquet",
+      "bytes": 50108029,
+      "sha256": "781f801f8c7254f3a6d8b6d312daadfd42757dfd709915cd5ef77fc88191b064"
+    },
+    {
+      "path": "trips_clean/part-028.parquet",
+      "bytes": 52499700,
+      "sha256": "c764645e2540687a9a1f80ba8e6587013b46d0d7f7f245c7c41695167daadbba"
+    },
+    {
+      "path": "trips_clean/part-029.parquet",
+      "bytes": 49585615,
+      "sha256": "31c97dac53153cc44d27987700a6d1cf0a3ce972be50e3cfd3b1073abec66ea7"
+    },
+    {
+      "path": "trips_clean/part-030.parquet",
+      "bytes": 43604619,
+      "sha256": "c5cc7ee082a742efe79d1dbb4f17aa7c38a1049d15903fea77c7299a50011310"
+    },
+    {
+      "path": "trips_clean/part-031.parquet",
+      "bytes": 34004399,
+      "sha256": "3bc79fca1d2aecbce5053d9b84bcf85dae87c7ffed96b60431f667a20d579960"
+    },
+    {
+      "path": "trips_clean/part-032.parquet",
+      "bytes": 21082510,
+      "sha256": "f74e9fbb82d14eb955b7083a92f908c2f0b0014d718f39dc7c0cdb8757b02e67"
+    },
+    {
+      "path": "trips_clean/part-033.parquet",
+      "bytes": 11220173,
+      "sha256": "49bc19a2468c86f23825df66cad77b95ba1703e49f48323e1b1011efd66741fb"
+    },
+    {
+      "path": "trips_clean/part-034.parquet",
+      "bytes": 11904211,
+      "sha256": "f018f614e6eb7ef35218cff830db18bd148875134b59e0edeb2ef3cd8e986692"
+    },
+    {
+      "path": "trips_clean/part-035.parquet",
+      "bytes": 12103750,
+      "sha256": "3732832dada9636490647cddbef3b0b8b2f8b74222f7df2b40d40623b43f7c26"
+    },
+    {
+      "path": "trips_clean/part-036.parquet",
+      "bytes": 16578738,
+      "sha256": "6cd8c93d2fa8811b2fd613b7b3299edc5febf78565913d5e39e184ab3dc8494e"
+    },
+    {
+      "path": "trips_clean/part-037.parquet",
+      "bytes": 26439575,
+      "sha256": "25abc0d4ff09493bb2a67da2851c02f87227cab90ce300c47291f7185a780139"
+    },
+    {
+      "path": "trips_clean/part-038.parquet",
+      "bytes": 38281706,
+      "sha256": "67cbf5084cad720bb906c61dd851719b751df6def9aee89ba997ea3762e9ab6e"
+    },
+    {
+      "path": "trips_clean/part-039.parquet",
+      "bytes": 43880965,
+      "sha256": "2616d5254a518a22d1fdca8a67f937a5e880630bfe3611dd4ac9167255f17cc1"
+    },
+    {
+      "path": "trips_clean/part-040.parquet",
+      "bytes": 46961263,
+      "sha256": "a0dfc23862ec92510da4fa12c914d685c4f4a348828e29d34e80aa44fc978e8d"
+    },
+    {
+      "path": "trips_clean/part-041.parquet",
+      "bytes": 47819480,
+      "sha256": "5b88257763ab4b96396aa29f6a83487270d9cf974980415af02f10bbdb4f8c91"
+    },
+    {
+      "path": "trips_clean/part-042.parquet",
+      "bytes": 41517354,
+      "sha256": "381895dc0517afd6d40618186967c6e21c97a435f6457363e5e0a8332523efff"
+    },
+    {
+      "path": "trips_clean/part-043.parquet",
+      "bytes": 32889078,
+      "sha256": "1dfde32ee23d85a373cd7c309b61ec38e603cf9fcbe02ad545cf5c6e6a583208"
+    },
+    {
+      "path": "trips_clean/part-044.parquet",
+      "bytes": 22549927,
+      "sha256": "ea041a6027c36f414d9a87c3fe45bca3c1248a956b4bbb93dd277eedc770186f"
+    },
+    {
+      "path": "trips_clean/part-045.parquet",
+      "bytes": 13757237,
+      "sha256": "f643320c387fa65f8d3d5d8aeb4267842fef8939dbc7f8046a9ea7bcad806474"
+    },
+    {
+      "path": "trips_clean/part-046.parquet",
+      "bytes": 9224477,
+      "sha256": "c1c484ab011f8011eb9e3b4a53daeab6f7ac29d77b873efc599084354e89e8ac"
+    },
+    {
+      "path": "trips_clean/part-047.parquet",
+      "bytes": 15153075,
+      "sha256": "1751801d8597281f8fae8b4c4f08f790121f32d81aa93e43ef8c5d8be4128eb9"
+    },
+    {
+      "path": "trips_clean/part-048.parquet",
+      "bytes": 18960621,
+      "sha256": "ab11f0e5d094f4d515388d611917ab5e320b7318603a6d9b3e96f04aae06c803"
+    },
+    {
+      "path": "trips_clean/part-049.parquet",
+      "bytes": 24558637,
+      "sha256": "38889dbf28a98daa341c6e78653b51a376b7b4948e00433a47defba7ee0743a4"
+    },
+    {
+      "path": "trips_clean/part-050.parquet",
+      "bytes": 36130253,
+      "sha256": "87266fdc6c6d48580367bc2235360cb7ed24a0a2a3a3a6e0e03dddb7e39bcc22"
+    },
+    {
+      "path": "trips_clean/part-051.parquet",
+      "bytes": 45246542,
+      "sha256": "1855f1b55ec30481aa6dd5f9be13fc8d4bdb30d4979faa049ef3d6fb3202a9e6"
+    },
+    {
+      "path": "trips_clean/part-052.parquet",
+      "bytes": 49295407,
+      "sha256": "30300e69dde9f4a19a1dc6afbfda7505922c55de7b594ff1a5de44d796d92ec2"
+    },
+    {
+      "path": "trips_clean/part-053.parquet",
+      "bytes": 48559547,
+      "sha256": "c85f3200188c6baeebba93c883c5d952eb9b38b7f0f31d96153059299e4779da"
+    },
+    {
+      "path": "trips_clean/part-054.parquet",
+      "bytes": 43871708,
+      "sha256": "4ccc186dbe4d93d5d2648a6ddd2ede5160ae9c3b21ff06332a0dc09419502439"
+    },
+    {
+      "path": "trips_clean/part-055.parquet",
+      "bytes": 39964926,
+      "sha256": "92de125d43be0ddbfea595c229ead77ca39573e2ca6f27262c31ea3d746784f2"
+    },
+    {
+      "path": "trips_clean/part-056.parquet",
+      "bytes": 22218538,
+      "sha256": "d4fe81a55d3dbe5f4b0e7d6ed629b6baa008ead10c788c0c9af4cdf88a03ef3d"
+    },
+    {
+      "path": "trips_clean/part-057.parquet",
+      "bytes": 11709591,
+      "sha256": "a5d1f4c196c0ebd46e5447721e2dab43fc0ffea36befe407bead90f8a0a98e9d"
+    },
+    {
+      "path": "trips_clean/part-058.parquet",
+      "bytes": 9117929,
+      "sha256": "5dbd2017804a35596115099c44334c9bfde6f8551cbcf5adf073128f11f5c5f7"
+    },
+    {
+      "path": "trips_clean/part-059.parquet",
+      "bytes": 9815354,
+      "sha256": "601b5a71516f6953e156cf99dc2f29090e911cb23d8c8e5db3a6e1e7ce3ce80c"
+    },
+    {
+      "path": "trips_clean/part-060.parquet",
+      "bytes": 18665954,
+      "sha256": "fdb1ac1a61025540b27d2390beaaa4f1f4bc5dd73974ed12ef230a305d758b35"
+    },
+    {
+      "path": "trips_clean/part-061.parquet",
+      "bytes": 23211005,
+      "sha256": "8c8b2412146a4c100eff0d3c33f49edf0f0ef4189c27d0235628c7d1d255f1e9"
+    },
+    {
+      "path": "trips_clean/part-062.parquet",
+      "bytes": 30658772,
+      "sha256": "2a03090fb999a9453c95bd99043e4187146270e4ccd64006663d47fad64589b8"
+    },
+    {
+      "path": "trips_clean/part-063.parquet",
+      "bytes": 40023973,
+      "sha256": "665b565d686de4307615412f1578d877d8b2501c3af6f7980c6cba6b32ec2f30"
+    },
+    {
+      "path": "trips_clean/part-064.parquet",
+      "bytes": 44364323,
+      "sha256": "0595ab4e094da1184af2e5fb31c5602edbff67eafa24e25596389385d68bd434"
+    },
+    {
+      "path": "trips_clean/part-065.parquet",
+      "bytes": 45872661,
+      "sha256": "361e539c0047e57d76e8d17a17493a686ad67d138a6fee0c24a67043d943159c"
+    },
+    {
+      "path": "trips_clean/part-066.parquet",
+      "bytes": 41558445,
+      "sha256": "65af5f79c6c0618e3e2189a733aac9c41f0d2584d71e20a599ffcde12b99ccc4"
+    },
+    {
+      "path": "trips_clean/part-067.parquet",
+      "bytes": 37254322,
+      "sha256": "25ede094cff5c39b29309bcbf98c859f4449a577cbc6135e382fbda3895c4beb"
+    },
+    {
+      "path": "trips_clean/part-068.parquet",
+      "bytes": 21081011,
+      "sha256": "66772b4b4113e213123c7b4a1ef754052e0e9bf5e8cf89d1571f881d4d52cae3"
+    },
+    {
+      "path": "trips_clean/part-069.parquet",
+      "bytes": 8707446,
+      "sha256": "f8dceba6a9fc8e3b98e81d023c8c12f0be45f813b39156d6de51794aae648c53"
+    },
+    {
+      "path": "trips_clean/part-070.parquet",
+      "bytes": 8912888,
+      "sha256": "d232cc41b4520b84f67806606ea825f6670716ff47d03652b1646eb3a76d0a0c"
+    },
+    {
+      "path": "trips_clean/part-071.parquet",
+      "bytes": 13268645,
+      "sha256": "99504a444737849606471a5fd3d0717ac0f2aacf068ef2b4b4bd45833983b87c"
+    },
+    {
+      "path": "trips_clean/part-072.parquet",
+      "bytes": 20064507,
+      "sha256": "8fea77c7eb99cd83c3de0734d2a4049d97b7c0ef182686376e28d36afe24f77a"
+    },
+    {
+      "path": "trips_clean/part-073.parquet",
+      "bytes": 26977279,
+      "sha256": "5d9e7baf4885c72b12e3b82384123aef5c669b21b6b190b3a0e8f90bd212565b"
+    },
+    {
+      "path": "trips_clean/part-074.parquet",
+      "bytes": 38761073,
+      "sha256": "040845e114f934559f308b3deaeb06e1c0a85e577f5598ccd08528db820c03e0"
+    },
+    {
+      "path": "trips_clean/part-075.parquet",
+      "bytes": 45721820,
+      "sha256": "e13b671855c5c6e50c0dddc81a90306f9dcc0e2a2d4cdb3914afaa4de7aa591a"
+    },
+    {
+      "path": "trips_clean/part-076.parquet",
+      "bytes": 49918701,
+      "sha256": "0c070cf65d1b2f8aa6431b17bea07e687dc7bc7032794565662c950a0b5a0d46"
+    },
+    {
+      "path": "trips_clean/part-077.parquet",
+      "bytes": 49494422,
+      "sha256": "55ba8932aef0ad19b1bb13b42c564c39bf6ae78d48f2d013cefd3b139f0b7e71"
+    },
+    {
+      "path": "trips_clean/part-078.parquet",
+      "bytes": 45073434,
+      "sha256": "86f37f2b6649f98ecc2a25a457735c393576ecd3718fc5520b6ba812b05b7777"
+    },
+    {
+      "path": "trips_clean/part-079.parquet",
+      "bytes": 46732239,
+      "sha256": "8b7c77a2b40dea0231fe883f8601b9a1a5e95e68e3e4c3d041a42acf889e131d"
+    },
+    {
+      "path": "trips_clean/part-080.parquet",
+      "bytes": 44755411,
+      "sha256": "ce93e14fb1e4f9353c624074118499ce834eb4f713d0a8e3df5b2c11c33a2dc6"
+    },
+    {
+      "path": "trips_clean/part-081.parquet",
+      "bytes": 52956346,
+      "sha256": "129212442045627a97f9f4867c75313737478bb01bd88497f4ea9b3b7c644b03"
+    },
+    {
+      "path": "trips_clean/part-082.parquet",
+      "bytes": 23709357,
+      "sha256": "dc7cfc3f7cda1578722005073ce8cb2bf0c0221bd4b719764677a73c4cbde21d"
+    },
+    {
+      "path": "trips_clean/part-083.parquet",
+      "bytes": 40677755,
+      "sha256": "7a0e20fb5c3ea0d096fed13b2cf9e67b0aa5751476907b4a2d02c3d1fee29a7d"
+    },
+    {
+      "path": "trips_clean/part-084.parquet",
+      "bytes": 25919848,
+      "sha256": "99b10116e155cbc0b200fff6242f9869a031b04c7cf283ffe876ebda610e9261"
+    },
+    {
+      "path": "trips_clean/part-085.parquet",
+      "bytes": 11767896,
+      "sha256": "09d980b08af654bd516dda47a767101fef244bf4e2df5967d6968f0dfde7e9bb"
+    },
+    {
+      "path": "trips_clean/part-086.parquet",
+      "bytes": 52645805,
+      "sha256": "a22e18bab1d6c1d11fa77a7e144ce21c1a0d74ef1634f3ac27e5c31db2465d89"
+    },
+    {
+      "path": "trips_clean/part-087.parquet",
+      "bytes": 36727697,
+      "sha256": "d309f4a53f9b1a7712e54ce2ac8b462be396cd4355dc58a637404f7cf3ed21cd"
+    },
+    {
+      "path": "trips_clean/part-088.parquet",
+      "bytes": 24466753,
+      "sha256": "84d24d54c53477d15fd96efb14c525f07efa4dc444b6faa650f463010babcbba"
+    },
+    {
+      "path": "trips_clean/part-089.parquet",
+      "bytes": 28382983,
+      "sha256": "5a94470a73a65251ac301faa0c03ea452c7e49af2493ce96cacd6ec303d975da"
+    },
+    {
+      "path": "trips_clean/part-090.parquet",
+      "bytes": 30690554,
+      "sha256": "de93ea656515bda8e5acb744a37327515ea7ddeb77cd42d0bef8e807e7d7ed77"
+    },
+    {
+      "path": "trips_clean/part-091.parquet",
+      "bytes": 13760506,
+      "sha256": "807a0a7a5dafcb0aabd5bffe5429f52696356f175003905ac61d00d306e40ce2"
+    },
+    {
+      "path": "trips_clean/part-092.parquet",
+      "bytes": 21016119,
+      "sha256": "2a78e386a35293e751a6fd66a1aa4acdcfe1b417d3fd632e0060e9aefaa3377a"
+    },
+    {
+      "path": "trips_clean/part-093.parquet",
+      "bytes": 27353485,
+      "sha256": "fc3dc24e0502d52acee3d19065b105661267f44e9bedb59dbd3fb1253fb715b2"
+    },
+    {
+      "path": "trips_clean/part-094.parquet",
+      "bytes": 23337424,
+      "sha256": "2ad362230ab81734a5823620c58694fd5e798c3769f80e438ae9b137ec724cbe"
+    },
+    {
+      "path": "trips_clean/part-095.parquet",
+      "bytes": 94618140,
+      "sha256": "35b3072993a44757bd98a82bf719c933092e38d3af4cc264444405d5e5ee294f"
+    },
+    {
+      "path": "trips_clean/part-096.parquet",
+      "bytes": 45140593,
+      "sha256": "2dfff43d6dc696a165c346cd6185f4dfe8bdf4c739af3e637ff434daebfc8c10"
+    },
+    {
+      "path": "trips_clean/part-097.parquet",
+      "bytes": 28583745,
+      "sha256": "c1091b18b9e61249b499d16f9914531878027ca0ee31e5d85ae55d477241976d"
+    },
+    {
+      "path": "trips_clean/part-098.parquet",
+      "bytes": 73694935,
+      "sha256": "58f6b2c30eb7c71cc91c4f708c364934f02616d4efe355b782a3155be0375018"
+    },
+    {
+      "path": "trips_clean/part-099.parquet",
+      "bytes": 105218027,
+      "sha256": "123a4ea7e44e73e9c3a1cd1049e59e125529b3b581185ea9400e8aa5fc480f8c"
+    },
+    {
+      "path": "trips_clean/part-100.parquet",
+      "bytes": 39253370,
+      "sha256": "84ae5c93dd30b80afe6ee21ce0380403cc7771a573ce5bc8c10a3403a3634234"
+    },
+    {
+      "path": "trips_clean/part-101.parquet",
+      "bytes": 25598446,
+      "sha256": "1ad70e09a53cf0951002fee82d40509fbbb2b58249e5c319ed5084b1fd62004f"
+    },
+    {
+      "path": "trips_clean/part-102.parquet",
+      "bytes": 70027556,
+      "sha256": "87ece9dcbceca56a34b19552de2f2d9bcbe1b545a8ff3ab3f819dda1f4d73551"
+    },
+    {
+      "path": "trips_clean/part-103.parquet",
+      "bytes": 99794251,
+      "sha256": "4d855299a93235ad389aa4e2dca986ee2ee5426009c252c763614df78443e754"
+    },
+    {
+      "path": "trips_clean/part-104.parquet",
+      "bytes": 42503302,
+      "sha256": "9df9e6caa4c4e7355bd914a3af557ef557764b48c7c43f2f97445463f2a9ba1a"
+    },
+    {
+      "path": "trips_clean/part-105.parquet",
+      "bytes": 24246977,
+      "sha256": "8ef5da50ce33050cca7fa4c881921903fc697fab6a6ad19cc0a43acf16d5aad3"
+    },
+    {
+      "path": "trips_clean/part-106.parquet",
+      "bytes": 73317865,
+      "sha256": "e47d931804cf559cb97c24757f7fe130fcdb50795473576846c8782d84f3757d"
+    },
+    {
+      "path": "trips_clean/part-107.parquet",
+      "bytes": 108528699,
+      "sha256": "0397ad262f14215975d64799b6757af900ddea51d9ac35debf67e0ab9b658c48"
+    },
+    {
+      "path": "trips_clean/part-108.parquet",
+      "bytes": 46458270,
+      "sha256": "3535d9ab8eebecd55ea92ec6d4af214ebaf4491db87e4010bb155257d7bbb52d"
+    },
+    {
+      "path": "trips_clean/part-109.parquet",
+      "bytes": 33884233,
+      "sha256": "a6b9421a78472aa875147d3ccbac0b1956a88ebe0a3cbb21523fb8a8c0180d04"
+    },
+    {
+      "path": "weather_daily.parquet",
+      "bytes": 186029,
+      "sha256": "f5330ed60a09d00104c0e5ed84b09ed5e939c4720b4ae3bb6844129fe1387e94"
+    },
+    {
+      "path": "weather_observations.parquet",
+      "bytes": 609555,
+      "sha256": "a2c6c026b096ee5379b446a1aac7bd99d3d6cd5a18e3e22b19a9a66ad75c79c3"
+    }
+  ]
+}

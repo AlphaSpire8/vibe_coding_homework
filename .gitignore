@@ -14,3 +14,5 @@ AGENTS.md
 
 # Original datasets remain on the server.
 /data/raw/
+/data/processed/
+/data/.prepare-*/
