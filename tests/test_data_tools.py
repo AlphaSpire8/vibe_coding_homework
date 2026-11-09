@@ -1,14 +1,18 @@
 import gzip
+import json
 import unittest
-from contextlib import contextmanager
+from contextlib import contextmanager, redirect_stdout
 from datetime import date
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
+from io import StringIO
 from pathlib import Path
 from tempfile import TemporaryDirectory
 from threading import Thread
+from unittest.mock import patch
 from zipfile import ZipFile
 
-from scripts.download_data import download
+from scripts import download_data
+from scripts.download_data import download, sha256, write_json
 from scripts.verify_data import archive_months, inspect_zip, weather_coverage
 
 
@@ -82,6 +86,80 @@ class DownloadTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, "来源清单大小不符"):
                 download(source, root=Path(directory), attempts=1)
             self.assertFalse((Path(directory) / "data.bin").exists())
+
+
+class ManifestTests(unittest.TestCase):
+    def test_discovery_failure_preserves_cached_records(self):
+        for failure in ("listing", "gbfs", "interrupt"):
+            with self.subTest(failure=failure), TemporaryDirectory() as directory:
+                root = Path(directory)
+                manifest = root / "downloads.json"
+                cached = []
+                for name in (
+                    "noaa/weather.csv.gz",
+                    "divvy/stations/station_information.json",
+                ):
+                    path = root / "data/raw" / name
+                    path.parent.mkdir(parents=True, exist_ok=True)
+                    path.write_bytes(b"original snapshot")
+                    cached.append(
+                        {
+                            "path": str(path.relative_to(root)),
+                            "url": "https://example.test/" + name,
+                            "bytes": path.stat().st_size,
+                            "sha256": sha256(path),
+                            "retrieved_at": "2026-01-01T00:00:00+00:00",
+                        }
+                    )
+                write_json(manifest, {"complete": True, "files": cached})
+
+                page = {
+                    "path": "data/raw/sources/divvy_bucket_001.xml",
+                    "group": "source_metadata",
+                    "url": "https://example.test/list",
+                }
+
+                def discover(save):
+                    save(page, refresh=True)
+                    if failure == "interrupt":
+                        raise KeyboardInterrupt()
+                    if failure == "listing":
+                        raise OSError("second listing page failed")
+                    return [
+                        {
+                            "path": "data/raw/divvy/trips/202401-divvy-tripdata.zip",
+                            "expected_bytes": 1,
+                        }
+                    ]
+
+                def fetch(source, *args, **kwargs):
+                    if source["path"].endswith("gbfs.json"):
+                        raise OSError("GBFS index failed")
+                    return {**source, "bytes": 1, "sha256": "page checksum"}
+
+                with (
+                    patch.object(download_data, "ROOT", root),
+                    patch.object(download_data, "MANIFEST", manifest),
+                    patch.object(
+                        download_data, "discover_archives", side_effect=discover
+                    ),
+                    patch.object(download_data, "download", side_effect=fetch),
+                    patch("sys.argv", ["download_data"]),
+                    redirect_stdout(StringIO()),
+                ):
+                    with self.assertRaises(
+                        KeyboardInterrupt if failure == "interrupt" else OSError
+                    ):
+                        download_data.main()
+
+                saved = json.loads(manifest.read_text())
+                records = {record["path"]: record for record in saved["files"]}
+                self.assertFalse(saved["complete"])
+                for record in cached:
+                    self.assertEqual(records.get(record["path"]), record)
+                    self.assertEqual(
+                        (root / record["path"]).read_bytes(), b"original snapshot"
+                    )
 
 
 class VerificationTests(unittest.TestCase):

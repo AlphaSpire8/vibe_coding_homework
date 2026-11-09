@@ -148,11 +148,11 @@ def main():
     records = {record["path"]: record for record in previous.get("files", [])}
     manifest = {"started_at": utc_now(), "complete": False, "files": []}
     active = set()
+    discovery_complete = False
 
     def persist():
-        manifest["files"] = [
-            records[path] for path in sorted(active) if path in records
-        ]
+        paths = active if discovery_complete else records
+        manifest["files"] = [records[path] for path in sorted(paths) if path in records]
         write_json(MANIFEST, manifest)
 
     def save(source, refresh=None):
@@ -225,6 +225,8 @@ def main():
 
     failures = []
     active.update(source["path"] for source in sources)
+    discovery_complete = True
+    persist()
     with ThreadPoolExecutor(max_workers=args.workers) as pool:
         pending = {
             pool.submit(
