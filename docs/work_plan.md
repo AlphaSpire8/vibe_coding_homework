@@ -11,7 +11,7 @@
 
 ## 阶段与验收
 
-阶段 1—3 已完成；下载结果见 [data_download.md](data_download.md)，整理结果见 [data_preparation.md](data_preparation.md)。下一阶段为数据探索。
+阶段 1—4 已完成；下载、整理和探索结果分别见 [data_download.md](data_download.md)、[data_preparation.md](data_preparation.md)、[exploratory_analysis.md](exploratory_analysis.md)。下一阶段共同选题。
 
 | 阶段 | 工作 | 验收产物 |
 | --- | --- | --- |

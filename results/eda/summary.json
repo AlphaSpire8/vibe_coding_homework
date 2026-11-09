@@ -1,0 +1,56 @@
+{
+  "exploration_year": 2024,
+  "holdout_year": 2025,
+  "holdout_relationships_analyzed": false,
+  "rides": 4121607,
+  "riders": {
+    "member": {
+      "rider_type": "member",
+      "rides": 2640636,
+      "median_min": 8.920983333333334,
+      "q25_min": 5.316666666666666,
+      "q75_min": 15.15,
+      "q95_min": 32.8590375,
+      "same_station_share": 0.02439488062724283,
+      "conflicting_rows": 104,
+      "weekend_weekday_ratio": 0.7696768382613423,
+      "weekday_peak_hour_share": 0.5040859379364592,
+      "dry_days": 196,
+      "wet_days": 95,
+      "dry_calendar_index": 104.8809557525617,
+      "wet_calendar_index": 87.13596290804507,
+      "wet_dry_index_ratio": 0.830808246195037
+    },
+    "casual": {
+      "rider_type": "casual",
+      "rides": 1480971,
+      "median_min": 13.697066666666666,
+      "q25_min": 7.733333333333333,
+      "q75_min": 26.090866666666667,
+      "q95_min": 74.30046666666667,
+      "same_station_share": 0.08661682099109301,
+      "conflicting_rows": 138,
+      "weekend_weekday_ratio": 1.580393004932129,
+      "weekday_peak_hour_share": 0.4065178048504441,
+      "dry_days": 196,
+      "wet_days": 95,
+      "dry_calendar_index": 106.92641877407914,
+      "wet_calendar_index": 81.21619738556089,
+      "wet_dry_index_ratio": 0.7595522071786541
+    }
+  },
+  "source_unobserved_days": 0,
+  "weather_missing_days": 0,
+  "paired_daily_duration": {
+    "n_days": 366,
+    "median_gap_min": 3.309095833333333,
+    "casual_longer_days": 349
+  },
+  "stations": {
+    "start_ids": 1717,
+    "multiple_names": 85,
+    "mapped_ids": 1717,
+    "top10_start_share": 0.08665066805253388
+  },
+  "months_casual_weekend_ratio_above_member": 12
+}

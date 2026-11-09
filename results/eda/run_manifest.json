@@ -1,0 +1,167 @@
+{
+  "generated_at": "2026-11-09T12:58:25+00:00",
+  "scope": {
+    "exploration_year": 2024,
+    "holdout_year": 2025,
+    "wet_threshold_mm": 1.0,
+    "temperature_bin_width_c": 5.0,
+    "peak_hours": [
+      7,
+      8,
+      9,
+      16,
+      17,
+      18
+    ],
+    "quality_scope": "all_years_existing_preparation_counts_only",
+    "holdout_behavior_and_weather_analysis": false
+  },
+  "preparation_manifest_sha256": "24ab165cad6504a0b3fafedff08673fe1abfbf3859fd51d9845f812dbadf48ec",
+  "config_sha256": "9b9e8597faa0c6ea3189b0776d7e658455b182865aa49159dba3dbd36b73d93c",
+  "duckdb_version": "2.0.0",
+  "numpy_version": "2.5.4",
+  "matplotlib_version": "3.11.2",
+  "uv_lock_sha256": "16b500f5274601b6a708deea66ae0ab9ae6ce96288b4c2eac1ca7e9c421ade19",
+  "code_sha256": {
+    "explore_data.py": "e444781530f39b0d18652f3bee212a669a6f4a920fc1f8f990f96f26ff564a35",
+    "plot_exploration.py": "2f56a4e359ed8ecdc6391a80a505aa4c8eb74a563728a037ebc1ccb8068adf8d"
+  },
+  "font": "Noto Sans CJK SC",
+  "results": [
+    {
+      "path": "figures/01_selection_quality.pdf",
+      "sha256": "2407af9b9c18c5bd7767291a16023d901ada2918c3d5649d0ec0567f8a933e11",
+      "bytes": 32726
+    },
+    {
+      "path": "figures/01_selection_quality.png",
+      "sha256": "950d92d724fa59edd800f9d144ec4fbce7241e4c48235c7c39224d4a35e03675",
+      "bytes": 135097
+    },
+    {
+      "path": "figures/02_time_patterns.pdf",
+      "sha256": "7370b59187515690bfeb7e40301e272796706dd27274a4ce29ba7cd2d838d41f",
+      "bytes": 25059
+    },
+    {
+      "path": "figures/02_time_patterns.png",
+      "sha256": "b77e9fa6e21079eddf20343bb1846a7572f46a9abfb1405f4613fa6e0d9db4c1",
+      "bytes": 188883
+    },
+    {
+      "path": "figures/03_duration_distribution.pdf",
+      "sha256": "694e18d474628314d112a8b95a57d6668d8f71891d5f415a64a34e80c6ddd598",
+      "bytes": 25163
+    },
+    {
+      "path": "figures/03_duration_distribution.png",
+      "sha256": "3da519f31f4c5c60af6c8f92226b7e042b68ac1182ce27bd3b179800526ef6f2",
+      "bytes": 103379
+    },
+    {
+      "path": "figures/04_station_patterns.pdf",
+      "sha256": "747b4b7b5a5ee67902a19dfdc2009c339e04ec625678a5394d51cc61ccfe7562",
+      "bytes": 332196
+    },
+    {
+      "path": "figures/04_station_patterns.png",
+      "sha256": "959cd9d40f2e10200d0607257c6af599e6faf05a89e1e7401e633ab0d2bb0077",
+      "bytes": 270413
+    },
+    {
+      "path": "figures/05_weather_patterns.pdf",
+      "sha256": "e86888ea225298f7bef224ba4bb70c280204f4ed1c26efdd9e05f18dfd38119f",
+      "bytes": 36575
+    },
+    {
+      "path": "figures/05_weather_patterns.png",
+      "sha256": "4b7b56a3a32b77a5ac426427fa9396a6bd217021cdeeeed7901d859af2790030",
+      "bytes": 190007
+    },
+    {
+      "path": "figures/06_weather_correlations.pdf",
+      "sha256": "e4ffa120f386ee59d14add3549d5d418898fafd84780037c535f883fb2978ee2",
+      "bytes": 36298
+    },
+    {
+      "path": "figures/06_weather_correlations.png",
+      "sha256": "218ad53753b93f7624b8818aa9cfe9da0ca4fede4a68f8a74c3c51121a3f02e1",
+      "bytes": 102625
+    },
+    {
+      "path": "summary.json",
+      "sha256": "bafa08c558c968a4a5fe6a46ef1094e6d95b6cc954510b6c51246bc18fa08d5f",
+      "bytes": 1681
+    },
+    {
+      "path": "tables/correlations.csv",
+      "sha256": "2e73597165d2bb029bb6b10761658e4a84f6e914023f4e1cd93b3e5eb04fc8ab",
+      "bytes": 1184
+    },
+    {
+      "path": "tables/coverage_history.csv",
+      "sha256": "4e6c59bc6a147dc561e304ade24893184dd0d3837b211cf58324d351e070139d",
+      "bytes": 956
+    },
+    {
+      "path": "tables/daily.csv",
+      "sha256": "7869ca2536258aa840bb6eec29a1ddb5723b0700bcfc5509850cb7a010d32b1b",
+      "bytes": 95559
+    },
+    {
+      "path": "tables/day_type.csv",
+      "sha256": "1137499c7359a55bb6e59e00732eb0232bf216f27859de4672361c21e4711471",
+      "bytes": 283
+    },
+    {
+      "path": "tables/duration_cdf.csv",
+      "sha256": "3c49a3b4f6e30d82bbe918b0c96f6c24d514fec4a128ffd421c7ef9eadecd30b",
+      "bytes": 79622
+    },
+    {
+      "path": "tables/hourly.csv",
+      "sha256": "883fc48a8886016bc65cd9b16c9ea01bcd31b8f19fbfa81fc2d1dda2957d1231",
+      "bytes": 4011
+    },
+    {
+      "path": "tables/low_index_days.csv",
+      "sha256": "4ead8ad0fd8bca00692cecbefd0c09d86152b853ede9e504ca865be226a26523",
+      "bytes": 623
+    },
+    {
+      "path": "tables/monthly.csv",
+      "sha256": "9507d82065697331aa02940284f1f6ca597882a67b2eda93c514858589f8f62a",
+      "bytes": 891
+    },
+    {
+      "path": "tables/monthly_weekend.csv",
+      "sha256": "c2680f2b7a66bb20bd3480eadc15ae41bdfb2b8595795888cf4e963607594479",
+      "bytes": 713
+    },
+    {
+      "path": "tables/rain.csv",
+      "sha256": "31bfcdfbb244c342e5306a4960b6c164460b0c0937ce1dc9a2561925a85b7d02",
+      "bytes": 504
+    },
+    {
+      "path": "tables/rider_summary.csv",
+      "sha256": "5561461f800c8fd027c6980f8b316c017544a749a6bdb14e809550757d9e63e0",
+      "bytes": 293
+    },
+    {
+      "path": "tables/selection_quality.csv",
+      "sha256": "83c5c143dac5056f7a209d9bde6b08592d52b4b61cbcc9bb73ffe362e7083724",
+      "bytes": 366
+    },
+    {
+      "path": "tables/stations.csv",
+      "sha256": "9002c5d4a4b9382873048b3289b15ada043d4fa5b69346646ce85a3f8bf82483",
+      "bytes": 138639
+    },
+    {
+      "path": "tables/temperature.csv",
+      "sha256": "520484bea2b5e4e5b94abc58bc07fd63d245485feb793ebc46cf46ee53d020f2",
+      "bytes": 1199
+    }
+  ]
+}

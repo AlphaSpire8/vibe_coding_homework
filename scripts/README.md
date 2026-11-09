@@ -3,6 +3,8 @@
 - `download_data.py`：根据完整分页清单下载全部 Divvy ZIP；获取两个 NOAA 站点的完整日观测档案、GBFS 站点快照和来源文档。
 - `verify_data.py`：离线检查大小、SHA-256、ZIP/GZIP 完整性、JSON 格式与时间覆盖，生成清单和阶段报告。
 - `prepare_data.py`：统一历年字段、天气单位与质量标记，生成全量表、过滤子集和整理报告。
+- `explore_data.py`：按冻结配置计算质量、描述、时空与天气关联统计，检查汇总守恒及年份边界。
+- `plot_exploration.py`：将探索汇总绘制为中文 PNG/PDF。
 - `__init__.py`：支持从项目根目录以模块方式运行。
 
 在项目根目录执行，统一使用根目录 uv 环境：
@@ -12,6 +14,7 @@ uv sync --locked
 uv run python -m scripts.download_data
 uv run python -m scripts.verify_data
 uv run python -m scripts.prepare_data
+uv run python -m scripts.explore_data
 ```
 
 下载支持失败后重跑，复用大小与校验值匹配的文件；单个文件通过临时文件写入。默认并发数为 4，可用 `--workers` 调整。`--refresh` 重新获取全部文件；默认保留已下载的天气与 GBFS 快照，Divvy 文件列表每次重新获取。
@@ -23,3 +26,5 @@ uv run python -m scripts.prepare_data
 整理使用 DuckDB，默认最多 4 个线程与 4 GiB 数据库内存；逐个临时解压 CSV。全部处理和记录数核对成功后替换 `data/processed/`，失败时保留原有整理结果。规则与口径见 `docs/data_dictionary.md`。
 
 仅调整过滤规则时，可执行 `uv run python -m scripts.prepare_data --filter-only`，核验并复用已有标准化表，重新生成过滤子集和审计。字段映射、时间解析或单位规则改变时须完整执行，不能使用该选项。
+
+探索读取 `configs/exploration.json`，输出至 `results/eda/`，使用 Matplotlib 与中文系统字体（服务器已安装 Noto Sans CJK）。2025 年仅复用已有质量计数，行为及天气关系统计限定在 2024 年；范围变更须先讨论。图表按日聚合天气关联，研究报告与候选问题由阅读结果后撰写。
