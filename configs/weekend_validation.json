@@ -1,0 +1,52 @@
+{
+  "protocol_id": "weekend_rider_ratio_v1",
+  "execution_status": "not_executed",
+  "selected_question": "A",
+  "discovery_year": 2024,
+  "validation_year": 2025,
+  "trip_dataset": "data/processed/trips_clean/*.parquet",
+  "rider_types": ["member", "casual"],
+  "weekend_iso_days": [6, 7],
+  "holiday_reclassification": false,
+  "primary": {
+    "effect": "casual_weekend_weekday_ratio_divided_by_member_ratio",
+    "null_boundary": 1.0,
+    "alternative": "greater_than_one",
+    "unit": "paired_calendar_day",
+    "missing_source_day_action": "stop_for_data_quality_review",
+    "zero_group_total_action": "report_not_estimable_without_pseudocount"
+  },
+  "uncertainty": {
+    "method": "paired_calendar_week_cluster_bootstrap_with_month_strata",
+    "week_key": "monday_date",
+    "month_stratum": "month_of_first_observed_date_in_week",
+    "retain_partial_boundary_weeks": true,
+    "replicates": 10000,
+    "seed": 20261109,
+    "percentile_interval": [0.025, 0.975],
+    "minimum_valid_fraction": 0.99
+  },
+  "weather_experiment": {
+    "strata": ["calendar_month", "temperature_bin", "precipitation_state"],
+    "temperature": "(tmax_c+tmin_c)/2",
+    "temperature_bin_width_c": 10,
+    "temperature_bin_origin_c": 0,
+    "temperature_bin_closure": "left_closed_right_open",
+    "wet_threshold_mm": 1.0,
+    "precipitation_states": ["zero_without_trace", "trace_or_below_threshold", "at_least_threshold"],
+    "minimum_weekend_days_per_stratum": 2,
+    "minimum_weekday_days_per_stratum": 2,
+    "minimum_supported_strata_for_summary": 5,
+    "summary": "day_count_weighted_geometric_mean_of_stratum_ratio_ratios",
+    "common_support": "weather_and_day_type_only",
+    "zero_supported_group_total_action": "report_summary_not_estimable_without_dropping_strata",
+    "secondary_interval": "not_planned",
+    "report_full_and_common_support_unstratified_effects": true,
+    "relax_thresholds_after_validation": false
+  },
+  "decision_rule": {
+    "primary_support": "point_estimate_gt_1_and_95pct_interval_lower_gt_1",
+    "secondary_role": "descriptive_robustness_on_common_support",
+    "causal_claim": false
+  }
+}

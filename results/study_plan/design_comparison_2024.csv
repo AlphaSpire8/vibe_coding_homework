@@ -1,0 +1,5 @@
+temperature_width_c,minimum_weekend_days,minimum_weekday_days,nonempty_cells,supported_cells,supported_days,coverage_fraction,supported_weekend_days,supported_weekday_days,covered_months,missing_weather_days
+5,2,2,119,21,144,0.39344262295081966,50,94,11,0
+5,3,3,119,5,50,0.1366120218579235,18,32,5,0
+10,2,2,82,25,226,0.6174863387978142,76,150,12,0
+10,3,3,82,13,149,0.40710382513661203,52,97,11,0

@@ -5,6 +5,7 @@
 - `prepare_data.py`：统一历年字段、天气单位与质量标记，生成全量表、过滤子集和整理报告。
 - `explore_data.py`：按冻结配置计算质量、描述、时空与天气关联统计，检查汇总守恒及年份边界。
 - `plot_exploration.py`：将探索汇总绘制为中文 PNG/PDF。
+- `check_weekend_plan.py`：仅用发现年天气与日期检查分层覆盖，生成验证年纯日历周块。
 - `__init__.py`：支持从项目根目录以模块方式运行。
 
 在项目根目录执行，统一使用根目录 uv 环境：
@@ -28,3 +29,5 @@ uv run python -m scripts.explore_data
 仅调整过滤规则时，可执行 `uv run python -m scripts.prepare_data --filter-only`，核验并复用已有标准化表，重新生成过滤子集和审计。字段映射、时间解析或单位规则改变时须完整执行，不能使用该选项。
 
 探索读取 `configs/exploration.json`，输出至 `results/eda/`，使用 Matplotlib 与中文系统字体（服务器已安装 Noto Sans CJK）。2025 年仅复用已有质量计数，行为及天气关系统计限定在 2024 年；范围变更须先讨论。图表按日聚合天气关联，研究报告与候选问题由阅读结果后撰写。
+
+验证方案的可行性检查执行 `uv run python -m scripts.check_weekend_plan`，读取 `configs/weekend_validation.json` 和已有探索日表，核对年份及校验值后输出至 `results/study_plan/`；不计算行程效应，不读取 2025 年行程或天气。

@@ -11,7 +11,7 @@
 
 ## 阶段与验收
 
-阶段 1—4 已完成；下载、整理和探索结果分别见 [data_download.md](data_download.md)、[data_preparation.md](data_preparation.md)、[exploratory_analysis.md](exploratory_analysis.md)。下一阶段共同选题。
+阶段 1—4 已完成；下载、整理和探索结果分别见 [data_download.md](data_download.md)、[data_preparation.md](data_preparation.md)、[exploratory_analysis.md](exploratory_analysis.md)。阶段 5 已选 A 并形成 [验证方案](weekend_study_protocol.md)，待 PR 审阅；之后进入阶段 6，执行 2025 年主验证和天气分层实验。
 
 | 阶段 | 工作 | 验收产物 |
 | --- | --- | --- |
