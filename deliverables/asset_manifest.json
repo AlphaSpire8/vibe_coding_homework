@@ -1,0 +1,46 @@
+{
+  "purpose": "presentation_only_no_new_statistical_analysis",
+  "inputs": [
+    {
+      "path": "results/eda/run_manifest.json",
+      "sha256": "2a1cbe31386411b07e8981138a49d79f1e592e1659e4a7466cca6cc348055eb9"
+    },
+    {
+      "path": "results/eda/summary.json",
+      "sha256": "bafa08c558c968a4a5fe6a46ef1094e6d95b6cc954510b6c51246bc18fa08d5f"
+    },
+    {
+      "path": "results/eda/tables/monthly_weekend.csv",
+      "sha256": "c2680f2b7a66bb20bd3480eadc15ae41bdfb2b8595795888cf4e963607594479"
+    },
+    {
+      "path": "results/validation/run_manifest.json",
+      "sha256": "1153b1f831852f3cfe86ded06775ea92608b73308ffe1b0f25914a06b8f9e254"
+    },
+    {
+      "path": "results/validation/summary.json",
+      "sha256": "b2ca6059da3f9656c99edcc0718a61d337fdc38a2fdf35b72a0c4a4d4073ae8a"
+    }
+  ],
+  "code_sha256": "176fa385b207509b41121ae540edeafb5dbbc98d833a6b358b7db8002dce07de",
+  "uv_lock_sha256": "16b500f5274601b6a708deea66ae0ab9ae6ce96288b4c2eac1ca7e9c421ade19",
+  "font": "Noto Sans CJK SC",
+  "outputs": [
+    {
+      "path": "slides/discovery.pdf",
+      "sha256": "6c31a4a477987e6e6f0e87285a5daeb2132f12b7601c40b1bf0e1b445665d912"
+    },
+    {
+      "path": "slides/validation.pdf",
+      "sha256": "405dced75a323b4fb264ea59035cb3989de68c5d12a18137252c478069617584"
+    },
+    {
+      "path": "report/discovery.pdf",
+      "sha256": "6c31a4a477987e6e6f0e87285a5daeb2132f12b7601c40b1bf0e1b445665d912"
+    },
+    {
+      "path": "report/validation.pdf",
+      "sha256": "405dced75a323b4fb264ea59035cb3989de68c5d12a18137252c478069617584"
+    }
+  ]
+}
