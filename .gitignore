@@ -11,3 +11,6 @@ wheels/
 
 # instructions for agents
 AGENTS.md
+
+# Original datasets remain on the server.
+/data/raw/

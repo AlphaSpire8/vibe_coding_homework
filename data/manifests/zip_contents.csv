@@ -1,0 +1,216 @@
+archive,member,kind,uncompressed_bytes,crc32,columns
+202004-divvy-tripdata.zip,202004-divvy-tripdata.csv,trips,14254024,81313568,"[""ride_id"", ""rideable_type"", ""started_at"", ""ended_at"", ""start_station_name"", ""start_station_id"", ""end_station_name"", ""end_station_id"", ""start_lat"", ""start_lng"", ""end_lat"", ""end_lng"", ""member_casual""]"
+202004-divvy-tripdata.zip,__MACOSX/._202004-divvy-tripdata.csv,other,434,364d4ec3,[]
+202005-divvy-tripdata.zip,202005-divvy-tripdata.csv,trips,33628525,46dcabb8,"[""ride_id"", ""rideable_type"", ""started_at"", ""ended_at"", ""start_station_name"", ""start_station_id"", ""end_station_name"", ""end_station_id"", ""start_lat"", ""start_lng"", ""end_lat"", ""end_lng"", ""member_casual""]"
+202005-divvy-tripdata.zip,__MACOSX/._202005-divvy-tripdata.csv,other,434,36facd70,[]
+202006-divvy-tripdata.zip,202006-divvy-tripdata.csv,trips,60824000,45894fa7,"[""ride_id"", ""rideable_type"", ""started_at"", ""ended_at"", ""start_station_name"", ""start_station_id"", ""end_station_name"", ""end_station_id"", ""start_lat"", ""start_lng"", ""end_lat"", ""end_lng"", ""member_casual""]"
+202006-divvy-tripdata.zip,__MACOSX/._202006-divvy-tripdata.csv,other,434,bee69143,[]
+202007-divvy-tripdata.zip,202007-divvy-tripdata.csv,trips,97627159,02276861,"[""ride_id"", ""rideable_type"", ""started_at"", ""ended_at"", ""start_station_name"", ""start_station_id"", ""end_station_name"", ""end_station_id"", ""start_lat"", ""start_lng"", ""end_lat"", ""end_lng"", ""member_casual""]"
+202007-divvy-tripdata.zip,__MACOSX/._202007-divvy-tripdata.csv,other,490,a3ddd9d9,[]
+202008-divvy-tripdata.zip,202008-divvy-tripdata.csv,trips,111020987,88d1551c,"[""ride_id"", ""rideable_type"", ""started_at"", ""ended_at"", ""start_station_name"", ""start_station_id"", ""end_station_name"", ""end_station_id"", ""start_lat"", ""start_lng"", ""end_lat"", ""end_lng"", ""member_casual""]"
+202008-divvy-tripdata.zip,__MACOSX/._202008-divvy-tripdata.csv,other,434,bd682703,[]
+202009-divvy-tripdata.zip,202009-divvy-tripdata.csv,trips,95450077,35a2627e,"[""ride_id"", ""rideable_type"", ""started_at"", ""ended_at"", ""start_station_name"", ""start_station_id"", ""end_station_name"", ""end_station_id"", ""start_lat"", ""start_lng"", ""end_lat"", ""end_lng"", ""member_casual""]"
+202009-divvy-tripdata.zip,__MACOSX/._202009-divvy-tripdata.csv,other,434,2b367749,[]
+202010-divvy-tripdata.zip,202010-divvy-tripdata.csv,trips,69333608,10e958ce,"[""ride_id"", ""rideable_type"", ""started_at"", ""ended_at"", ""start_station_name"", ""start_station_id"", ""end_station_name"", ""end_station_id"", ""start_lat"", ""start_lng"", ""end_lat"", ""end_lng"", ""member_casual""]"
+202010-divvy-tripdata.zip,__MACOSX/._202010-divvy-tripdata.csv,other,577,f6c5fb31,[]
+202011-divvy-tripdata.zip,202011-divvy-tripdata.csv,trips,46203255,f1c8afd0,"[""ride_id"", ""rideable_type"", ""started_at"", ""ended_at"", ""start_station_name"", ""start_station_id"", ""end_station_name"", ""end_station_id"", ""start_lat"", ""start_lng"", ""end_lat"", ""end_lng"", ""member_casual""]"
+202011-divvy-tripdata.zip,__MACOSX/._202011-divvy-tripdata.csv,other,577,782933bc,[]
+202012-divvy-tripdata.zip,202012-divvy-tripdata.csv,trips,25031027,d6ba8c4c,"[""ride_id"", ""rideable_type"", ""started_at"", ""ended_at"", ""start_station_name"", ""start_station_id"", ""end_station_name"", ""end_station_id"", ""start_lat"", ""start_lng"", ""end_lat"", ""end_lng"", ""member_casual""]"
+202012-divvy-tripdata.zip,__MACOSX/._202012-divvy-tripdata.csv,other,577,cda6c764,[]
+202101-divvy-tripdata.zip,202101-divvy-tripdata.csv,trips,18391685,3cf95db9,"[""ride_id"", ""rideable_type"", ""started_at"", ""ended_at"", ""start_station_name"", ""start_station_id"", ""end_station_name"", ""end_station_id"", ""start_lat"", ""start_lng"", ""end_lat"", ""end_lng"", ""member_casual""]"
+202101-divvy-tripdata.zip,__MACOSX/._202101-divvy-tripdata.csv,other,577,95d61ab2,[]
+202102-divvy-tripdata.zip,202102-divvy-tripdata.csv,trips,9365975,da5c4e31,"[""ride_id"", ""rideable_type"", ""started_at"", ""ended_at"", ""start_station_name"", ""start_station_id"", ""end_station_name"", ""end_station_id"", ""start_lat"", ""start_lng"", ""end_lat"", ""end_lng"", ""member_casual""]"
+202102-divvy-tripdata.zip,__MACOSX/._202102-divvy-tripdata.csv,other,498,b3640fcb,[]
+202103-divvy-tripdata.zip,202103-divvy-tripdata.csv,trips,43555310,26ad4dd9,"[""ride_id"", ""rideable_type"", ""started_at"", ""ended_at"", ""start_station_name"", ""start_station_id"", ""end_station_name"", ""end_station_id"", ""start_lat"", ""start_lng"", ""end_lat"", ""end_lng"", ""member_casual""]"
+202103-divvy-tripdata.zip,__MACOSX/._202103-divvy-tripdata.csv,other,498,148d4c8d,[]
+202104-divvy-tripdata.zip,202104-divvy-tripdata.csv,trips,64035536,622cca8c,"[""ride_id"", ""rideable_type"", ""started_at"", ""ended_at"", ""start_station_name"", ""start_station_id"", ""end_station_name"", ""end_station_id"", ""start_lat"", ""start_lng"", ""end_lat"", ""end_lng"", ""member_casual""]"
+202104-divvy-tripdata.zip,__MACOSX/._202104-divvy-tripdata.csv,other,477,5c45d3ea,[]
+202105-divvy-tripdata.zip,202105-divvy-tripdata.csv,trips,99896575,7a665ff5,"[""ride_id"", ""rideable_type"", ""started_at"", ""ended_at"", ""start_station_name"", ""start_station_id"", ""end_station_name"", ""end_station_id"", ""start_lat"", ""start_lng"", ""end_lat"", ""end_lng"", ""member_casual""]"
+202105-divvy-tripdata.zip,__MACOSX/._202105-divvy-tripdata.csv,other,477,a48601db,[]
+202106-divvy-tripdata.zip,202106-divvy-tripdata.csv,trips,136439093,7933c34f,"[""ride_id"", ""rideable_type"", ""started_at"", ""ended_at"", ""start_station_name"", ""start_station_id"", ""end_station_name"", ""end_station_id"", ""start_lat"", ""start_lng"", ""end_lat"", ""end_lng"", ""member_casual""]"
+202106-divvy-tripdata.zip,__MACOSX/._202106-divvy-tripdata.csv,other,498,000f71e8,[]
+202107-divvy-tripdata.zip,202107-divvy-tripdata.csv,trips,154040041,fa5ca326,"[""ride_id"", ""rideable_type"", ""started_at"", ""ended_at"", ""start_station_name"", ""start_station_id"", ""end_station_name"", ""end_station_id"", ""start_lat"", ""start_lng"", ""end_lat"", ""end_lng"", ""member_casual""]"
+202107-divvy-tripdata.zip,__MACOSX/._202107-divvy-tripdata.csv,other,498,bfc98fa4,[]
+202108-divvy-tripdata.zip,202108-divvy-tripdata.csv,trips,150970305,cb9e634e,"[""ride_id"", ""rideable_type"", ""started_at"", ""ended_at"", ""start_station_name"", ""start_station_id"", ""end_station_name"", ""end_station_id"", ""start_lat"", ""start_lng"", ""end_lat"", ""end_lng"", ""member_casual""]"
+202108-divvy-tripdata.zip,__MACOSX/._202108-divvy-tripdata.csv,other,598,0bca5284,[]
+202109-divvy-tripdata.zip,202109-divvy-tripdata.csv,trips,141130996,a512adec,"[""ride_id"", ""rideable_type"", ""started_at"", ""ended_at"", ""start_station_name"", ""start_station_id"", ""end_station_name"", ""end_station_id"", ""start_lat"", ""start_lng"", ""end_lat"", ""end_lng"", ""member_casual""]"
+202109-divvy-tripdata.zip,__MACOSX/._202109-divvy-tripdata.csv,other,598,ca8c0551,[]
+202110-divvy-tripdata.zip,202110-divvy-tripdata.csv,trips,116029278,aee560d1,"[""ride_id"", ""rideable_type"", ""started_at"", ""ended_at"", ""start_station_name"", ""start_station_id"", ""end_station_name"", ""end_station_id"", ""start_lat"", ""start_lng"", ""end_lat"", ""end_lng"", ""member_casual""]"
+202110-divvy-tripdata.zip,__MACOSX/._202110-divvy-tripdata.csv,other,598,e8c62add,[]
+202111-divvy-tripdata.zip,202111-divvy-tripdata.csv,trips,65374062,d80850f5,"[""ride_id"", ""rideable_type"", ""started_at"", ""ended_at"", ""start_station_name"", ""start_station_id"", ""end_station_name"", ""end_station_id"", ""start_lat"", ""start_lng"", ""end_lat"", ""end_lng"", ""member_casual""]"
+202111-divvy-tripdata.zip,__MACOSX/._202111-divvy-tripdata.csv,other,598,e65029fc,[]
+202112-divvy-tripdata.zip,202112-divvy-tripdata.csv,trips,44653666,069bd20e,"[""ride_id"", ""rideable_type"", ""started_at"", ""ended_at"", ""start_station_name"", ""start_station_id"", ""end_station_name"", ""end_station_id"", ""start_lat"", ""start_lng"", ""end_lat"", ""end_lng"", ""member_casual""]"
+202112-divvy-tripdata.zip,__MACOSX/._202112-divvy-tripdata.csv,other,598,c9b63f2c,[]
+202201-divvy-tripdata.zip,202201-divvy-tripdata.csv,trips,19011955,e2cdcfd1,"[""ride_id"", ""rideable_type"", ""started_at"", ""ended_at"", ""start_station_name"", ""start_station_id"", ""end_station_name"", ""end_station_id"", ""start_lat"", ""start_lng"", ""end_lat"", ""end_lng"", ""member_casual""]"
+202201-divvy-tripdata.zip,__MACOSX/._202201-divvy-tripdata.csv,other,654,cee40d65,[]
+202202-divvy-tripdata.zip,202202-divvy-tripdata.csv,trips,21132516,5cecc862,"[""ride_id"", ""rideable_type"", ""started_at"", ""ended_at"", ""start_station_name"", ""start_station_id"", ""end_station_name"", ""end_station_id"", ""start_lat"", ""start_lng"", ""end_lat"", ""end_lng"", ""member_casual""]"
+202202-divvy-tripdata.zip,__MACOSX/._202202-divvy-tripdata.csv,other,598,9d02223d,[]
+202203-divvy-tripdata.zip,202203-divvy-tripdata.csv,trips,51745473,da4f9483,"[""ride_id"", ""rideable_type"", ""started_at"", ""ended_at"", ""start_station_name"", ""start_station_id"", ""end_station_name"", ""end_station_id"", ""start_lat"", ""start_lng"", ""end_lat"", ""end_lng"", ""member_casual""]"
+202203-divvy-tripdata.zip,__MACOSX/._202203-divvy-tripdata.csv,other,598,74aaab6c,[]
+202204-divvy-tripdata.zip,202204-divvy-tripdata.csv,trips,66909087,f82e8911,"[""ride_id"", ""rideable_type"", ""started_at"", ""ended_at"", ""start_station_name"", ""start_station_id"", ""end_station_name"", ""end_station_id"", ""start_lat"", ""start_lng"", ""end_lat"", ""end_lng"", ""member_casual""]"
+202204-divvy-tripdata.zip,__MACOSX/._202204-divvy-tripdata.csv,other,598,3472d5af,[]
+202205-divvy-tripdata.zip,202205-divvy-tripdata.csv,trips,117534432,7b2e43e5,"[""ride_id"", ""rideable_type"", ""started_at"", ""ended_at"", ""start_station_name"", ""start_station_id"", ""end_station_name"", ""end_station_id"", ""start_lat"", ""start_lng"", ""end_lat"", ""end_lng"", ""member_casual""]"
+202205-divvy-tripdata.zip,__MACOSX/._202205-divvy-tripdata.csv,other,598,b731eb12,[]
+202206-divvy-tripdata.zip,202206-divvy-tripdata.csv,trips,143592643,99d91bfe,"[""ride_id"", ""rideable_type"", ""started_at"", ""ended_at"", ""start_station_name"", ""start_station_id"", ""end_station_name"", ""end_station_id"", ""start_lat"", ""start_lng"", ""end_lat"", ""end_lng"", ""member_casual""]"
+202206-divvy-tripdata.zip,__MACOSX/._202206-divvy-tripdata.csv,other,598,0bf1ff7a,[]
+202207-divvy-tripdata.zip,202207-divvy-tripdata.csv,trips,152888753,f30bdad0,"[""ride_id"", ""rideable_type"", ""started_at"", ""ended_at"", ""start_station_name"", ""start_station_id"", ""end_station_name"", ""end_station_id"", ""start_lat"", ""start_lng"", ""end_lat"", ""end_lng"", ""member_casual""]"
+202207-divvy-tripdata.zip,__MACOSX/._202207-divvy-tripdata.csv,other,598,bd5640a9,[]
+202208-divvy-tripdata.zip,202208-divvy-tripdata.csv,trips,145559436,605ed6e5,"[""ride_id"", ""rideable_type"", ""started_at"", ""ended_at"", ""start_station_name"", ""start_station_id"", ""end_station_name"", ""end_station_id"", ""start_lat"", ""start_lng"", ""end_lat"", ""end_lng"", ""member_casual""]"
+202208-divvy-tripdata.zip,__MACOSX/._202208-divvy-tripdata.csv,other,598,2bce07d0,[]
+202209-divvy-tripdata.zip,202209-divvy-publictripdata.csv,trips,141449526,2897f2e4,"[""ride_id"", ""rideable_type"", ""started_at"", ""ended_at"", ""start_station_name"", ""start_station_id"", ""end_station_name"", ""end_station_id"", ""start_lat"", ""start_lng"", ""end_lat"", ""end_lng"", ""member_casual""]"
+202209-divvy-tripdata.zip,__MACOSX/._202209-divvy-publictripdata.csv,other,598,cfebf8f8,[]
+202210-divvy-tripdata.zip,202210-divvy-tripdata.csv,trips,111915287,2fede424,"[""ride_id"", ""rideable_type"", ""started_at"", ""ended_at"", ""start_station_name"", ""start_station_id"", ""end_station_name"", ""end_station_id"", ""start_lat"", ""start_lng"", ""end_lat"", ""end_lng"", ""member_casual""]"
+202210-divvy-tripdata.zip,__MACOSX/._202210-divvy-tripdata.csv,other,598,e6990449,[]
+202211-divvy-tripdata.zip,202211-divvy-tripdata.csv,trips,67939634,3f9fdb02,"[""ride_id"", ""rideable_type"", ""started_at"", ""ended_at"", ""start_station_name"", ""start_station_id"", ""end_station_name"", ""end_station_id"", ""start_lat"", ""start_lng"", ""end_lat"", ""end_lng"", ""member_casual""]"
+202211-divvy-tripdata.zip,__MACOSX/._202211-divvy-tripdata.csv,other,598,1065c9a4,[]
+202212-divvy-tripdata.zip,202212-divvy-tripdata.csv,trips,36466595,359e90e5,"[""ride_id"", ""rideable_type"", ""started_at"", ""ended_at"", ""start_station_name"", ""start_station_id"", ""end_station_name"", ""end_station_id"", ""start_lat"", ""start_lng"", ""end_lat"", ""end_lng"", ""member_casual""]"
+202212-divvy-tripdata.zip,__MACOSX/._202212-divvy-tripdata.csv,other,598,70e59e69,[]
+202301-divvy-tripdata.zip,202301-divvy-tripdata.csv,trips,38451449,088249b5,"[""ride_id"", ""rideable_type"", ""started_at"", ""ended_at"", ""start_station_name"", ""start_station_id"", ""end_station_name"", ""end_station_id"", ""start_lat"", ""start_lng"", ""end_lat"", ""end_lng"", ""member_casual""]"
+202301-divvy-tripdata.zip,__MACOSX/._202301-divvy-tripdata.csv,other,498,5eab0a32,[]
+202302-divvy-tripdata.zip,202302-divvy-tripdata.csv,trips,38594935,49558054,"[""ride_id"", ""rideable_type"", ""started_at"", ""ended_at"", ""start_station_name"", ""start_station_id"", ""end_station_name"", ""end_station_id"", ""start_lat"", ""start_lng"", ""end_lat"", ""end_lng"", ""member_casual""]"
+202302-divvy-tripdata.zip,__MACOSX/._202302-divvy-tripdata.csv,other,598,3da13b62,[]
+202303-divvy-tripdata.zip,202303-divvy-tripdata.csv,trips,52338215,cb43616a,"[""ride_id"", ""rideable_type"", ""started_at"", ""ended_at"", ""start_station_name"", ""start_station_id"", ""end_station_name"", ""end_station_id"", ""start_lat"", ""start_lng"", ""end_lat"", ""end_lng"", ""member_casual""]"
+202303-divvy-tripdata.zip,__MACOSX/._202303-divvy-tripdata.csv,other,598,2ded747c,[]
+202304-divvy-tripdata.zip,202304-divvy-tripdata.csv,trips,85771350,374f71ec,"[""ride_id"", ""rideable_type"", ""started_at"", ""ended_at"", ""start_station_name"", ""start_station_id"", ""end_station_name"", ""end_station_id"", ""start_lat"", ""start_lng"", ""end_lat"", ""end_lng"", ""member_casual""]"
+202304-divvy-tripdata.zip,__MACOSX/._202304-divvy-tripdata.csv,other,598,63f3f15f,[]
+202305-divvy-tripdata.zip,202305-divvy-tripdata.csv,trips,121820924,75ed6690,"[""ride_id"", ""rideable_type"", ""started_at"", ""ended_at"", ""start_station_name"", ""start_station_id"", ""end_station_name"", ""end_station_id"", ""start_lat"", ""start_lng"", ""end_lat"", ""end_lng"", ""member_casual""]"
+202305-divvy-tripdata.zip,__MACOSX/._202305-divvy-tripdata.csv,other,562,bc80b833,[]
+202306-divvy-tripdata.zip,202306-divvy-tripdata.csv,trips,144356672,4597bdf8,"[""ride_id"", ""rideable_type"", ""started_at"", ""ended_at"", ""start_station_name"", ""start_station_id"", ""end_station_name"", ""end_station_id"", ""start_lat"", ""start_lng"", ""end_lat"", ""end_lng"", ""member_casual""]"
+202306-divvy-tripdata.zip,__MACOSX/._202306-divvy-tripdata.csv,other,462,11ed3e85,[]
+202307-divvy-tripdata.zip,202307-divvy-tripdata.csv,trips,153861112,e2165809,"[""ride_id"", ""rideable_type"", ""started_at"", ""ended_at"", ""start_station_name"", ""start_station_id"", ""end_station_name"", ""end_station_id"", ""start_lat"", ""start_lng"", ""end_lat"", ""end_lng"", ""member_casual""]"
+202307-divvy-tripdata.zip,__MACOSX/._202307-divvy-tripdata.csv,other,462,d25e27b7,[]
+202308-divvy-tripdata.zip,202308-divvy-tripdata.csv,trips,155106942,cdb6f719,"[""ride_id"", ""rideable_type"", ""started_at"", ""ended_at"", ""start_station_name"", ""start_station_id"", ""end_station_name"", ""end_station_id"", ""start_lat"", ""start_lng"", ""end_lat"", ""end_lng"", ""member_casual""]"
+202308-divvy-tripdata.zip,__MACOSX/._202308-divvy-tripdata.csv,other,462,283d7d33,[]
+202309-divvy-tripdata.zip,202309-divvy-tripdata.csv,trips,134160122,bc28502f,"[""ride_id"", ""rideable_type"", ""started_at"", ""ended_at"", ""start_station_name"", ""start_station_id"", ""end_station_name"", ""end_station_id"", ""start_lat"", ""start_lng"", ""end_lat"", ""end_lng"", ""member_casual""]"
+202309-divvy-tripdata.zip,__MACOSX/._202309-divvy-tripdata.csv,other,462,b9518cae,[]
+202310-divvy-tripdata.zip,202310-divvy-tripdata.csv,trips,107890751,32986738,"[""ride_id"", ""rideable_type"", ""started_at"", ""ended_at"", ""start_station_name"", ""start_station_id"", ""end_station_name"", ""end_station_id"", ""start_lat"", ""start_lng"", ""end_lat"", ""end_lng"", ""member_casual""]"
+202310-divvy-tripdata.zip,__MACOSX/._202310-divvy-tripdata.csv,other,462,79fa9985,[]
+202311-divvy-tripdata.zip,202311-divvy-tripdata.csv,trips,73030585,5ba1431a,"[""ride_id"", ""rideable_type"", ""started_at"", ""ended_at"", ""start_station_name"", ""start_station_id"", ""end_station_name"", ""end_station_id"", ""start_lat"", ""start_lng"", ""end_lat"", ""end_lng"", ""member_casual""]"
+202311-divvy-tripdata.zip,__MACOSX/._202311-divvy-tripdata.csv,other,562,30a86657,[]
+202312-divvy-tripdata.zip,202312-divvy-tripdata.csv,trips,45031306,f2fa786a,"[""ride_id"", ""rideable_type"", ""started_at"", ""ended_at"", ""start_station_name"", ""start_station_id"", ""end_station_name"", ""end_station_id"", ""start_lat"", ""start_lng"", ""end_lat"", ""end_lng"", ""member_casual""]"
+202312-divvy-tripdata.zip,__MACOSX/._202312-divvy-tripdata.csv,other,562,a890baa8,[]
+202401-divvy-tripdata.zip,202401-divvy-tripdata.csv,trips,29458763,8c21641c,"[""ride_id"", ""rideable_type"", ""started_at"", ""ended_at"", ""start_station_name"", ""start_station_id"", ""end_station_name"", ""end_station_id"", ""start_lat"", ""start_lng"", ""end_lat"", ""end_lng"", ""member_casual""]"
+202401-divvy-tripdata.zip,__MACOSX/._202401-divvy-tripdata.csv,other,562,5d15dce5,[]
+202402-divvy-tripdata.zip,202402-divvy-tripdata.csv,trips,45854560,8ee973e6,"[""ride_id"", ""rideable_type"", ""started_at"", ""ended_at"", ""start_station_name"", ""start_station_id"", ""end_station_name"", ""end_station_id"", ""start_lat"", ""start_lng"", ""end_lat"", ""end_lng"", ""member_casual""]"
+202402-divvy-tripdata.zip,__MACOSX/._202402-divvy-tripdata.csv,other,618,f2b39fdc,[]
+202403-divvy-tripdata.zip,202403-divvy-tripdata.csv,trips,60761710,fe2616a8,"[""ride_id"", ""rideable_type"", ""started_at"", ""ended_at"", ""start_station_name"", ""start_station_id"", ""end_station_name"", ""end_station_id"", ""start_lat"", ""start_lng"", ""end_lat"", ""end_lng"", ""member_casual""]"
+202403-divvy-tripdata.zip,__MACOSX/._202403-divvy-tripdata.csv,other,562,addb3c9e,[]
+202404-divvy-tripdata.zip,202404-divvy-tripdata.csv,trips,82116053,d93538c9,"[""ride_id"", ""rideable_type"", ""started_at"", ""ended_at"", ""start_station_name"", ""start_station_id"", ""end_station_name"", ""end_station_id"", ""start_lat"", ""start_lng"", ""end_lat"", ""end_lng"", ""member_casual""]"
+202404-divvy-tripdata.zip,__MACOSX/._202404-divvy-tripdata.csv,other,562,aed2f9a1,[]
+202405-divvy-tripdata.zip,202405-divvy-tripdata.csv,trips,120615989,7f15233a,"[""ride_id"", ""rideable_type"", ""started_at"", ""ended_at"", ""start_station_name"", ""start_station_id"", ""end_station_name"", ""end_station_id"", ""start_lat"", ""start_lng"", ""end_lat"", ""end_lng"", ""member_casual""]"
+202405-divvy-tripdata.zip,__MACOSX/._202405-divvy-tripdata.csv,other,562,16116ed1,[]
+202406-divvy-tripdata.zip,202406-divvy-tripdata.csv,trips,144699212,acc1479a,"[""ride_id"", ""rideable_type"", ""started_at"", ""ended_at"", ""start_station_name"", ""start_station_id"", ""end_station_name"", ""end_station_id"", ""start_lat"", ""start_lng"", ""end_lat"", ""end_lng"", ""member_casual""]"
+202406-divvy-tripdata.zip,__MACOSX/._202406-divvy-tripdata.csv,other,562,6070ea90,[]
+202407-divvy-tripdata.zip,202407-divvy-tripdata.csv,trips,153564604,ad7eab43,"[""ride_id"", ""rideable_type"", ""started_at"", ""ended_at"", ""start_station_name"", ""start_station_id"", ""end_station_name"", ""end_station_id"", ""start_lat"", ""start_lng"", ""end_lat"", ""end_lng"", ""member_casual""]"
+202407-divvy-tripdata.zip,__MACOSX/._202407-divvy-tripdata.csv,other,562,54b5950b,[]
+202408-divvy-tripdata.zip,202408-divvy-tripdata.csv,trips,154549343,0ba3596c,"[""ride_id"", ""rideable_type"", ""started_at"", ""ended_at"", ""start_station_name"", ""start_station_id"", ""end_station_name"", ""end_station_id"", ""start_lat"", ""start_lng"", ""end_lat"", ""end_lng"", ""member_casual""]"
+202408-divvy-tripdata.zip,__MACOSX/._202408-divvy-tripdata.csv,other,562,820092b5,[]
+202409-divvy-tripdata.zip,202409-divvy-tripdata.csv,trips,164926608,da19714e,"[""ride_id"", ""rideable_type"", ""started_at"", ""ended_at"", ""start_station_name"", ""start_station_id"", ""end_station_name"", ""end_station_id"", ""start_lat"", ""start_lng"", ""end_lat"", ""end_lng"", ""member_casual""]"
+202409-divvy-tripdata.zip,__MACOSX/._202409-divvy-tripdata.csv,other,562,1d1cddbd,[]
+202410-divvy-tripdata.zip,202410-divvy-tripdata.csv,trips,126692520,9995197f,"[""ride_id"", ""rideable_type"", ""started_at"", ""ended_at"", ""start_station_name"", ""start_station_id"", ""end_station_name"", ""end_station_id"", ""start_lat"", ""start_lng"", ""end_lat"", ""end_lng"", ""member_casual""]"
+202410-divvy-tripdata.zip,__MACOSX/._202410-divvy-tripdata.csv,other,562,473ff8f5,[]
+202411-divvy-tripdata.zip,202411-divvy-tripdata.csv,trips,69057866,fd1ec86c,"[""ride_id"", ""rideable_type"", ""started_at"", ""ended_at"", ""start_station_name"", ""start_station_id"", ""end_station_name"", ""end_station_id"", ""start_lat"", ""start_lng"", ""end_lat"", ""end_lng"", ""member_casual""]"
+202411-divvy-tripdata.zip,__MACOSX/._202411-divvy-tripdata.csv,other,562,0be95821,[]
+202412-divvy-tripdata.zip,202412-divvy-tripdata.csv,trips,36842165,73bf2fea,"[""ride_id"", ""rideable_type"", ""started_at"", ""ended_at"", ""start_station_name"", ""start_station_id"", ""end_station_name"", ""end_station_id"", ""start_lat"", ""start_lng"", ""end_lat"", ""end_lng"", ""member_casual""]"
+202412-divvy-tripdata.zip,__MACOSX/._202412-divvy-tripdata.csv,other,562,51c8cefe,[]
+202501-divvy-tripdata.zip,202501-divvy-tripdata.csv,trips,28644017,82322c2c,"[""ride_id"", ""rideable_type"", ""started_at"", ""ended_at"", ""start_station_name"", ""start_station_id"", ""end_station_name"", ""end_station_id"", ""start_lat"", ""start_lng"", ""end_lat"", ""end_lng"", ""member_casual""]"
+202501-divvy-tripdata.zip,__MACOSX/._202501-divvy-tripdata.csv,other,562,80f19a8f,[]
+202502-divvy-tripdata.zip,202502-divvy-tripdata.csv,trips,31272002,9b2eb3e0,"[""ride_id"", ""rideable_type"", ""started_at"", ""ended_at"", ""start_station_name"", ""start_station_id"", ""end_station_name"", ""end_station_id"", ""start_lat"", ""start_lng"", ""end_lat"", ""end_lng"", ""member_casual""]"
+202502-divvy-tripdata.zip,__MACOSX/._202502-divvy-tripdata.csv,other,562,c7a7a478,[]
+202503-divvy-tripdata.zip,202503-divvy-tripdata.csv,trips,60899009,b756c5b1,"[""ride_id"", ""rideable_type"", ""started_at"", ""ended_at"", ""start_station_name"", ""start_station_id"", ""end_station_name"", ""end_station_id"", ""start_lat"", ""start_lng"", ""end_lat"", ""end_lng"", ""member_casual""]"
+202503-divvy-tripdata.zip,__MACOSX/._202503-divvy-tripdata.csv,other,462,2bcb4b09,[]
+202504-divvy-tripdata.zip,202504-divvy-tripdata.csv,trips,75649187,5d28562c,"[""ride_id"", ""rideable_type"", ""started_at"", ""ended_at"", ""start_station_name"", ""start_station_id"", ""end_station_name"", ""end_station_id"", ""start_lat"", ""start_lng"", ""end_lat"", ""end_lng"", ""member_casual""]"
+202504-divvy-tripdata.zip,__MACOSX/._202504-divvy-tripdata.csv,other,562,1985b98d,[]
+202505-divvy-tripdata.zip,202505-divvy-tripdata.csv,trips,101555514,70d19525,"[""ride_id"", ""rideable_type"", ""started_at"", ""ended_at"", ""start_station_name"", ""start_station_id"", ""end_station_name"", ""end_station_id"", ""start_lat"", ""start_lng"", ""end_lat"", ""end_lng"", ""member_casual""]"
+202505-divvy-tripdata.zip,__MACOSX/._202505-divvy-tripdata.csv,other,562,225107e6,[]
+202506-divvy-tripdata.zip,202506-divvy-tripdata.csv,trips,135955630,4878a8a0,"[""ride_id"", ""rideable_type"", ""started_at"", ""ended_at"", ""start_station_name"", ""start_station_id"", ""end_station_name"", ""end_station_id"", ""start_lat"", ""start_lng"", ""end_lat"", ""end_lng"", ""member_casual""]"
+202506-divvy-tripdata.zip,__MACOSX/._202506-divvy-tripdata.csv,other,462,83b18720,[]
+202507-divvy-tripdata.zip,202507-divvy-tripdata.csv,trips,152333181,2028f514,"[""ride_id"", ""rideable_type"", ""started_at"", ""ended_at"", ""start_station_name"", ""start_station_id"", ""end_station_name"", ""end_station_id"", ""start_lat"", ""start_lng"", ""end_lat"", ""end_lng"", ""member_casual""]"
+202507-divvy-tripdata.zip,__MACOSX/._202507-divvy-tripdata.csv,other,562,5999f969,[]
+202508-divvy-tripdata.zip,202508-divvy-tripdata.csv,trips,157547236,f067fdee,"[""ride_id"", ""rideable_type"", ""started_at"", ""ended_at"", ""start_station_name"", ""start_station_id"", ""end_station_name"", ""end_station_id"", ""start_lat"", ""start_lng"", ""end_lat"", ""end_lng"", ""member_casual""]"
+202508-divvy-tripdata.zip,__MACOSX/._202508-divvy-tripdata.csv,other,462,547de872,[]
+202509-divvy-tripdata.zip,202509-divvy-tripdata.csv,trips,142656918,beaa559a,"[""ride_id"", ""rideable_type"", ""started_at"", ""ended_at"", ""start_station_name"", ""start_station_id"", ""end_station_name"", ""end_station_id"", ""start_lat"", ""start_lng"", ""end_lat"", ""end_lng"", ""member_casual""]"
+202509-divvy-tripdata.zip,__MACOSX/._202509-divvy-tripdata.csv,other,598,6a9665f7,[]
+202510-divvy-tripdata.zip,202510-divvy-tripdata.csv,trips,128361274,c0daee70,"[""ride_id"", ""rideable_type"", ""started_at"", ""ended_at"", ""start_station_name"", ""start_station_id"", ""end_station_name"", ""end_station_id"", ""start_lat"", ""start_lng"", ""end_lat"", ""end_lng"", ""member_casual""]"
+202510-divvy-tripdata.zip,__MACOSX/._202510-divvy-tripdata.csv,other,598,08655190,[]
+202511-divvy-tripdata.zip,202511-divvy-tripdata.csv,trips,71109639,ce2d01d1,"[""ride_id"", ""rideable_type"", ""started_at"", ""ended_at"", ""start_station_name"", ""start_station_id"", ""end_station_name"", ""end_station_id"", ""start_lat"", ""start_lng"", ""end_lat"", ""end_lng"", ""member_casual""]"
+202511-divvy-tripdata.zip,__MACOSX/._202511-divvy-tripdata.csv,other,498,e66417ef,[]
+202512-divvy-tripdata.zip,202512-divvy-tripdata.csv,trips,28300500,71d87d45,"[""ride_id"", ""rideable_type"", ""started_at"", ""ended_at"", ""start_station_name"", ""start_station_id"", ""end_station_name"", ""end_station_id"", ""start_lat"", ""start_lng"", ""end_lat"", ""end_lng"", ""member_casual""]"
+202512-divvy-tripdata.zip,__MACOSX/._202512-divvy-tripdata.csv,other,598,9bed94f6,[]
+202601-divvy-tripdata.zip,202501-divvy-tripdata.csv,trips,27856985,9b2a893c,"[""ride_id"", ""rideable_type"", ""started_at"", ""ended_at"", ""start_station_name"", ""start_station_id"", ""end_station_name"", ""end_station_id"", ""start_lat"", ""start_lng"", ""end_lat"", ""end_lng"", ""member_casual""]"
+202601-divvy-tripdata.zip,__MACOSX/._202501-divvy-tripdata.csv,other,598,140d6284,[]
+202602-divvy-tripdata.zip,202602-divvy-tripdata.csv,trips,41164802,076fddba,"[""ride_id"", ""rideable_type"", ""started_at"", ""ended_at"", ""start_station_name"", ""start_station_id"", ""end_station_name"", ""end_station_id"", ""start_lat"", ""start_lng"", ""end_lat"", ""end_lng"", ""member_casual""]"
+202602-divvy-tripdata.zip,__MACOSX/._202602-divvy-tripdata.csv,other,498,8ce898be,[]
+202603-divvy-tripdata.zip,202603-divvy-tripdata.csv,trips,64047548,81dae646,"[""ride_id"", ""rideable_type"", ""started_at"", ""ended_at"", ""start_station_name"", ""start_station_id"", ""end_station_name"", ""end_station_id"", ""start_lat"", ""start_lng"", ""end_lat"", ""end_lng"", ""member_casual""]"
+202603-divvy-tripdata.zip,__MACOSX/._202603-divvy-tripdata.csv,other,598,6f676f59,[]
+202604-divvy-tripdata.zip,202604-divvy-tripdata.csv,trips,89771695,d7d58c86,"[""ride_id"", ""rideable_type"", ""started_at"", ""ended_at"", ""start_station_name"", ""start_station_id"", ""end_station_name"", ""end_station_id"", ""start_lat"", ""start_lng"", ""end_lat"", ""end_lng"", ""member_casual""]"
+202605-divvy-tripdata.zip,202605-divvy-tripdata.csv,trips,130660322,2619ef5d,"[""ride_id"", ""rideable_type"", ""started_at"", ""ended_at"", ""start_station_name"", ""start_station_id"", ""end_station_name"", ""end_station_id"", ""start_lat"", ""start_lng"", ""end_lat"", ""end_lng"", ""member_casual""]"
+202605-divvy-tripdata.zip,__MACOSX/._202605-divvy-tripdata.csv,other,498,345b0e77,[]
+202606-divvy-tripdata.zip,202606-divvy-tripdata.csv,trips,152640622,119398e4,"[""ride_id"", ""rideable_type"", ""started_at"", ""ended_at"", ""start_station_name"", ""start_station_id"", ""end_station_name"", ""end_station_id"", ""start_lat"", ""start_lng"", ""end_lat"", ""end_lng"", ""member_casual""]"
+202606-divvy-tripdata.zip,__MACOSX/._202606-divvy-tripdata.csv,other,598,2cc0a3e6,[]
+202607-divvy-tripdata.zip,202607-divvy-tripdata.csv,trips,173089330,60494b17,"[""ride_id"", ""rideable_type"", ""started_at"", ""ended_at"", ""start_station_name"", ""start_station_id"", ""end_station_name"", ""end_station_id"", ""start_lat"", ""start_lng"", ""end_lat"", ""end_lng"", ""member_casual""]"
+202607-divvy-tripdata.zip,__MACOSX/._202607-divvy-tripdata.csv,other,498,f1d18529,[]
+202608-divvy-tripdata.zip,202608-divvy-tripdata.csv,trips,172809981,0dca50b3,"[""ride_id"", ""rideable_type"", ""started_at"", ""ended_at"", ""start_station_name"", ""start_station_id"", ""end_station_name"", ""end_station_id"", ""start_lat"", ""start_lng"", ""end_lat"", ""end_lng"", ""member_casual""]"
+202608-divvy-tripdata.zip,__MACOSX/._202608-divvy-tripdata.csv,other,598,d3238ba6,[]
+202609-divvy-tripdata.zip,202609-divvy-tripdata.csv,trips,153933196,03a3ac5e,"[""ride_id"", ""rideable_type"", ""started_at"", ""ended_at"", ""start_station_name"", ""start_station_id"", ""end_station_name"", ""end_station_id"", ""start_lat"", ""start_lng"", ""end_lat"", ""end_lng"", ""member_casual""]"
+202609-divvy-tripdata.zip,__MACOSX/._202609-divvy-tripdata.csv,other,598,cc58c49a,[]
+202610-divvy-tripdata.zip,202610-divvy-tripdata.csv,trips,154413726,ccda6052,"[""ride_id"", ""rideable_type"", ""started_at"", ""ended_at"", ""start_station_name"", ""start_station_id"", ""end_station_name"", ""end_station_id"", ""start_lat"", ""start_lng"", ""end_lat"", ""end_lng"", ""member_casual""]"
+Divvy_Stations_Trips_2013.zip,Divvy_Stations_Trips_2013/Divvy_Stations_2013.csv,stations,20111,9ec6efce,"[""id"", ""name"", ""latitude"", ""longitude"", ""dpcapacity"", ""landmark"", ""online date""]"
+Divvy_Stations_Trips_2013.zip,Divvy_Stations_Trips_2013/Divvy_Stations_2013.shp.zip,other,16010,c4a513c9,[]
+Divvy_Stations_Trips_2013.zip,Divvy_Stations_Trips_2013/Divvy_Trips_2013.csv,trips,93389990,f7f055b4,"[""trip_id"", ""starttime"", ""stoptime"", ""bikeid"", ""tripduration"", ""from_station_id"", ""from_station_name"", ""to_station_id"", ""to_station_name"", ""usertype"", ""gender"", ""birthday""]"
+Divvy_Stations_Trips_2013.zip,Divvy_Stations_Trips_2013/README.txt,other,1321,2379b123,[]
+Divvy_Stations_Trips_2014_Q1Q2.zip,Divvy_Trips_2014_Q1Q2.csv,trips,111674031,2993dfcc,"[""trip_id"", ""starttime"", ""stoptime"", ""bikeid"", ""tripduration"", ""from_station_id"", ""from_station_name"", ""to_station_id"", ""to_station_name"", ""usertype"", ""gender"", ""birthyear""]"
+Divvy_Stations_Trips_2014_Q1Q2.zip,Divvy_Stations_2014_Q1Q2.shp.zip,other,17412,ddd1e0e8,[]
+Divvy_Stations_Trips_2014_Q1Q2.zip,Divvy_Stations_2014-Q1Q2.xlsx,other,25083,1eaedd78,[]
+Divvy_Stations_Trips_2014_Q1Q2.zip,README.txt,other,1296,e0e77a24,[]
+Divvy_Stations_Trips_2014_Q3Q4.zip,Divvy_Stations_Trips_2014_Q3Q4/Divvy_Stations_2014_Q3Q4.zip,other,16536,7f0d6950,[]
+Divvy_Stations_Trips_2014_Q3Q4.zip,Divvy_Stations_Trips_2014_Q3Q4/Divvy_Stations_2014-Q3Q4.csv,stations,20749,52f2b74f,"[""id"", ""name"", ""latitude"", ""longitude"", ""dpcapacity"", ""dateCreated""]"
+Divvy_Stations_Trips_2014_Q3Q4.zip,Divvy_Stations_Trips_2014_Q3Q4/Divvy_Trips_2014-Q3-07.csv,trips,50405316,cf84ea1e,"[""trip_id"", ""starttime"", ""stoptime"", ""bikeid"", ""tripduration"", ""from_station_id"", ""from_station_name"", ""to_station_id"", ""to_station_name"", ""usertype"", ""gender"", ""birthyear""]"
+Divvy_Stations_Trips_2014_Q3Q4.zip,Divvy_Stations_Trips_2014_Q3Q4/Divvy_Trips_2014-Q3-0809.csv,trips,86174012,c23a351b,"[""trip_id"", ""starttime"", ""stoptime"", ""bikeid"", ""tripduration"", ""from_station_id"", ""from_station_name"", ""to_station_id"", ""to_station_name"", ""usertype"", ""gender"", ""birthyear""]"
+Divvy_Stations_Trips_2014_Q3Q4.zip,Divvy_Stations_Trips_2014_Q3Q4/Divvy_Trips_2014-Q4.csv,trips,55586016,db252370,"[""trip_id"", ""starttime"", ""stoptime"", ""bikeid"", ""tripduration"", ""from_station_id"", ""from_station_name"", ""to_station_id"", ""to_station_name"", ""usertype"", ""gender"", ""birthyear""]"
+Divvy_Stations_Trips_2014_Q3Q4.zip,Divvy_Stations_Trips_2014_Q3Q4/README.txt,other,1340,5d5ef428,[]
+Divvy_Trips_2015-Q1Q2.zip,Divvy_Trips_2015-Q1.csv,trips,25436302,7080424c,"[""trip_id"", ""starttime"", ""stoptime"", ""bikeid"", ""tripduration"", ""from_station_id"", ""from_station_name"", ""to_station_id"", ""to_station_name"", ""usertype"", ""gender"", ""birthyear""]"
+Divvy_Trips_2015-Q1Q2.zip,Divvy_Stations_2015.csv,stations,27647,4947b867,"[""id"", ""name"", ""latitude"", ""longitude"", ""dpcapacity"", ""landmark""]"
+Divvy_Trips_2015-Q1Q2.zip,Divvy_Trips_2015-Q2.csv,trips,110209615,8bcd7b43,"[""trip_id"", ""starttime"", ""stoptime"", ""bikeid"", ""tripduration"", ""from_station_id"", ""from_station_name"", ""to_station_id"", ""to_station_name"", ""usertype"", ""gender"", ""birthyear""]"
+Divvy_Trips_2015_Q3Q4.zip,Divvy_Trips_2015_Q4.csv,trips,80298886,39e9187a,"[""trip_id"", ""starttime"", ""stoptime"", ""bikeid"", ""tripduration"", ""from_station_id"", ""from_station_name"", ""to_station_id"", ""to_station_name"", ""usertype"", ""gender"", ""birthyear""]"
+Divvy_Trips_2015_Q3Q4.zip,Divvy_Trips_2015_09.csv,trips,52843134,d31de1b1,"[""trip_id"", ""starttime"", ""stoptime"", ""bikeid"", ""tripduration"", ""from_station_id"", ""from_station_name"", ""to_station_id"", ""to_station_name"", ""usertype"", ""gender"", ""birthyear""]"
+Divvy_Trips_2015_Q3Q4.zip,Divvy_Trips_2015_08.csv,trips,61103028,6837ced3,"[""trip_id"", ""starttime"", ""stoptime"", ""bikeid"", ""tripduration"", ""from_station_id"", ""from_station_name"", ""to_station_id"", ""to_station_name"", ""usertype"", ""gender"", ""birthyear""]"
+Divvy_Trips_2015_Q3Q4.zip,Divvy_Trips_2015_07.csv,trips,65405808,9f12236c,"[""trip_id"", ""starttime"", ""stoptime"", ""bikeid"", ""tripduration"", ""from_station_id"", ""from_station_name"", ""to_station_id"", ""to_station_name"", ""usertype"", ""gender"", ""birthyear""]"
+Divvy_Trips_2016_Q1Q2.zip,Divvy_Trips_2016_Q1Q2/Divvy_Stations_2016_Q1Q2.csv,stations,33547,6d7f450b,"[""id"", ""name"", ""latitude"", ""longitude"", ""dpcapacity"", ""online_date""]"
+Divvy_Trips_2016_Q1Q2.zip,Divvy_Trips_2016_Q1Q2/Divvy_Trips_2016_04.csv,trips,28878172,bd09f688,"[""trip_id"", ""starttime"", ""stoptime"", ""bikeid"", ""tripduration"", ""from_station_id"", ""from_station_name"", ""to_station_id"", ""to_station_name"", ""usertype"", ""gender"", ""birthyear""]"
+Divvy_Trips_2016_Q1Q2.zip,Divvy_Trips_2016_Q1Q2/Divvy_Trips_2016_05.csv,trips,44987188,be20e766,"[""trip_id"", ""starttime"", ""stoptime"", ""bikeid"", ""tripduration"", ""from_station_id"", ""from_station_name"", ""to_station_id"", ""to_station_name"", ""usertype"", ""gender"", ""birthyear""]"
+Divvy_Trips_2016_Q1Q2.zip,Divvy_Trips_2016_Q1Q2/Divvy_Trips_2016_06.csv,trips,59617846,82c85ee4,"[""trip_id"", ""starttime"", ""stoptime"", ""bikeid"", ""tripduration"", ""from_station_id"", ""from_station_name"", ""to_station_id"", ""to_station_name"", ""usertype"", ""gender"", ""birthyear""]"
+Divvy_Trips_2016_Q1Q2.zip,Divvy_Trips_2016_Q1Q2/Divvy_Trips_2016_Q1.csv,trips,49786841,18b64d8c,"[""trip_id"", ""starttime"", ""stoptime"", ""bikeid"", ""tripduration"", ""from_station_id"", ""from_station_name"", ""to_station_id"", ""to_station_name"", ""usertype"", ""gender"", ""birthyear""]"
+Divvy_Trips_2016_Q1Q2.zip,Divvy_Trips_2016_Q1Q2/README.txt,other,1331,a5da105b,[]
+Divvy_Trips_2016_Q3Q4.zip,Divvy_Stations_2016_Q4.csv,stations,37235,428595b3,"[""id"", ""name"", ""latitude"", ""longitude"", ""dpcapacity"", ""online_date""]"
+Divvy_Trips_2016_Q3Q4.zip,Divvy_Trips_2016_Q3.csv,trips,223509754,e8a4ecce,"[""trip_id"", ""starttime"", ""stoptime"", ""bikeid"", ""tripduration"", ""from_station_id"", ""from_station_name"", ""to_station_id"", ""to_station_name"", ""usertype"", ""gender"", ""birthyear""]"
+Divvy_Trips_2016_Q3Q4.zip,README_2016_Q4.txt,other,1330,66ff1bdc,[]
+Divvy_Trips_2016_Q3Q4.zip,README_2016_Q3.txt,other,1331,a1e9377c,[]
+Divvy_Trips_2016_Q3Q4.zip,Divvy_Stations_2016_Q3.csv,stations,37235,4fce4dbf,"[""id"", ""name"", ""latitude"", ""longitude"", ""dpcapacity"", ""online_date""]"
+Divvy_Trips_2016_Q3Q4.zip,Divvy_Trips_2016_Q4.csv,trips,108380022,b4ef2c29,"[""trip_id"", ""starttime"", ""stoptime"", ""bikeid"", ""tripduration"", ""from_station_id"", ""from_station_name"", ""to_station_id"", ""to_station_name"", ""usertype"", ""gender"", ""birthyear""]"
+Divvy_Trips_2017_Q1Q2.zip,Divvy_Trips_2017_Q1.csv,trips,67969331,270657b6,"[""trip_id"", ""start_time"", ""end_time"", ""bikeid"", ""tripduration"", ""from_station_id"", ""from_station_name"", ""to_station_id"", ""to_station_name"", ""usertype"", ""gender"", ""birthyear""]"
+Divvy_Trips_2017_Q1Q2.zip,Divvy_Stations_2017_Q1Q2.csv,stations,56223,6c620ab1,"[""id"", ""name"", ""city"", ""latitude"", ""longitude"", ""dpcapacity"", ""online_date""]"
+Divvy_Trips_2017_Q1Q2.zip,README.txt,other,1513,dd7bada7,[]
+Divvy_Trips_2017_Q1Q2.zip,Divvy_Trips_2017_Q2.csv,trips,174311015,222aebb9,"[""trip_id"", ""start_time"", ""end_time"", ""bikeid"", ""tripduration"", ""from_station_id"", ""from_station_name"", ""to_station_id"", ""to_station_name"", ""usertype"", ""gender"", ""birthyear""]"
+Divvy_Trips_2017_Q3Q4.zip,Divvy_Stations_2017_Q3Q4.csv,stations,46340,9d85575a,"[""id"", ""name"", ""city"", ""latitude"", ""longitude"", ""dpcapacity"", ""online_date"", """"]"
+Divvy_Trips_2017_Q3Q4.zip,Divvy_Trips_2017_Q3.csv,trips,249752322,224e8d85,"[""trip_id"", ""start_time"", ""end_time"", ""bikeid"", ""tripduration"", ""from_station_id"", ""from_station_name"", ""to_station_id"", ""to_station_name"", ""usertype"", ""gender"", ""birthyear""]"
+Divvy_Trips_2017_Q3Q4.zip,Divvy_Trips_2017_Q4.csv,trips,85943745,acf98dd1,"[""trip_id"", ""start_time"", ""end_time"", ""bikeid"", ""tripduration"", ""from_station_id"", ""from_station_name"", ""to_station_id"", ""to_station_name"", ""usertype"", ""gender"", ""birthyear""]"
+Divvy_Trips_2017_Q3Q4.zip,README.txt,other,1514,fc8e475b,[]
+Divvy_Trips_2018_Q1.zip,Divvy_Trips_2018_Q1.csv,trips,53449681,d1bb67be,"[""01 - Rental Details Rental ID"", ""01 - Rental Details Local Start Time"", ""01 - Rental Details Local End Time"", ""01 - Rental Details Bike ID"", ""01 - Rental Details Duration In Seconds Uncapped"", ""03 - Rental Start Station ID"", ""03 - Rental Start Station Name"", ""02 - Rental End Station ID"", ""02 - Rental End Station Name"", ""User Type"", ""Member Gender"", ""05 - Member Details Member Birthday Year""]"
+Divvy_Trips_2018_Q1.zip,__MACOSX/._Divvy_Trips_2018_Q1.csv,other,612,eff050a8,[]
+Divvy_Trips_2018_Q2.zip,Divvy_Trips_2018_Q2.csv,trips,145385296,f29d9ef6,"[""trip_id"", ""start_time"", ""end_time"", ""bikeid"", ""tripduration"", ""from_station_id"", ""from_station_name"", ""to_station_id"", ""to_station_name"", ""usertype"", ""gender"", ""birthyear""]"
+Divvy_Trips_2018_Q2.zip,__MACOSX/._Divvy_Trips_2018_Q2.csv,other,668,ef655876,[]
+Divvy_Trips_2018_Q3.zip,Divvy_Trips_2018_Q3.csv,trips,207786278,4fb094b2,"[""trip_id"", ""start_time"", ""end_time"", ""bikeid"", ""tripduration"", ""from_station_id"", ""from_station_name"", ""to_station_id"", ""to_station_name"", ""usertype"", ""gender"", ""birthyear""]"
+Divvy_Trips_2018_Q3.zip,__MACOSX/._Divvy_Trips_2018_Q3.csv,other,668,ad1a9f78,[]
+Divvy_Trips_2018_Q4.zip,Divvy_Trips_2018_Q4.csv,trips,88842833,ec595de6,"[""trip_id"", ""start_time"", ""end_time"", ""bikeid"", ""tripduration"", ""from_station_id"", ""from_station_name"", ""to_station_id"", ""to_station_name"", ""usertype"", ""gender"", ""birthyear""]"
+Divvy_Trips_2018_Q4.zip,__MACOSX/._Divvy_Trips_2018_Q4.csv,other,668,ce9175d9,[]
+Divvy_Trips_2019_Q1.zip,Divvy_Trips_2019_Q1.csv,trips,50528553,b7999410,"[""trip_id"", ""start_time"", ""end_time"", ""bikeid"", ""tripduration"", ""from_station_id"", ""from_station_name"", ""to_station_id"", ""to_station_name"", ""usertype"", ""gender"", ""birthyear""]"
+Divvy_Trips_2019_Q1.zip,__MACOSX/._Divvy_Trips_2019_Q1.csv,other,768,a9412905,[]
+Divvy_Trips_2019_Q2.zip,Divvy_Trips_2019_Q2.csv,trips,152598335,d4091b05,"[""01 - Rental Details Rental ID"", ""01 - Rental Details Local Start Time"", ""01 - Rental Details Local End Time"", ""01 - Rental Details Bike ID"", ""01 - Rental Details Duration In Seconds Uncapped"", ""03 - Rental Start Station ID"", ""03 - Rental Start Station Name"", ""02 - Rental End Station ID"", ""02 - Rental End Station Name"", ""User Type"", ""Member Gender"", ""05 - Member Details Member Birthday Year""]"
+Divvy_Trips_2019_Q2.zip,__MACOSX/._Divvy_Trips_2019_Q2.csv,other,712,59ffb43a,[]
+Divvy_Trips_2019_Q3.zip,Divvy_Trips_2019_Q3.csv,trips,225527165,12f84efb,"[""trip_id"", ""start_time"", ""end_time"", ""bikeid"", ""tripduration"", ""from_station_id"", ""from_station_name"", ""to_station_id"", ""to_station_name"", ""usertype"", ""gender"", ""birthyear""]"
+Divvy_Trips_2019_Q3.zip,__MACOSX/._Divvy_Trips_2019_Q3.csv,other,668,9b1ec155,[]
+Divvy_Trips_2019_Q4.zip,Divvy_Trips_2019_Q4.csv,trips,97031682,3971354b,"[""trip_id"", ""start_time"", ""end_time"", ""bikeid"", ""tripduration"", ""from_station_id"", ""from_station_name"", ""to_station_id"", ""to_station_name"", ""usertype"", ""gender"", ""birthyear""]"
+Divvy_Trips_2019_Q4.zip,__MACOSX/._Divvy_Trips_2019_Q4.csv,other,668,c8258ce4,[]
+Divvy_Trips_2020_Q1.zip,Divvy_Trips_2020_Q1.csv,trips,71273013,b78bb14b,"[""ride_id"", ""rideable_type"", ""started_at"", ""ended_at"", ""start_station_name"", ""start_station_id"", ""end_station_name"", ""end_station_id"", ""start_lat"", ""start_lng"", ""end_lat"", ""end_lng"", ""member_casual""]"
+Divvy_Trips_2020_Q1.zip,__MACOSX/._Divvy_Trips_2020_Q1.csv,other,490,8e29eed2,[]
