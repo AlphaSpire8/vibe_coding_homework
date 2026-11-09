@@ -1,0 +1,448 @@
+{
+  "trips": [
+    {
+      "name": "ride_id",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "started_at_raw",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "ended_at_raw",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "rider_type_raw",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "rideable_type",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "reported_duration_raw",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "bike_id",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "gender_raw",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "birth_year_raw",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "start_station_id",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "start_station_name",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "end_station_id",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "end_station_name",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "id_namespace",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "source_archive",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "source_member",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "source_row",
+      "type": "BIGINT"
+    },
+    {
+      "name": "raw_record_sha256",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "started_at",
+      "type": "TIMESTAMP"
+    },
+    {
+      "name": "ended_at",
+      "type": "TIMESTAMP"
+    },
+    {
+      "name": "reported_duration_seconds",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "start_lat",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "start_lng",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "end_lat",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "end_lng",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "rider_type",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "wall_duration_seconds",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "trip_date",
+      "type": "DATE"
+    },
+    {
+      "name": "timestamps_have_seconds",
+      "type": "BOOLEAN"
+    },
+    {
+      "name": "duration_seconds",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "duration_source",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "flag_id_missing",
+      "type": "BOOLEAN"
+    },
+    {
+      "name": "flag_time_invalid",
+      "type": "BOOLEAN"
+    },
+    {
+      "name": "flag_duration_missing",
+      "type": "BOOLEAN"
+    },
+    {
+      "name": "flag_reported_duration_invalid",
+      "type": "BOOLEAN"
+    },
+    {
+      "name": "flag_duration_nonpositive",
+      "type": "BOOLEAN"
+    },
+    {
+      "name": "flag_duration_short",
+      "type": "BOOLEAN"
+    },
+    {
+      "name": "flag_duration_long",
+      "type": "BOOLEAN"
+    },
+    {
+      "name": "flag_negative_wall_duration",
+      "type": "BOOLEAN"
+    },
+    {
+      "name": "flag_duration_mismatch",
+      "type": "BOOLEAN"
+    },
+    {
+      "name": "flag_station_missing",
+      "type": "BOOLEAN"
+    },
+    {
+      "name": "flag_rider_unmapped",
+      "type": "BOOLEAN"
+    },
+    {
+      "name": "flag_coordinate_missing",
+      "type": "BOOLEAN"
+    },
+    {
+      "name": "flag_coordinate_invalid",
+      "type": "BOOLEAN"
+    },
+    {
+      "name": "flag_zero_coordinates",
+      "type": "BOOLEAN"
+    },
+    {
+      "name": "flag_outside_source_period",
+      "type": "BOOLEAN"
+    },
+    {
+      "name": "duplicate_id_count",
+      "type": "BIGINT"
+    },
+    {
+      "name": "id_variant_count",
+      "type": "BIGINT"
+    },
+    {
+      "name": "exact_duplicate_rank",
+      "type": "BIGINT"
+    },
+    {
+      "name": "flag_duplicate_id",
+      "type": "BOOLEAN"
+    },
+    {
+      "name": "flag_conflicting_id",
+      "type": "BOOLEAN"
+    }
+  ],
+  "weather_observations": [
+    {
+      "name": "station_id",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "weather_date",
+      "type": "DATE"
+    },
+    {
+      "name": "element",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "raw_value",
+      "type": "INTEGER"
+    },
+    {
+      "name": "measurement_flag",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "quality_flag",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "source_flag",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "observation_time",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "source_file",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "is_missing",
+      "type": "BOOLEAN"
+    },
+    {
+      "name": "is_quality_flagged",
+      "type": "BOOLEAN"
+    },
+    {
+      "name": "is_trace",
+      "type": "BOOLEAN"
+    },
+    {
+      "name": "converted_value",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "is_physically_invalid",
+      "type": "BOOLEAN"
+    },
+    {
+      "name": "usable_value",
+      "type": "DOUBLE"
+    }
+  ],
+  "weather_daily": [
+    {
+      "name": "station_id",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "weather_date",
+      "type": "DATE"
+    },
+    {
+      "name": "prcp_mm",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "snwd_mm",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "snow_mm",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "awnd_m_s",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "tmax_c",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "tmin_c",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "prcp_trace",
+      "type": "BOOLEAN"
+    },
+    {
+      "name": "snow_trace",
+      "type": "BOOLEAN"
+    },
+    {
+      "name": "snwd_trace",
+      "type": "BOOLEAN"
+    },
+    {
+      "name": "any_quality_flagged",
+      "type": "BOOLEAN"
+    }
+  ],
+  "station_snapshots": [
+    {
+      "name": "station_id",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "station_name",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "latitude",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "longitude",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "capacity",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "online_date_raw",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "source_scope",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "source_label",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "source_member",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "observed_at_utc",
+      "type": "VARCHAR"
+    }
+  ],
+  "station_identity_audit": [
+    {
+      "name": "station_id",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "name_variants",
+      "type": "BIGINT"
+    },
+    {
+      "name": "first_seen_date",
+      "type": "DATE"
+    },
+    {
+      "name": "last_seen_date",
+      "type": "DATE"
+    },
+    {
+      "name": "latitude_min",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "latitude_max",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "longitude_min",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "longitude_max",
+      "type": "DOUBLE"
+    }
+  ],
+  "station_snapshot_audit": [
+    {
+      "name": "source_scope",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "station_id",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "observations",
+      "type": "BIGINT"
+    },
+    {
+      "name": "name_variants",
+      "type": "BIGINT"
+    },
+    {
+      "name": "latitude_min",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "latitude_max",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "longitude_min",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "longitude_max",
+      "type": "DOUBLE"
+    }
+  ],
+  "duplicate_ids": [
+    {
+      "name": "id_namespace",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "ride_id",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "id_count",
+      "type": "BIGINT"
+    },
+    {
+      "name": "id_variant_count",
+      "type": "BIGINT"
+    }
+  ]
+}
