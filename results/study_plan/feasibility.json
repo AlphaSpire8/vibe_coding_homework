@@ -1,0 +1,44 @@
+{
+  "checked_at": "2026-11-09T13:24:26+00:00",
+  "discovery_year": 2024,
+  "validation_year": 2025,
+  "config_sha256": "583e4e4631e506fd3d43959dd33db34c1b4bde870546c88cb913d131fa0f1503",
+  "source_csv_sha256": "7869ca2536258aa840bb6eec29a1ddb5723b0700bcfc5509850cb7a010d32b1b",
+  "script_sha256": "244239032111411874c03cb1eb59ec9d7c913b2017be351cee6a84a235040844",
+  "selection_used_trip_effects": false,
+  "validation_weather_read": false,
+  "validation_relationships_analyzed": false,
+  "selected_design_2024": {
+    "temperature_width_c": 10,
+    "minimum_weekend_days": 2,
+    "minimum_weekday_days": 2,
+    "nonempty_cells": 82,
+    "supported_cells": 25,
+    "supported_days": 226,
+    "coverage_fraction": 0.6174863387978142,
+    "supported_weekend_days": 76,
+    "supported_weekday_days": 150,
+    "covered_months": 12,
+    "missing_weather_days": 0
+  },
+  "validation_calendar_only": {
+    "days": 365,
+    "weekend_days": 104,
+    "weekday_days": 261,
+    "week_blocks": 53
+  },
+  "outputs": [
+    {
+      "path": "design_comparison_2024.csv",
+      "sha256": "4b266ba6d7b4149b2316a326824da4e44eb0b32d075790051df9d27919b59df6"
+    },
+    {
+      "path": "selected_weather_cells_2024.csv",
+      "sha256": "970beebb9f16af75c84a6a276591d5d68b49d9624773e88ea57437e87041a201"
+    },
+    {
+      "path": "validation_calendar_blocks.csv",
+      "sha256": "cc6cf988833b9ef2dedc8b0599fc13d26473b6211d62453c05182e4010189dce"
+    }
+  ]
+}
