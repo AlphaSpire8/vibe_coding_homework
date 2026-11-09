@@ -1,6 +1,6 @@
 # 工作计划
 
-作业要求见 [homework_intro.md](homework_intro.md)，决策与 AI 使用情况见 [research_log.md](research_log.md)。本计划待用户审阅。
+作业要求见 [homework_intro.md](../homework_intro.md)，决策与 AI 使用情况见 [research_log.md](research_log.md)。计划已通过 [PR #1](https://github.com/AlphaSpire8/vibe_coding_homework/pull/1) 审阅并合并，按阶段推进。
 
 ## 已确认的安排
 
@@ -10,6 +10,8 @@
 - 交付：完整可运行代码、汇报材料、完整报告。截止日期不作为当前计划约束。
 
 ## 阶段与验收
+
+阶段 1、2 已完成；下载结果见 [data_download.md](data_download.md)。下一阶段为数据整理。
 
 | 阶段 | 工作 | 验收产物 |
 | --- | --- | --- |
