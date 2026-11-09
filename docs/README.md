@@ -10,3 +10,4 @@
 - [research_questions.md](research_questions.md)：三个候选问题与选题结果。
 - [weekend_study_protocol.md](weekend_study_protocol.md)：周末节律假设、主验证和天气分层实验方案。
 - [weekend_validation_results.md](weekend_validation_results.md)：2025 年主验证、额外实验、两张核心图和结论边界。
+- [delivery_check.md](delivery_check.md)：交付材料核验、编译检查与临时文件位置。

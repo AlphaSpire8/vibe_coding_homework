@@ -8,6 +8,7 @@
 - `check_weekend_plan.py`：仅用发现年天气与日期检查分层覆盖，生成验证年纯日历周块。
 - `validate_weekend.py`：核对冻结方案与输入，执行 2025 年主验证、配对周块重抽样及天气分层实验。
 - `plot_weekend.py`：将验证统计绘制为两张中文核心图，输出 PNG/PDF。
+- `prepare_deliverables.py`：校验已有汇总并重绘两张汇报图，放入报告和汇报目录，记录来源校验值。
 - `__init__.py`：支持从项目根目录以模块方式运行。
 
 在项目根目录执行，统一使用根目录 uv 环境：
@@ -35,3 +36,5 @@ uv run python -m scripts.explore_data
 验证方案的可行性检查执行 `uv run python -m scripts.check_weekend_plan`，读取 `configs/weekend_validation.json` 和已有探索日表，核对年份及校验值后输出至 `results/study_plan/`；不计算行程效应，不读取 2025 年行程或天气。
 
 正式验证执行 `uv run python -m scripts.validate_weekend`，依照已通过 PR #5 的配置，输出至 `results/validation/`。运行前核对全部整理文件的 SHA-256 及发现年参考结果；仅分析 2025 年，沿用筛选口径，不覆盖探索结果。配置中的状态保留为制定时值，实际执行状态写入结果。
+
+交付配图执行 `uv run python -m scripts.prepare_deliverables`，只读取已校验的探索/验证汇总，输出至 `deliverables/`；不改写 `.tex` 或分析结果。LaTeX 编译与 PDF 导出由用户在 TexPage 完成。
