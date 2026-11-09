@@ -1,4 +1,4 @@
-# 数据工具
+# 脚本
 
 - `download_data.py`：根据完整分页清单下载全部 Divvy ZIP；获取两个 NOAA 站点的完整日观测档案、GBFS 站点快照和来源文档。
 - `verify_data.py`：离线检查大小、SHA-256、ZIP/GZIP 完整性、JSON 格式与时间覆盖，生成清单和阶段报告。
@@ -19,22 +19,12 @@ uv run python -m scripts.download_data
 uv run python -m scripts.verify_data
 uv run python -m scripts.prepare_data
 uv run python -m scripts.explore_data
+uv run python -m scripts.check_weekend_plan
+uv run python -m scripts.validate_weekend
+uv run python -m scripts.prepare_deliverables
 ```
 
-下载支持失败后重跑，复用大小与校验值匹配的文件；单个文件通过临时文件写入。默认并发数为 4，可用 `--workers` 调整。`--refresh` 重新获取全部文件；默认保留已下载的天气与 GBFS 快照，Divvy 文件列表每次重新获取。
-
-来源发现完成前保留旧清单记录；分页或 GBFS 获取失败、中断时，旧快照的校验值与获取时间仍可复用。
-
-验证不解压保留第二份数据，通过流式读取检查原始包。完整性通过不代表记录已完成清洗；月份覆盖依据来源包名，仅扫描首尾包确认行程日期边界。
-
-整理使用 DuckDB，默认最多 4 个线程与 4 GiB 数据库内存；逐个临时解压 CSV。全部处理和记录数核对成功后替换 `data/processed/`，失败时保留原有整理结果。规则与口径见 `docs/data_dictionary.md`。
-
-仅调整过滤规则时，可执行 `uv run python -m scripts.prepare_data --filter-only`，核验并复用已有标准化表，重新生成过滤子集和审计。字段映射、时间解析或单位规则改变时须完整执行，不能使用该选项。
-
-探索读取 `configs/exploration.json`，输出至 `results/eda/`，使用 Matplotlib 与中文系统字体（服务器已安装 Noto Sans CJK）。2025 年仅复用已有质量计数，行为及天气关系统计限定在 2024 年；范围变更须先讨论。图表按日聚合天气关联，研究报告与候选问题由阅读结果后撰写。
-
-验证方案的可行性检查执行 `uv run python -m scripts.check_weekend_plan`，读取 `configs/weekend_validation.json` 和已有探索日表，核对年份及校验值后输出至 `results/study_plan/`；不计算行程效应，不读取 2025 年行程或天气。
-
-正式验证执行 `uv run python -m scripts.validate_weekend`，依照已通过 PR #5 的配置，输出至 `results/validation/`。运行前核对全部整理文件的 SHA-256 及发现年参考结果；仅分析 2025 年，沿用筛选口径，不覆盖探索结果。配置中的状态保留为制定时值，实际执行状态写入结果。
-
-交付配图执行 `uv run python -m scripts.prepare_deliverables`，只读取已校验的探索/验证汇总，输出至 `deliverables/`；不改写 `.tex` 或分析结果。LaTeX 编译与 PDF 导出由用户在 TexPage 完成。
+- 下载默认 4 并发（`--workers` 可调），支持校验缓存后重跑；`--refresh` 强制更新。默认复用天气与 GBFS 快照，每次重新发现 Divvy 清单；来源发现失败时保留旧清单。
+- 完整性检查离线流式读取原始包。整理默认使用 4 线程、4 GiB 内存，成功后替换 `data/processed/`。仅过滤规则改变时可用 `--filter-only`；字段、时间或单位规则改变须完整整理。
+- 探索仅分析 2024 年；设计检查只用该年天气与日期；正式验证依冻结配置分析 2025 年。精确版本见各结果目录运行清单，数据口径见 [数据字典](../docs/data_dictionary.md)。
+- 绘图需要系统中文字体，服务器已有 Noto Sans CJK。交付制图入口只更新 PDF 配图和校验清单；LaTeX 源码由用户在 TexPage 编译、导出。
