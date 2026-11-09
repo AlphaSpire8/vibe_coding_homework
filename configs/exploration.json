@@ -1,0 +1,9 @@
+{
+  "exploration_year": 2024,
+  "holdout_year": 2025,
+  "wet_threshold_mm": 1.0,
+  "temperature_bin_width_c": 5.0,
+  "peak_hours": [7, 8, 9, 16, 17, 18],
+  "quality_scope": "all_years_existing_preparation_counts_only",
+  "holdout_behavior_and_weather_analysis": false
+}
