@@ -1,0 +1,13 @@
+month,calendar_days,supported_weekday_days,supported_weekend_days,missing_weather_days
+1,31,11,7,0
+2,28,7,6,0
+3,31,13,5,0
+4,30,9,5,0
+5,31,12,7,0
+6,30,10,4,0
+7,31,22,8,0
+8,31,19,9,0
+9,30,19,5,0
+10,31,14,7,0
+11,30,6,6,0
+12,31,6,4,0
