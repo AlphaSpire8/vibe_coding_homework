@@ -6,6 +6,8 @@
 - `explore_data.py`：按冻结配置计算质量、描述、时空与天气关联统计，检查汇总守恒及年份边界。
 - `plot_exploration.py`：将探索汇总绘制为中文 PNG/PDF。
 - `check_weekend_plan.py`：仅用发现年天气与日期检查分层覆盖，生成验证年纯日历周块。
+- `validate_weekend.py`：核对冻结方案与输入，执行 2025 年主验证、配对周块重抽样及天气分层实验。
+- `plot_weekend.py`：将验证统计绘制为两张中文核心图，输出 PNG/PDF。
 - `__init__.py`：支持从项目根目录以模块方式运行。
 
 在项目根目录执行，统一使用根目录 uv 环境：
@@ -31,3 +33,5 @@ uv run python -m scripts.explore_data
 探索读取 `configs/exploration.json`，输出至 `results/eda/`，使用 Matplotlib 与中文系统字体（服务器已安装 Noto Sans CJK）。2025 年仅复用已有质量计数，行为及天气关系统计限定在 2024 年；范围变更须先讨论。图表按日聚合天气关联，研究报告与候选问题由阅读结果后撰写。
 
 验证方案的可行性检查执行 `uv run python -m scripts.check_weekend_plan`，读取 `configs/weekend_validation.json` 和已有探索日表，核对年份及校验值后输出至 `results/study_plan/`；不计算行程效应，不读取 2025 年行程或天气。
+
+正式验证执行 `uv run python -m scripts.validate_weekend`，依照已通过 PR #5 的配置，输出至 `results/validation/`。运行前核对全部整理文件的 SHA-256 及发现年参考结果；仅分析 2025 年，沿用筛选口径，不覆盖探索结果。配置中的状态保留为制定时值，实际执行状态写入结果。

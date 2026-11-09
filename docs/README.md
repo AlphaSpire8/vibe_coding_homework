@@ -9,3 +9,4 @@
 - [exploratory_analysis.md](exploratory_analysis.md)：四类探索分析、主要发现及局限。
 - [research_questions.md](research_questions.md)：三个候选问题与选题结果。
 - [weekend_study_protocol.md](weekend_study_protocol.md)：周末节律假设、主验证和天气分层实验方案。
+- [weekend_validation_results.md](weekend_validation_results.md)：2025 年主验证、额外实验、两张核心图和结论边界。
